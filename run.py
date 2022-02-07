@@ -18,8 +18,7 @@ data = sales.get_all_values()
 
 def clear_terminal():
     """ Clears the terminal"""
-    command = 'clear'
-    os.system(command)
+    os.system('clear')
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application"""
