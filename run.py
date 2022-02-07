@@ -2,6 +2,7 @@ import os
 import time
 import gspread
 from google.oauth2.service_account import Credentials
+from questions import question_list
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -16,50 +17,6 @@ SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
 
 sales = SHEET.worksheet("sales")
 data = sales.get_all_values()
-
-class Question:
-    """
-    Questions instance, gets the question
-    and the answer
-    """
-    def __init__(self, question, answer):
-        self.question = question
-        self.answer = answer
-
-questions = [
-     "Easy F1 Question 1\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
-
-     "Easy F1 Question 2\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
-
-     "Easy F1 Question 3\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
-
-     "Easy F1 Question 4\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
-
-     "Easy F1 Question 5\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
-]
-
-question_list = [
-    Question(questions[0], "A"),
-    Question(questions[1], "A"),
-    Question(questions[2], "A"),
-    Question(questions[3], "A"),
-    Question(questions[4], "A"),
-]
 
 def start_quiz():
     """ Loads the questions and validates the users answer"""
