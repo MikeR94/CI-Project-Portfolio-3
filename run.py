@@ -24,7 +24,7 @@ def clear_terminal():
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application"""
     print("Welcome to the main menu")
-    user_input = input("A) Start the Quiz\nB) Exit the game\n")
+    user_input = input("A) Start the Quiz\nB) Exit the game\n").capitalize()
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
         time.sleep(2)
