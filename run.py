@@ -1,6 +1,7 @@
 import os
 import time
 import gspread
+import sys
 from google.oauth2.service_account import Credentials
 from questions import question_list
 
@@ -19,7 +20,7 @@ sales = SHEET.worksheet("sales")
 data = sales.get_all_values()
 
 def start_quiz():
-    """ Loads the questions and validates the users answer"""
+    """ Loads the questions and validates the users answer """
     score = 0
     for question in question_list:
         user_answer = input(question.question).capitalize()
@@ -32,12 +33,21 @@ def start_quiz():
 
 
 def clear_terminal():
-    """ Clears the terminal"""
+    """ Clears the terminal """
     os.system('clear')
 
 
+def exit_game():
+    """ Exits the game """
+    print("Thank you for playing\n")
+    print("Shutting the program down...\n")
+    time.sleep(2)
+    print("Program shutdown successfully")
+    sys.exit()
+
+
 def main_menu():
-    """ Displays the main menu to the user that allows them to navigate the application"""
+    """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu")
     user_input = input("A) Start the Quiz\nB) Exit the game\n").capitalize()
     if user_input == ("A"):
@@ -48,6 +58,8 @@ def main_menu():
     if user_input == ("B"):
         print("Exiting the game...")
         time.sleep(2)
+        clear_terminal()
+        exit_game()
 
 print("Welcome to the F1 quiz!")
 name = input("Please enter your name: ")
