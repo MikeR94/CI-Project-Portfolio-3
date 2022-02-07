@@ -15,4 +15,11 @@ SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
 sales = SHEET.worksheet("sales")
 data = sales.get_all_values()
 
-print(data)
+def main_menu():
+    """ Displays the main menu to the user that allows them to navigate the application"""
+    print("Welcome to the main menu")
+
+print("Welcome to the F1 quiz!")
+name = input("Please enter your name: ")
+
+main_menu()
