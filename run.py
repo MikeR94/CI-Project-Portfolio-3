@@ -1,4 +1,5 @@
 import os
+import time
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -26,10 +27,12 @@ def main_menu():
     user_input = input("A) Start the Quiz\nB) Exit the game\n")
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
+        time.sleep(2)
         clear_terminal()
         print("Test 12345")
     if user_input == ("B"):
         print("Exiting the game...")
+        time.sleep(2)
 
 print("Welcome to the F1 quiz!")
 name = input("Please enter your name: ")
