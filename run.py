@@ -1,3 +1,4 @@
+import os
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -15,12 +16,19 @@ SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
 sales = SHEET.worksheet("sales")
 data = sales.get_all_values()
 
+def clear_terminal():
+    """ Clears the terminal"""
+    command = 'clear'
+    os.system(command)
+
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application"""
     print("Welcome to the main menu")
     user_input = input("A) Start the Quiz\nB) Exit the game\n")
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
+        clear_terminal()
+        print("Test 12345")
     if user_input == ("B"):
         print("Exiting the game...")
 
