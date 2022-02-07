@@ -18,6 +18,11 @@ data = sales.get_all_values()
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application"""
     print("Welcome to the main menu")
+    user_input = input("A) Start the Quiz\nB) Exit the game\n")
+    if user_input == ("A"):
+        print("Great stuff, starting a new quiz now...")
+    if user_input == ("B"):
+        print("Exiting the game...")
 
 print("Welcome to the F1 quiz!")
 name = input("Please enter your name: ")
