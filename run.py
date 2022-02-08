@@ -20,8 +20,8 @@ CREDS = Credentials.from_service_account_file("creds.json")
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
-sales = SHEET.worksheet("sales")
-data = sales.get_all_values()
+leaderboard = SHEET.worksheet("leaderboard")
+data = leaderboard.get_all_values()
 
 
 def start_quiz(selected_difficulty):
@@ -36,6 +36,7 @@ def start_quiz(selected_difficulty):
         else:
             print("Incorrect answer")
     print("Quiz finished")
+    leaderboard.append_row(values=[name, score])
 
 
 def select_difficulty():
