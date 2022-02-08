@@ -56,6 +56,7 @@ def start_quiz(selected_difficulty):
             time.sleep(2)
     print("Please wait, adding your score to the leaderboard...\n")
     leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected])
+    leaderboard.sort((2, 'des'))
     time.sleep(2)
     print("Leaderboard updated successfully!\n")
 
