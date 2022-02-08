@@ -135,6 +135,7 @@ def show_game_stats():
         if item.isdigit():
             total_incorrect.append(int(item))
     print(f"Overall incorrect questions answered: {sum(total_incorrect)}\n")
+    quick_menu()
 
 
 def clear_terminal():
