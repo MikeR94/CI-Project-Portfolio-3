@@ -157,6 +157,14 @@ def main_menu():
     print("Welcome to the main menu, " + name + "!\n")
     print("Please select an option from the menu\n")
     user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) View game statistics\nD) Exit the game\n").capitalize()
+    while True:
+        if user_input not in {"A", "B", "C", "D"}:
+            print("Invalid input! Please enter either A, B, C, or D\n")
+            time.sleep(1)
+            clear_terminal()
+            main_menu()
+        else:
+            break
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
         time.sleep(2)
