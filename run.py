@@ -1,6 +1,7 @@
 import os
 import time
 import sys
+import random
 import gspread
 from google.oauth2.service_account import Credentials
 from questions import question_list
@@ -22,7 +23,8 @@ data = sales.get_all_values()
 def start_quiz():
     """ Loads the questions and validates the users answer """
     score = 0
-    for question in question_list:
+    questions = random.sample(question_list, 5)
+    for question in questions:
         user_answer = input(question.question).capitalize()
         if user_answer == question.answer:
             score += 1
