@@ -36,6 +36,8 @@ def start_quiz(selected_difficulty):
             else:
                 break
         if user_answer == question.answer:
+            print("Correct answer!\n")
+            time.sleep(2)
             if selected_difficulty == easy_question_list:
                 score += 5
             elif selected_difficulty == medium_question_list:
@@ -43,7 +45,8 @@ def start_quiz(selected_difficulty):
             elif selected_difficulty == hard_question_list:
                 score += 20
         else:
-            print("Incorrect answer")
+            print("Incorrect answer\n")
+            time.sleep(2)
     print("Please wait, adding your score to the leaderboard...\n")
     leaderboard.append_row(values=[name, score])
     time.sleep(2)
@@ -92,7 +95,8 @@ def exit_game():
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
-    print("Welcome to the main menu")
+    print("Welcome to the main menu, " + name + "!\n")
+    print("Please select an option from the menu\n")
     user_input = input("A) Start the Quiz\nB) Exit the game\n").capitalize()
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
@@ -107,5 +111,7 @@ def main_menu():
 
 print("Welcome to the F1 quiz!")
 name = input("Please enter your name: ")
+time.sleep(2)
+clear_terminal()
 
 main_menu()
