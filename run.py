@@ -116,6 +116,27 @@ def show_leaderboards():
     quick_menu()
 
 
+def show_game_stats():
+    """Shows the game stats"""
+    games_played = leaderboard.row_count - 1
+    print(f"Overall games played: {games_played}\n")
+    total_points = []
+    for item in leaderboard.col_values(2):
+        if item.isdigit():
+            total_points.append(int(item))
+    print(f"Overall points accumulated: {sum(total_points)}\n")
+    total_correct = []
+    for item in leaderboard.col_values(3):
+        if item.isdigit():
+            total_correct.append(int(item))
+    print(f"Overall correct questions answered: {sum(total_correct)}\n")
+    total_incorrect = []
+    for item in leaderboard.col_values(4):
+        if item.isdigit():
+            total_incorrect.append(int(item))
+    print(f"Overall incorrect questions answered: {sum(total_incorrect)}\n")
+
+
 def clear_terminal():
     """ Clears the terminal """
     os.system('clear')
@@ -134,7 +155,7 @@ def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu, " + name + "!\n")
     print("Please select an option from the menu\n")
-    user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) Exit the game\n").capitalize()
+    user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) View game statistics\nD) Exit the game\n").capitalize()
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
         time.sleep(2)
@@ -146,6 +167,11 @@ def main_menu():
         clear_terminal()
         show_leaderboards()
     if user_input == ("C"):
+        print("Loading the game statistics...")
+        time.sleep(2)
+        clear_terminal()
+        show_game_stats()
+    if user_input == ("D"):
         print("Exiting the game...")
         time.sleep(2)
         clear_terminal()
