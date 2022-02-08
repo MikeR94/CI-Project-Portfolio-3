@@ -39,8 +39,10 @@ def start_quiz(selected_difficulty):
                 score += 20
         else:
             print("Incorrect answer")
-    print("Quiz finished")
+    print("Please wait, adding your score to the leaderboard...\n")
     leaderboard.append_row(values=[name, score])
+    time.sleep(2)
+    print("Leaderboard updated successfully!\n")
 
 
 def select_difficulty():
