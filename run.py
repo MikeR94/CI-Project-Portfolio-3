@@ -31,8 +31,12 @@ def start_quiz(selected_difficulty):
     for question in questions:
         user_answer = input(question.question).capitalize()
         if user_answer == question.answer:
-            score += 1
-            print("Correct answer!")
+            if selected_difficulty == easy_question_list:
+                score += 5
+            elif selected_difficulty == medium_question_list:
+                score += 10
+            elif selected_difficulty == hard_question_list:
+                score += 20
         else:
             print("Incorrect answer")
     print("Quiz finished")
