@@ -109,6 +109,11 @@ def select_difficulty():
         select_difficulty()
 
 
+def show_leaderboards():
+    """ Shows the leaderboards to the user """
+    print(data)
+
+
 def clear_terminal():
     """ Clears the terminal """
     os.system('clear')
@@ -127,13 +132,18 @@ def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu, " + name + "!\n")
     print("Please select an option from the menu\n")
-    user_input = input("A) Start the Quiz\nB) Exit the game\n").capitalize()
+    user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) Exit the game\n").capitalize()
     if user_input == ("A"):
         print("Great stuff, starting a new quiz now...")
         time.sleep(2)
         clear_terminal()
         select_difficulty()
     if user_input == ("B"):
+        print("Loading the leaderboards...")
+        time.sleep(2)
+        clear_terminal()
+        show_leaderboards()
+    if user_input == ("C"):
         print("Exiting the game...")
         time.sleep(2)
         clear_terminal()
