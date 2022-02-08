@@ -4,7 +4,10 @@ import sys
 import random
 import gspread
 from google.oauth2.service_account import Credentials
-from questions import question_list
+from questions import easy_question_list
+from questions import medium_question_list
+from questions import hard_question_list
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -12,18 +15,19 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
     ]
 
+
 CREDS = Credentials.from_service_account_file("creds.json")
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
-
 sales = SHEET.worksheet("sales")
 data = sales.get_all_values()
 
-def start_quiz():
+
+def start_quiz(selected_difficulty):
     """ Loads the questions and validates the users answer """
     score = 0
-    questions = random.sample(question_list, 5)
+    questions = random.sample(selected_difficulty, 5)
     for question in questions:
         user_answer = input(question.question).capitalize()
         if user_answer == question.answer:
@@ -32,6 +36,32 @@ def start_quiz():
         else:
             print("Incorrect answer")
     print("Quiz finished")
+
+
+def select_difficulty():
+    """ Allows the user to select a difficulty """
+    print("Please select a difficulty\n")
+    user_input = input("A) Easy\nB) Medium\nC) Hard\n").capitalize()
+    if user_input == ("A"):
+        print("Loading easy questions...")
+        time.sleep(2)
+        clear_terminal()
+        start_quiz(easy_question_list)
+    elif user_input == ("B"):
+        print("Loading medium questions...")
+        time.sleep(2)
+        clear_terminal()
+        start_quiz(medium_question_list)
+    elif user_input == ("C"):
+        print("Loading hard questions...")
+        time.sleep(2)
+        clear_terminal()
+        start_quiz(hard_question_list)
+    else:
+        print("Please enter either A, B or C")
+        time.sleep(2)
+        clear_terminal()
+        select_difficulty()
 
 
 def clear_terminal():
@@ -56,7 +86,7 @@ def main_menu():
         print("Great stuff, starting a new quiz now...")
         time.sleep(2)
         clear_terminal()
-        start_quiz()
+        select_difficulty()
     if user_input == ("B"):
         print("Exiting the game...")
         time.sleep(2)
