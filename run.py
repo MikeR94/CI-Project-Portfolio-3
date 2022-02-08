@@ -27,6 +27,8 @@ data = leaderboard.get_all_values()
 def start_quiz(selected_difficulty):
     """ Loads the questions and validates the users answer """
     score = 0
+    correct = 0
+    incorrect = 0
     questions = random.sample(selected_difficulty, 5)
     for question in questions:
         while True:
@@ -38,17 +40,22 @@ def start_quiz(selected_difficulty):
         if user_answer == question.answer:
             print("Correct answer!\n")
             time.sleep(2)
+            correct += 1
             if selected_difficulty == easy_question_list:
+                difficulty_selected = "Easy"
                 score += 5
             elif selected_difficulty == medium_question_list:
+                difficulty_selected = "Medium"
                 score += 10
             elif selected_difficulty == hard_question_list:
+                difficulty_selected = "Hard"
                 score += 20
         else:
+            incorrect += 1
             print("Incorrect answer\n")
             time.sleep(2)
     print("Please wait, adding your score to the leaderboard...\n")
-    leaderboard.append_row(values=[name, score])
+    leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected])
     time.sleep(2)
     print("Leaderboard updated successfully!\n")
 
