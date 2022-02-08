@@ -2,6 +2,7 @@ import os
 import time
 import sys
 import random
+from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
 from questions import easy_question_list
@@ -111,7 +112,8 @@ def select_difficulty():
 
 def show_leaderboards():
     """ Shows the leaderboards to the user """
-    print(data)
+    print(tabulate(data[0:10], tablefmt='fancy_grid'))
+    quick_menu()
 
 
 def clear_terminal():
