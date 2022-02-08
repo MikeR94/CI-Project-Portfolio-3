@@ -59,6 +59,28 @@ def start_quiz(selected_difficulty):
     leaderboard.sort((2, 'des'))
     time.sleep(2)
     print("Leaderboard updated successfully!\n")
+    quick_menu()
+
+
+def quick_menu():
+    """Small navigation menu for the user"""
+    print("----------------------")
+    while True:
+        user_input = (input("A) Return to main menu B) Exit game\n ").capitalize())
+        if user_input not in {"A", "B"}:
+            print("Invalid input! Please enter either A, B\n")
+        else:
+            break
+    if user_input == ("A"):
+        print("Understood " + name + ", redirecting back to the main menu...")
+        time.sleep(2)
+        clear_terminal()
+        main_menu()
+    if user_input == ("B"):
+        print("Exiting the game...")
+        time.sleep(2)
+        clear_terminal()
+        exit_game()
 
 
 def select_difficulty():
