@@ -29,7 +29,12 @@ def start_quiz(selected_difficulty):
     score = 0
     questions = random.sample(selected_difficulty, 5)
     for question in questions:
-        user_answer = input(question.question).capitalize()
+        while True:
+            user_answer = input(question.question).capitalize()
+            if user_answer not in {"A", "B", "C"}:
+                print("Invalid input! You can attempt the question again\n")
+            else:
+                break
         if user_answer == question.answer:
             if selected_difficulty == easy_question_list:
                 score += 5
