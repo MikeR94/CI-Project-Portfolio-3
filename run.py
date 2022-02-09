@@ -159,6 +159,10 @@ def show_game_rules():
     """ Displays the game rules to the user """
     print("Currently under construction")
 
+def show_fact():
+    """ Displays a random F1 fact to the user """
+    print("Currently under construction")
+
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu, " + name + "!\n")
