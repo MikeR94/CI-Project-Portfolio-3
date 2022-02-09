@@ -23,6 +23,8 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("ci_project_portfolio_3")
 leaderboard = SHEET.worksheet("leaderboard")
 data = leaderboard.get_all_values()
+facts = SHEET.worksheet("facts")
+fact_data = facts.get_all_values()
 
 
 def start_quiz(selected_difficulty):
@@ -164,8 +166,18 @@ def show_game_rules():
 
 def show_fact():
     """ Displays a random F1 fact to the user """
-    print("Currently under construction\n")
+    random_fact = get_random_fact()
+    print(random_fact)
     quick_menu()
+
+
+def get_random_fact():
+    """ Stores all facts in a list, picks one at random and returns it as a string"""
+    fact_list = []
+    for i in fact_data:
+        fact_list.append(i)
+    load_fact = random.choice(fact_list)
+    return ''.join(load_fact)
 
 
 def submit_feedback():
