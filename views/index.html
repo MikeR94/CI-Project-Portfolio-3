@@ -1,6 +1,12 @@
 <body>
-    <button onclick="window.location.reload()">Run Program</button>
-    <div id="terminal"></div>
+    <div id="background">
+        <div id="main-terminal">
+            <div id="terminal"></div>
+        </div>
+        <div id="playbtn">
+            <button onclick="window.location.reload()">Run Program</button>
+        </div>
+    </div>
 
     <script>
         var term = new Terminal({
