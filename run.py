@@ -200,6 +200,21 @@ def main_menu():
         clear_terminal()
         show_game_stats()
     if user_input == ("D"):
+        print("Loading the game rules...")
+        time.sleep(2)
+        clear_terminal()
+        show_game_rules()
+    if user_input == ("E"):
+        print("Loading the F1 fact display...")
+        time.sleep(2)
+        clear_terminal()
+        show_fact()
+    if user_input == ("F"):
+        print("Loading submit feedback...")
+        time.sleep(2)
+        clear_terminal()
+        submit_feedback()
+    if user_input == ("G"):
         print("Exiting the game...")
         time.sleep(2)
         clear_terminal()
