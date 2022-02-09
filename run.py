@@ -158,17 +158,20 @@ def exit_game():
 
 def show_game_rules():
     """ Displays the game rules to the user """
-    print("Currently under construction")
+    print("Currently under construction\n")
+    quick_menu()
 
 
 def show_fact():
     """ Displays a random F1 fact to the user """
-    print("Currently under construction")
+    print("Currently under construction\n")
+    quick_menu()
 
 
 def submit_feedback():
     """ Allows the user to submit feedback """
-    print("Currently under construction")
+    print("Currently under construction\n")
+    quick_menu()
 
 
 def main_menu():
