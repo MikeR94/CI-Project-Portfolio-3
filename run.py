@@ -90,7 +90,7 @@ def quick_menu():
     while True:
         user_input = (input("A) Return to main menu B) Exit game\n").capitalize())
         if user_input not in {"A", "B"}:
-            print("Invalid input! Please enter either A, B\n")
+            print("Invalid input! Please enter either A or B\n")
         else:
             break
     if user_input == ("A"):
