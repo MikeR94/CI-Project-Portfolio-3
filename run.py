@@ -167,22 +167,22 @@ def show_leaderboards():
 def show_game_stats():
     """Shows the game stats"""
     games_played = leaderboard.row_count - 1
-    print(f"Overall games played: {games_played}\n")
+    white_string(f"Overall games played: {games_played}\n".center(80))
     total_points = []
     for item in leaderboard.col_values(2):
         if item.isdigit():
             total_points.append(int(item))
-    print(f"Overall points accumulated: {sum(total_points)}\n")
+    white_string(f"Overall points accumulated: {sum(total_points)}\n".center(80))
     total_correct = []
     for item in leaderboard.col_values(3):
         if item.isdigit():
             total_correct.append(int(item))
-    print(f"Overall correct questions answered: {sum(total_correct)}\n")
+    white_string(f"Overall correct questions answered: {sum(total_correct)}\n".center(80))
     total_incorrect = []
     for item in leaderboard.col_values(4):
         if item.isdigit():
             total_incorrect.append(int(item))
-    print(f"Overall incorrect questions answered: {sum(total_incorrect)}\n")
+    white_string(f"Overall incorrect questions answered: {sum(total_incorrect)}\n".center(80))
     quick_menu()
 
 
