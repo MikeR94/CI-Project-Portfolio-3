@@ -34,7 +34,6 @@ feedback = SHEET.worksheet("feedback")
 nowdate = datetime.now()
 date = nowdate.strftime("%d/%m/%Y")
 
-
 def days_to_new_season():
     """ Test """
     futuredate = datetime.strptime('Mar 18 2022  00:00', '%b %d %Y %H:%M')
@@ -84,25 +83,44 @@ def start_quiz(selected_difficulty):
     quick_menu()
 
 
-def quick_menu():
+def quick_menu(centered = False):
     """Small navigation menu for the user"""
-    while True:
-        white_string("A) Return to main menu B) Exit game\n".center(80))
-        user_input = input().capitalize()
-        if user_input not in {"A", "B"}:
-            yellow_string("Invalid input! Please enter either A or B\n")
-        else:
-            break
-    if user_input == ("A"):
-        magenta_string("Understood " + name + ", redirecting back to the main menu...")
-        time.sleep(2)
-        clear_terminal()
-        main_menu()
-    if user_input == ("B"):
-        magenta_string("Exiting the game...")
-        time.sleep(2)
-        clear_terminal()
-        exit_game()
+    if centered:
+        while True:
+            white_string("A) Return to main menu B) Exit game\n".center(80))
+            user_input = input().capitalize()
+            if user_input not in {"A", "B"}:
+                yellow_string("Invalid input! Please enter either A or B\n")
+            else:
+                break
+        if user_input == ("A"):
+            magenta_string("Understood " + name + ", redirecting back to the main menu...")
+            time.sleep(2)
+            clear_terminal()
+            main_menu()
+        if user_input == ("B"):
+            magenta_string("Exiting the game...")
+            time.sleep(2)
+            clear_terminal()
+            exit_game()
+    else:
+        while True:
+            white_string("A) Return to main menu B) Exit game\n")
+            user_input = input().capitalize()
+            if user_input not in {"A", "B"}:
+                yellow_string("Invalid input! Please enter either A or B\n")
+            else:
+                break
+        if user_input == ("A"):
+            magenta_string("Understood " + name + ", redirecting back to the main menu...")
+            time.sleep(2)
+            clear_terminal()
+            main_menu()
+        if user_input == ("B"):
+            magenta_string("Exiting the game...")
+            time.sleep(2)
+            clear_terminal()
+            exit_game()
 
 
 def fact_menu():
