@@ -236,7 +236,12 @@ def show_game_rules():
 def show_fact():
     """ Displays a random F1 fact to the user """
     random_fact = get_random_fact()
+    blank_line()
+    blank_line()
+    solid_line(new_line_at_end=True)
     print(random_fact)
+    blank_line()
+    solid_line(new_line_at_end=False)
     fact_menu()
 
 
