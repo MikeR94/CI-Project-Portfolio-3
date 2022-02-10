@@ -127,7 +127,11 @@ def quick_menu(centered=False):
 def fact_menu():
     """Small navigation menu for the user"""
     while True:
-        user_input = (input("A) Return to main menu B) Exit game C) Load new fact\n").capitalize())
+        cyan_string(
+            'A) Return to main menu '
+            'B) Exit game '
+            'C) Load new fact\n')
+        user_input = input().capitalize()
         if user_input not in {"A", "B", "C"}:
             yellow_string("Invalid input! Please enter either A, B, or C \n")
         else:
