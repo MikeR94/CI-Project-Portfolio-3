@@ -16,6 +16,16 @@ White: \u001b[37m.
 """
 
 
+def formula_1_text():
+    """ Prints formula 1 in ASCI text"""
+    print('''___________                         __            ____
+\_   _____/__________  _____  __ __|  | _____    /_   |
+ |    __)/  _ \_  __ \/     \|  |  \  | \__  \    |   |
+ |     \(  <_> )  | \/  Y Y  \  |  /  |__/ __ \_  |   |
+ \___  / \____/|__|  |__|_|  /____/|____(____  /  |___|
+     \/                    \/                \/        \n'''.center(80))
+
+
 def multiple_blank_lines():
     """ Used to call blank_lines() multiple times and not clutter run.py"""
     blank_line()

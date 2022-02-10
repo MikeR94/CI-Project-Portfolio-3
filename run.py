@@ -9,8 +9,8 @@ import random
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
-from print import cyan_string, green_string, magenta_string, multiple_blank_lines
-from print import red_string, white_string, yellow_string, blank_line, solid_line
+from print import cyan_string, formula_1_text, green_string, magenta_string, multiple_blank_lines
+from print import red_string, white_string, yellow_string, blank_line, solid_line, formula_1_text
 from questions import easy_question_list
 from questions import medium_question_list
 from questions import hard_question_list
@@ -340,6 +340,7 @@ def main_menu():
         exit_game()
 
 print("Welcome to the F1 quiz!")
+formula_1_text()
 days_to_new_season()
 while True:
     name = input("Please enter your name: ")
