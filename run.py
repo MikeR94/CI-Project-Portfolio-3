@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 import time
 import sys
@@ -26,6 +27,8 @@ data = leaderboard.get_all_values()
 facts = SHEET.worksheet("facts")
 fact_data = facts.get_all_values()
 feedback = SHEET.worksheet("feedback")
+nowdate = datetime.now()
+date = nowdate.strftime("%d/%m/%Y")
 
 
 def start_quiz(selected_difficulty):
@@ -63,7 +66,7 @@ def start_quiz(selected_difficulty):
     print("You scored " + str(score) + " points, answering " + str(correct) + " correct and " + str(incorrect) + " incorrect\n")
     time.sleep(2)
     print("Please wait, adding your score to the leaderboard...\n")
-    leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected])
+    leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected, date])
     leaderboard.sort((2, 'des'))
     time.sleep(2)
     print("Leaderboard updated successfully!\n")
@@ -183,13 +186,13 @@ def get_random_fact():
 
 def submit_feedback():
     """ Allows the user to submit feedback """
-    print(name + " please submit your feedback below\n")
+    print(name + ", please submit your feedback below\n")
     print("If you wish to leave this screen before submitting a message, please click the run program button below\n")
     user_feedback = input("Enter feedback: ")
     print()
     print("Thank you for your feedback, uploading now...\n")
     time.sleep(2)
-    feedback.append_row(values=[name, user_feedback])
+    feedback.append_row(values=[name, user_feedback, date])
     print("Feedback uploaded successfully!\n")
     quick_menu()
 
