@@ -156,25 +156,31 @@ def fact_menu():
 
 def select_difficulty():
     """ Allows the user to select a difficulty """
-    print("Please select a difficulty\n")
-    user_input = input("A) Easy\nB) Medium\nC) Hard\n").capitalize()
+    multiple_blank_lines()
+    blank_line()
+    blank_line()
+    red_string("Please select a difficulty\n".center(80))
+    white_string('A) Easy'.center(80))
+    white_string('B) Medium'.center(80))
+    white_string('A) Hard'.center(80))
+    user_input = input().capitalize()
     if user_input == ("A"):
-        print("Loading easy questions...")
+        print("Loading easy questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(easy_question_list)
     elif user_input == ("B"):
-        print("Loading medium questions...")
+        print("Loading medium questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(medium_question_list)
     elif user_input == ("C"):
-        print("Loading hard questions...")
+        print("Loading hard questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(hard_question_list)
     else:
-        print("Please enter either A, B or C")
+        print("Please enter either A, B or C".center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
