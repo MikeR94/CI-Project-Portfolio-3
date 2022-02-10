@@ -6,6 +6,7 @@ import os
 import time
 import sys
 import random
+from print import red_string
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
@@ -203,6 +204,7 @@ def submit_feedback():
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu, " + name + "!\n")
+    red_string("Welcome!")
     print("Please select an option from the menu\n")
     user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) View game statistics\nD) View game rules\nE) View an F1 fact\nF) Submit feedback\nG) Exit the game\n").capitalize()
     while True:
@@ -250,6 +252,7 @@ def main_menu():
         exit_game()
 
 print("Welcome to the F1 quiz!")
+red_string("Welcome!")
 while True:
     name = input("Please enter your name: ")
     if len(name) > 7 or name.isspace() or name =="":
