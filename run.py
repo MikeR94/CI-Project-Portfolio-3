@@ -250,7 +250,12 @@ def main_menu():
         exit_game()
 
 print("Welcome to the F1 quiz!")
-name = input("Please enter your name: ")
+while True:
+    name = input("Please enter your name: ")
+    if len(name) > 7 or name.isspace() or name =="":
+        print('Please enter a name that is 7 characters or less\n')
+    else:
+        break
 time.sleep(2)
 clear_terminal()
 
