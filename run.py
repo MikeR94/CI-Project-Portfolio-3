@@ -41,7 +41,8 @@ def days_to_new_season():
     futuredate = datetime.strptime('Mar 18 2022  00:00', '%b %d %Y %H:%M')
     count = int((futuredate-nowdate).total_seconds())
     days = count//86400
-    return red_string("Days left until F1 2022 Season: {} days".format(days))
+    number_of_days = "{} days".format(days)
+    return red_string(f"Days left until F1 2022 Season: {number_of_days}".center(80))
 
 
 def start_quiz(selected_difficulty):
