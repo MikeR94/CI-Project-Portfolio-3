@@ -340,7 +340,6 @@ def main_menu():
         clear_terminal()
         exit_game()
 
-print("Welcome to the F1 quiz!")
 formula_1_text()
 days_to_new_season()
 while True:
