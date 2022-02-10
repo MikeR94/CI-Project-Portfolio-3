@@ -6,6 +6,7 @@ import os
 import time
 import sys
 import random
+from turtle import clear
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
@@ -340,6 +341,7 @@ def main_menu():
         clear_terminal()
         exit_game()
 
+clear_terminal()
 formula_1_text()
 days_to_new_season()
 blank_line()
