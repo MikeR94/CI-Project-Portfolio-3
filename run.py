@@ -96,7 +96,7 @@ def quick_menu(centered=False):
             else:
                 break
         if user_input == ("A"):
-            magenta_string("Understood " + name + ", redirecting back to the main menu...".center(80))
+            magenta_string(f"Understood {name}, redirecting back to the main menu...".center(80))
             time.sleep(2)
             clear_terminal()
             main_menu()
