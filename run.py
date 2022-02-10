@@ -9,7 +9,8 @@ import random
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
-from print import cyan_string, green_string, magenta_string, multiple_blank_lines, red_string, white_string, yellow_string, blank_line, solid_line, multiple_blank_lines
+from print import cyan_string, green_string, magenta_string, multiple_blank_lines
+from print import red_string, white_string, yellow_string, blank_line, solid_line
 from questions import easy_question_list
 from questions import medium_question_list
 from questions import hard_question_list
