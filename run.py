@@ -157,7 +157,10 @@ def fact_menu():
 def select_difficulty():
     """ Allows the user to select a difficulty """
     multiple_blank_lines()
-    multiple_blank_lines()
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
     red_string("Please select a difficulty\n".center(80))
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
