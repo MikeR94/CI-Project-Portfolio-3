@@ -25,6 +25,7 @@ leaderboard = SHEET.worksheet("leaderboard")
 data = leaderboard.get_all_values()
 facts = SHEET.worksheet("facts")
 fact_data = facts.get_all_values()
+feedback = SHEET.worksheet("feedback")
 
 
 def start_quiz(selected_difficulty):
@@ -182,7 +183,14 @@ def get_random_fact():
 
 def submit_feedback():
     """ Allows the user to submit feedback """
-    print("Currently under construction\n")
+    print(name + " please submit your feedback below\n")
+    print("If you wish to leave this screen before submitting a message, please click the run program button below\n")
+    user_feedback = input("Enter feedback: ")
+    print()
+    print("Thank you for your feedback, uploading now...\n")
+    time.sleep(2)
+    feedback.append_row(values=[name, user_feedback])
+    print("Feedback uploaded successfully!\n")
     quick_menu()
 
 
