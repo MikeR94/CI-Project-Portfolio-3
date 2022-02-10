@@ -76,7 +76,7 @@ def start_quiz(selected_difficulty):
     white_string("Great stuff, " + name + " You've managed to answer all the questions!\n")
     white_string("You scored " + str(score) + " points, answering " + str(correct) + " correct and " + str(incorrect) + " incorrect\n")
     time.sleep(2)
-    green_string("Please wait, adding your score to the leaderboard...\n")
+    magenta_string("Please wait, adding your score to the leaderboard...\n")
     leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected, date])
     leaderboard.sort((2, 'des'))
     time.sleep(2)
@@ -95,12 +95,12 @@ def quick_menu(centered=False):
             else:
                 break
         if user_input == ("A"):
-            green_string("Understood " + name + ", redirecting back to the main menu...".center(80))
+            magenta_string("Understood " + name + ", redirecting back to the main menu...".center(80))
             time.sleep(2)
             clear_terminal()
             main_menu()
         if user_input == ("B"):
-            green_string("Exiting the game...".center(80))
+            magenta_string("Exiting the game...".center(80))
             time.sleep(2)
             clear_terminal()
             exit_game()
@@ -113,12 +113,12 @@ def quick_menu(centered=False):
             else:
                 break
         if user_input == ("A"):
-            green_string("Understood " + name + ", redirecting back to the main menu...")
+            magenta_string("Understood " + name + ", redirecting back to the main menu...")
             time.sleep(2)
             clear_terminal()
             main_menu()
         if user_input == ("B"):
-            green_string("Exiting the game...")
+            magenta_string("Exiting the game...")
             time.sleep(2)
             clear_terminal()
             exit_game()
@@ -133,17 +133,17 @@ def fact_menu():
         else:
             break
     if user_input == ("A"):
-        green_string("Understood " + name + ", redirecting back to the main menu...")
+        magenta_string("Understood " + name + ", redirecting back to the main menu...")
         time.sleep(2)
         clear_terminal()
         main_menu()
     if user_input == ("B"):
-        green_string("Exiting the game...")
+        magenta_string("Exiting the game...")
         time.sleep(2)
         clear_terminal()
         exit_game()
     if user_input == ("C"):
-        green_string("Loading new fact...")
+        magenta_string("Loading new fact...")
         time.sleep(2)
         clear_terminal()
         show_fact()
@@ -251,7 +251,7 @@ def submit_feedback():
     white_string("If you wish to leave this screen before submitting a message, please click the run program button below\n")
     user_feedback = input("Enter feedback: ")
     blank_line()
-    green_string("Thank you for your feedback, uploading now...\n")
+    magenta_string("Thank you for your feedback, uploading now...\n")
     time.sleep(2)
     feedback.append_row(values=[name, user_feedback, date])
     green_string("Feedback uploaded successfully!\n")
@@ -285,37 +285,37 @@ def main_menu():
         else:
             break
     if user_input == ("A"):
-        green_string("Great stuff, starting a new quiz now...".center(80))
+        magenta_string("Great stuff, starting a new quiz now...".center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
     if user_input == ("B"):
-        green_string("Loading the leaderboards...".center(80))
+        magenta_string("Loading the leaderboards...".center(80))
         time.sleep(2)
         clear_terminal()
         show_leaderboards()
     if user_input == ("C"):
-        green_string("Loading the game statistics...".center(80))
+        magenta_string("Loading the game statistics...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_stats()
     if user_input == ("D"):
-        green_string("Loading the game rules...".center(80))
+        magenta_string("Loading the game rules...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_rules()
     if user_input == ("E"):
-        green_string("Loading the F1 fact display...".center(80))
+        magenta_string("Loading the F1 fact display...".center(80))
         time.sleep(2)
         clear_terminal()
         show_fact()
     if user_input == ("F"):
-        green_string("Loading submit feedback...".center(80))
+        magenta_string("Loading submit feedback...".center(80))
         time.sleep(2)
         clear_terminal()
         submit_feedback()
     if user_input == ("G"):
-        green_string("Exiting the game...".center(80))
+        magenta_string("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
         exit_game()
@@ -325,7 +325,7 @@ days_to_new_season()
 while True:
     name = input("Please enter your name: ")
     if len(name) > 7 or name.isspace() or name == "":
-        green_string('Please enter a name that is 7 characters or less\n')
+        yellow_string('Please enter a name that is 7 characters or less\n')
     else:
         break
 time.sleep(2)
