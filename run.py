@@ -105,6 +105,32 @@ def quick_menu():
         exit_game()
 
 
+def fact_menu():
+    """Small navigation menu for the user"""
+    print("----------------------")
+    while True:
+        user_input = (input("A) Return to main menu B) Exit game C) Load new fact\n").capitalize())
+        if user_input not in {"A", "B", "C"}:
+            print("Invalid input! Please enter either A, B, or C \n")
+        else:
+            break
+    if user_input == ("A"):
+        print("Understood " + name + ", redirecting back to the main menu...")
+        time.sleep(2)
+        clear_terminal()
+        main_menu()
+    if user_input == ("B"):
+        print("Exiting the game...")
+        time.sleep(2)
+        clear_terminal()
+        exit_game()
+    if user_input == ("C"):
+        print("Loading new fact...")
+        time.sleep(2)
+        clear_terminal()
+        show_fact()
+
+
 def select_difficulty():
     """ Allows the user to select a difficulty """
     print("Please select a difficulty\n")
@@ -184,7 +210,7 @@ def show_fact():
     """ Displays a random F1 fact to the user """
     random_fact = get_random_fact()
     print(random_fact)
-    quick_menu()
+    fact_menu()
 
 
 def get_random_fact():
