@@ -258,7 +258,6 @@ def main_menu():
     blank_line()
     blank_line()
     blank_line()
-    blank_line()
     red_string(f"Welcome to the main menu, {name}\n".center(80))
     red_string("Please select an option from the menu\n".center(80))
     blank_line()
