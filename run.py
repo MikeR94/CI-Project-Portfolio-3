@@ -34,6 +34,7 @@ feedback = SHEET.worksheet("feedback")
 nowdate = datetime.now()
 date = nowdate.strftime("%d/%m/%Y")
 
+
 def days_to_new_season():
     """ Test """
     futuredate = datetime.strptime('Mar 18 2022  00:00', '%b %d %Y %H:%M')
@@ -83,7 +84,7 @@ def start_quiz(selected_difficulty):
     quick_menu()
 
 
-def quick_menu(centered = False):
+def quick_menu(centered=False):
     """Small navigation menu for the user"""
     if centered:
         while True:
