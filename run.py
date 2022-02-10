@@ -342,10 +342,13 @@ def main_menu():
 
 formula_1_text()
 days_to_new_season()
+blank_line()
 while True:
-    name = input("Please enter your name: ")
+    white_string("Please enter your name below:\n".center(80))
+    name = input("".center(35))
     if len(name) > 7 or name.isspace() or name == "":
-        yellow_string('Please enter a name that is 7 characters or less\n')
+        blank_line()
+        yellow_string('Please enter a name that is 7 characters or less'.center(80))
     else:
         break
 time.sleep(2)
