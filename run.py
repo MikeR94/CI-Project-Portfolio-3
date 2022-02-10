@@ -130,24 +130,24 @@ def fact_menu():
         cyan_string(
             'A) Return to main menu '
             'B) Exit game '
-            'C) Load new fact\n')
+            'C) Load new fact\n'.center(80))
         user_input = input().capitalize()
         if user_input not in {"A", "B", "C"}:
-            yellow_string("Invalid input! Please enter either A, B, or C \n")
+            yellow_string("Invalid input! Please enter either A, B, or C \n".center(80))
         else:
             break
     if user_input == ("A"):
-        magenta_string("Understood " + name + ", redirecting back to the main menu...")
+        magenta_string("Understood " + name + ", redirecting back to the main menu...".center(80))
         time.sleep(2)
         clear_terminal()
         main_menu()
     if user_input == ("B"):
-        magenta_string("Exiting the game...")
+        magenta_string("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
         exit_game()
     if user_input == ("C"):
-        magenta_string("Loading new fact...")
+        magenta_string("Loading new fact...".center(80))
         time.sleep(2)
         clear_terminal()
         show_fact()
