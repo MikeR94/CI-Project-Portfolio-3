@@ -239,7 +239,7 @@ def show_fact():
     blank_line()
     blank_line()
     solid_line(new_line_at_end=True)
-    print(random_fact)
+    print(random_fact.center(80))
     blank_line()
     solid_line(new_line_at_end=False)
     fact_menu()
