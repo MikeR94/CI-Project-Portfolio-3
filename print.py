@@ -16,6 +16,18 @@ White: \u001b[37m.
 """
 
 
+def solid_line(new_line_at_end=False):
+    """ Prints a solid line the length of the terminal"""
+    if new_line_at_end:
+        print('\u001b[31m======================'
+        '================================='
+        '=========================\u001b[0m\n')
+    else:
+        print('\u001b[31m======================'
+        '================================='
+        '=========================\u001b[0m')
+
+
 def blank_line():
     """ Prints a blank line to the terminal """
     print()
