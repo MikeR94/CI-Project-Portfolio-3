@@ -164,7 +164,7 @@ def select_difficulty():
     red_string("Please select a difficulty\n".center(80))
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
-    white_string('A) Hard'.center(80))
+    white_string('C) Hard'.center(80))
     user_input = input().capitalize()
     if user_input == ("A"):
         magenta_string("Loading easy questions...".center(80))
