@@ -122,6 +122,7 @@ def select_difficulty():
 
 def show_leaderboards():
     """ Shows the leaderboards to the user """
+    leaderboard.sort((2, 'des'))
     print(tabulate(data[0:10], tablefmt='fancy_grid'))
     quick_menu()
 
