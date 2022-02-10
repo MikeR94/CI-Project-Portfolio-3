@@ -1,3 +1,6 @@
+""" Main file to run the F1 quiz """
+
+
 from datetime import datetime
 import os
 import time
@@ -61,7 +64,6 @@ def start_quiz(selected_difficulty):
             incorrect += 1
             print("Incorrect answer\n")
             time.sleep(2)
-        
     print("Great stuff, " + name + " You've managed to answer all the questions!\n")
     print("You scored " + str(score) + " points, answering " + str(correct) + " correct and " + str(incorrect) + " incorrect\n")
     time.sleep(2)
