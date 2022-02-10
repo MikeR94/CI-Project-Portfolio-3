@@ -213,8 +213,15 @@ def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     print("Welcome to the main menu, " + name + "!\n")
     red_string("Welcome!")
-    print("Please select an option from the menu\n")
-    user_input = input("A) Start the Quiz\nB) View the leaderboards\nC) View game statistics\nD) View game rules\nE) View an F1 fact\nF) Submit feedback\nG) Exit the game\n").capitalize()
+    magenta_string("Please select an option from the menu\n".center(80))
+    green_string("A) Start the quiz".center(80))
+    green_string("B) View the leaderboards".center(80))
+    green_string("C) View game statistics".center(80))
+    green_string("D) View game rules".center(80))
+    green_string("E) View an F1 fact".center(80))
+    green_string("F) Submit feedback".center(80))
+    green_string("G) Exit the game".center(80))
+    user_input = input().capitalize()
     while True:
         if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
             print("Invalid input! Please enter either A, B, C, D, E, F or G\n")
