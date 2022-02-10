@@ -165,22 +165,22 @@ def select_difficulty():
     white_string('A) Hard'.center(80))
     user_input = input().capitalize()
     if user_input == ("A"):
-        print("Loading easy questions...".center(80))
+        magenta_string("Loading easy questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(easy_question_list)
     elif user_input == ("B"):
-        print("Loading medium questions...".center(80))
+        magenta_string("Loading medium questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(medium_question_list)
     elif user_input == ("C"):
-        print("Loading hard questions...".center(80))
+        magenta_string("Loading hard questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(hard_question_list)
     else:
-        print("Please enter either A, B or C".center(80))
+        magenta_string("Please enter either A, B or C".center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
