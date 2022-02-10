@@ -9,7 +9,7 @@ import random
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
-from print import cyan_string, green_string, magenta_string, red_string, white_string, yellow_string, blue_string
+from print import cyan_string, green_string, magenta_string, red_string, white_string, yellow_string, blue_string, blank_line
 from questions import easy_question_list
 from questions import medium_question_list
 from questions import hard_question_list
@@ -211,12 +211,11 @@ def submit_feedback():
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
-    print()
-    print()
-    print()
-    print()
-    print()
-    print()
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
     cyan_string(f"Welcome to the main menu, {name}\n".center(80))
     cyan_string("Please select an option from the menu\n".center(80))
     white_string("A) Start the quiz".center(73))

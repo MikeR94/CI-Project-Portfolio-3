@@ -16,6 +16,11 @@ White: \u001b[37m.
 """
 
 
+def blank_line():
+    """ Prints a blank line to the terminal """
+    print()
+
+
 def red_string(text):
     """ Print a string in the colour red """
     string = f"\033[31;1m{text}\033[0m"
