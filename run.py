@@ -35,6 +35,14 @@ nowdate = datetime.now()
 date = nowdate.strftime("%d/%m/%Y")
 
 
+def days_to_new_season():
+    """ Test """
+    futuredate = datetime.strptime('Mar 18 2022  00:00', '%b %d %Y %H:%M')
+    count = int((futuredate-nowdate).total_seconds())
+    days = count//86400
+    return yellow_string("Days left until F1 2022 Season: {} days".format(days))
+
+
 def start_quiz(selected_difficulty):
     """ Loads the questions and validates the users answer """
     score = 0
@@ -252,17 +260,10 @@ def main_menu():
         exit_game()
 
 print("Welcome to the F1 quiz!")
-red_string("Welcome".center(50))
-green_string("Welcome")
-yellow_string("Welcome")
-blue_string("Welcome")
-magenta_string("Welcome")
-cyan_string("Welcome")
-white_string("Welcome")
-
+days_to_new_season()
 while True:
     name = input("Please enter your name: ")
-    if len(name) > 7 or name.isspace() or name =="":
+    if len(name) > 7 or name.isspace() or name == "":
         print('Please enter a name that is 7 characters or less\n')
     else:
         break
