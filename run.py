@@ -6,10 +6,10 @@ import os
 import time
 import sys
 import random
-from print import red_string
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
+from print import cyan_string, green_string, magenta_string, red_string, white_string, yellow_string, blue_string
 from questions import easy_question_list
 from questions import medium_question_list
 from questions import hard_question_list
@@ -252,7 +252,14 @@ def main_menu():
         exit_game()
 
 print("Welcome to the F1 quiz!")
-red_string("Welcome!")
+red_string("Welcome".center(50))
+green_string("Welcome")
+yellow_string("Welcome")
+blue_string("Welcome")
+magenta_string("Welcome")
+cyan_string("Welcome")
+white_string("Welcome")
+
 while True:
     name = input("Please enter your name: ")
     if len(name) > 7 or name.isspace() or name =="":
