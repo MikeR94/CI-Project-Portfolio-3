@@ -53,7 +53,7 @@ def start_quiz(selected_difficulty):
         while True:
             user_answer = input(question.question).capitalize()
             if user_answer not in {"A", "B", "C"}:
-                green_string("Invalid input! You can attempt the question again\n")
+                yellow_string("Invalid input! You can attempt the question again\n")
             else:
                 break
         if user_answer == question.answer:
@@ -88,28 +88,28 @@ def quick_menu(centered=False):
     """Small navigation menu for the user"""
     if centered:
         while True:
-            white_string("A) Return to main menu B) Exit game\n".center(80))
+            cyan_string("A) Return to main menu B) Exit game\n".center(80))
             user_input = input().capitalize()
             if user_input not in {"A", "B"}:
-                green_string("Invalid input! Please enter either A or B\n")
+                yellow_string("Invalid input! Please enter either A or B\n")
             else:
                 break
         if user_input == ("A"):
-            green_string("Understood " + name + ", redirecting back to the main menu...")
+            green_string("Understood " + name + ", redirecting back to the main menu...".center(80))
             time.sleep(2)
             clear_terminal()
             main_menu()
         if user_input == ("B"):
-            green_string("Exiting the game...")
+            green_string("Exiting the game...".center(80))
             time.sleep(2)
             clear_terminal()
             exit_game()
     else:
         while True:
-            white_string("A) Return to main menu B) Exit game\n")
+            cyan_string("A) Return to main menu B) Exit game\n")
             user_input = input().capitalize()
             if user_input not in {"A", "B"}:
-                green_string("Invalid input! Please enter either A or B\n")
+                yellow_string("Invalid input! Please enter either A or B\n")
             else:
                 break
         if user_input == ("A"):
@@ -129,7 +129,7 @@ def fact_menu():
     while True:
         user_input = (input("A) Return to main menu B) Exit game C) Load new fact\n").capitalize())
         if user_input not in {"A", "B", "C"}:
-            green_string("Invalid input! Please enter either A, B, or C \n")
+            yellow_string("Invalid input! Please enter either A, B, or C \n")
         else:
             break
     if user_input == ("A"):
@@ -278,7 +278,7 @@ def main_menu():
     blank_line()
     while True:
         if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
-            green_string("Invalid input! Please enter either A, B, C, D, E, F or G\n")
+            yellow_string("Invalid input! Please enter either A, B, C, D, E, F or G\n")
             time.sleep(1)
             clear_terminal()
             main_menu()
