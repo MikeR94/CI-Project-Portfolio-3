@@ -92,7 +92,7 @@ def quick_menu(centered=False):
             cyan_string("A) Return to main menu B) Exit game\n".center(80))
             user_input = input().capitalize()
             if user_input not in {"A", "B"}:
-                yellow_string("Invalid input! Please enter either A or B\n")
+                yellow_string("Invalid input! Please enter either A or B")
             else:
                 break
         if user_input == ("A"):
@@ -107,7 +107,7 @@ def quick_menu(centered=False):
             exit_game()
     else:
         while True:
-            cyan_string("A) Return to main menu B) Exit game\n")
+            cyan_string("A) Return to main menu B) Exit game")
             user_input = input().capitalize()
             if user_input not in {"A", "B"}:
                 yellow_string("Invalid input! Please enter either A or B\n")
