@@ -16,6 +16,15 @@ White: \u001b[37m.
 """
 
 
+def multiple_blank_lines():
+    """ Used to call blank_lines() multiple times and not clutter run.py"""
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
+
+
 def solid_line(new_line_at_end=False):
     """ Prints a solid line the length of the terminal"""
     if new_line_at_end:
