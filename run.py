@@ -236,7 +236,8 @@ def show_game_rules():
 def show_fact():
     """ Displays a random F1 fact to the user """
     multiple_blank_lines()
-    multiple_blank_lines()
+    blank_line()
+    blank_line()
     solid_line(new_line_at_end=True)
     random_fact = get_random_fact()
     print(random_fact.center(80))
