@@ -211,16 +211,15 @@ def submit_feedback():
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
-    print("Welcome to the main menu, " + name + "!\n")
-    red_string("Welcome!")
-    magenta_string("Please select an option from the menu\n".center(80))
-    green_string("A) Start the quiz".center(80))
-    green_string("B) View the leaderboards".center(80))
-    green_string("C) View game statistics".center(80))
-    green_string("D) View game rules".center(80))
-    green_string("E) View an F1 fact".center(80))
-    green_string("F) Submit feedback".center(80))
-    green_string("G) Exit the game".center(80))
+    cyan_string(f"Welcome to the main menu, {name}\n".center(80))
+    cyan_string("Please select an option from the menu\n".center(80))
+    white_string("A) Start the quiz".center(73))
+    white_string("B) View the leaderboards".center(80))
+    white_string("C) View game statistics".center(80))
+    white_string("D) View game rules".center(74))
+    white_string("E) View an F1 fact".center(74))
+    white_string("F) Submit feedback".center(74))
+    white_string("G) Exit the game\n".center(74))
     user_input = input().capitalize()
     while True:
         if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
