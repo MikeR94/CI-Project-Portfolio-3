@@ -235,37 +235,37 @@ def main_menu():
         else:
             break
     if user_input == ("A"):
-        print("Great stuff, starting a new quiz now...")
+        print("Great stuff, starting a new quiz now...".center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
     if user_input == ("B"):
-        print("Loading the leaderboards...")
+        print("Loading the leaderboards...".center(80))
         time.sleep(2)
         clear_terminal()
         show_leaderboards()
     if user_input == ("C"):
-        print("Loading the game statistics...")
+        print("Loading the game statistics...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_stats()
     if user_input == ("D"):
-        print("Loading the game rules...")
+        print("Loading the game rules...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_rules()
     if user_input == ("E"):
-        print("Loading the F1 fact display...")
+        print("Loading the F1 fact display...".center(80))
         time.sleep(2)
         clear_terminal()
         show_fact()
     if user_input == ("F"):
-        print("Loading submit feedback...")
+        print("Loading submit feedback...".center(80))
         time.sleep(2)
         clear_terminal()
         submit_feedback()
     if user_input == ("G"):
-        print("Exiting the game...")
+        print("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
         exit_game()
