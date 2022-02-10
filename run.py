@@ -267,7 +267,7 @@ def get_random_fact():
 def submit_feedback():
     """ Allows the user to submit feedback """
     white_string(name + ", please submit your feedback below\n")
-    white_string("If you wish to leave this screen before submitting a message, please click the run program button below\n")
+    white_string("If you wish to leave this screen before submitting a message, please click the  run program button below\n")
     user_feedback = input("Enter feedback: ")
     blank_line()
     magenta_string("Thank you for your feedback, uploading now...\n")
