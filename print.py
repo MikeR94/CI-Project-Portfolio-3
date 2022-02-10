@@ -1,3 +1,5 @@
+""" File used to prepare different coloured strings """
+
 import colorama
 
 colorama.init()
