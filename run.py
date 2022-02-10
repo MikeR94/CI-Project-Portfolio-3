@@ -211,6 +211,12 @@ def submit_feedback():
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
+    print()
+    print()
+    print()
+    print()
+    print()
+    print()
     cyan_string(f"Welcome to the main menu, {name}\n".center(80))
     cyan_string("Please select an option from the menu\n".center(80))
     white_string("A) Start the quiz".center(73))
