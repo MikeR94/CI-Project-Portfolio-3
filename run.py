@@ -169,6 +169,7 @@ def select_difficulty():
     white_string('B) Medium'.center(80))
     white_string('C) Hard'.center(80))
     user_input = input("".center(38)).upper()
+    blank_line()
     if user_input == ("A"):
         magenta_string("Loading easy questions...".center(80))
         time.sleep(2)
