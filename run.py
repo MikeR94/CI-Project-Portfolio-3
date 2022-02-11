@@ -34,6 +34,32 @@ fact_data = facts.get_all_values()
 feedback = SHEET.worksheet("feedback")
 nowdate = datetime.now()
 date = nowdate.strftime("%d/%m/%Y")
+track_info = SHEET.worksheet("track_info")
+paul_ricard = track_info.get_values("A1:B6")
+silverstone = track_info.get_values("A8:B13")
+
+def select_track():
+    """ Used to allow the user to select a track to view info """
+    while True:
+        print("Please enter a track name to view information about it\n".center(80))
+        user_input = input("".center(34)).lower()
+        blank_line()
+        if user_input not in {"paul ricard", "silverstone",}:
+            yellow_string("Invalid input! Please try again \n".center(80))
+        else:
+            break
+    if user_input == ("paul ricard"):
+        magenta_string(f"Understood {name}, loading track info...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        time.sleep(1)
+        print(tabulate(paul_ricard, tablefmt='plain'))
+    if user_input == ("silverstone"):
+        magenta_string(f"Understood {name}, loading track info...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        time.sleep(1)
+        print(tabulate(silverstone, tablefmt='plain'))
 
 
 def days_to_new_season():
@@ -306,12 +332,13 @@ def main_menu():
     white_string("(D) View game rules".center(80))
     white_string("(E) View an F1 fact".center(80))
     white_string("(F) Submit feedback".center(80))
-    white_string("(G) Exit the game\n".center(80))
+    white_string("(G) Exit the game".center(80))
+    white_string("(H) View select track menu\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
-            yellow_string("Invalid input! Please enter either A, B, C, D, E, F or G\n".center(80))
+        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G or H\n".center(80))
             time.sleep(1)
             clear_terminal()
             main_menu()
@@ -352,6 +379,11 @@ def main_menu():
         time.sleep(2)
         clear_terminal()
         exit_game()
+    if user_input == ("H"):
+        magenta_string("Loading select track..".center(80))
+        time.sleep(2)
+        clear_terminal()
+        select_track()
 print("Loading game files...")
 # time.sleep(2)
 green_string("Game files successfully loaded")
