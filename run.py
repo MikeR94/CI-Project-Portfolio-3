@@ -86,7 +86,7 @@ def select_track():
 
 
 def days_to_new_season():
-    """ Test """
+    """ Countsdown to the F1 2022 season and displays the remaining days to the user """
     futuredate = datetime.strptime('Mar 18 2022  00:00', '%b %d %Y %H:%M')
     count = int((futuredate-nowdate).total_seconds())
     days = count//86400
