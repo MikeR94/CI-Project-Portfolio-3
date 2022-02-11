@@ -63,11 +63,31 @@
         cursor: pointer;
       }
 
+      .size-error {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+
+      .size-error h1 {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        padding: 5px;
+        font-weight: normal;
+      }
+
       /* Media queries */
 
       @media screen and (max-width: 780px), (max-height: 575px) {
         #computer-background {
           display: none;
+        }
+
+        .size-error {
+          display: block;
         }
       }
 
