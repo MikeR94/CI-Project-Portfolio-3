@@ -39,11 +39,19 @@ paul_ricard = track_info.get_values("A1:B8")
 silverstone = track_info.get_values("A10:B17")
 calendar = SHEET.worksheet("calendar")
 show_calendar = calendar.get_all_values()
+drivers = SHEET.worksheet("drivers")
+show_drivers = drivers.get_all_values()
 
 
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
     print(tabulate(show_calendar, headers="firstrow", tablefmt='simple'))
+
+
+def view_drivers():
+    """ Shows the user the current F1 2022 drivers and some statistics about them """
+    print(tabulate(show_drivers, headers="firstrow", tablefmt='simple'))
+
 
 
 def select_track():
@@ -341,13 +349,14 @@ def main_menu():
     white_string("(E) View an F1 fact".center(80))
     white_string("(F) Submit feedback".center(80))
     white_string("(G) Exit the game".center(80))
-    white_string("(H) View select track menu\n".center(80))
-    white_string("(I) View 2022 F1 calendar\n".center(80))
+    white_string("(H) View select track menu".center(80))
+    white_string("(I) View 2022 F1 calendar".center(80))
+    white_string("(J) View 2022 F1 drivers\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H", "I"}:
-            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G, H or I\n".center(80))
+        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G, H, I or J\n".center(80))
             time.sleep(1)
             clear_terminal()
             main_menu()
@@ -398,6 +407,12 @@ def main_menu():
         time.sleep(2)
         clear_terminal()
         view_calendar()
+    if user_input == ("J"):
+        magenta_string("Loading current F1 drivers..".center(80))
+        drivers.sort((5, 'des'))
+        time.sleep(2)
+        clear_terminal()
+        view_drivers()
 print("Loading game files...")
 # time.sleep(2)
 green_string("Game files successfully loaded")
