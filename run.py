@@ -37,6 +37,14 @@ date = nowdate.strftime("%d/%m/%Y")
 track_info = SHEET.worksheet("track_info")
 paul_ricard = track_info.get_values("A1:B8")
 silverstone = track_info.get_values("A10:B17")
+calendar = SHEET.worksheet("calendar")
+show_calendar = calendar.get_all_values()
+
+
+def view_calendar():
+    """ Shows the user the current F1 2022 season calendar"""
+    print(tabulate(show_calendar, tablefmt='plain'))
+
 
 def select_track():
     """ Used to allow the user to select a track to view info """
