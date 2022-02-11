@@ -135,7 +135,7 @@ def fact_menu():
             'A) Return to main menu '
             'B) Exit game '
             'C) Load new fact\n'.center(80))
-        user_input = input().upper()
+        user_input = input("".center(38)).upper()
         if user_input not in {"A", "B", "C"}:
             yellow_string("Invalid input! Please enter either A, B, or C \n".center(80))
         else:
