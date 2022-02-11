@@ -345,8 +345,8 @@ def main_menu():
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H"}:
-            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G or H\n".center(80))
+        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H", "I"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G, H or I\n".center(80))
             time.sleep(1)
             clear_terminal()
             main_menu()
@@ -392,6 +392,11 @@ def main_menu():
         time.sleep(2)
         clear_terminal()
         select_track()
+    if user_input == ("I"):
+        magenta_string("Loading 2022 calendar..".center(80))
+        time.sleep(2)
+        clear_terminal()
+        view_calendar()
 print("Loading game files...")
 # time.sleep(2)
 green_string("Game files successfully loaded")
