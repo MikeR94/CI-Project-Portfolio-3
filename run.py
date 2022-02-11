@@ -311,32 +311,32 @@ def main_menu():
         time.sleep(2)
         clear_terminal()
         select_difficulty()
-    if user_input == ("B"):
+    if user_input == ("B") or ("b"):
         magenta_string("Loading the leaderboards...".center(80))
         time.sleep(2)
         clear_terminal()
         show_leaderboards()
-    if user_input == ("C"):
+    if user_input == ("C") or ("c"):
         magenta_string("Loading the game statistics...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_stats()
-    if user_input == ("D"):
+    if user_input == ("D") or ("d"):
         magenta_string("Loading the game rules...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_rules()
-    if user_input == ("E"):
+    if user_input == ("E") or ("e"):
         magenta_string("Loading the F1 fact display...".center(80))
         time.sleep(2)
         clear_terminal()
         show_fact()
-    if user_input == ("F"):
+    if user_input == ("F") or ("f"):
         magenta_string("Loading submit feedback...".center(80))
         time.sleep(2)
         clear_terminal()
         submit_feedback()
-    if user_input == ("G"):
+    if user_input == ("G") or ("g"):
         magenta_string("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
