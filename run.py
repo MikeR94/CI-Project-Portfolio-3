@@ -333,6 +333,108 @@ def submit_feedback():
     quick_menu()
 
 
+def quiz_hub():
+    """ Displays the main menu for the quiz menu options """
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
+    red_string(f"Welcome to the Quiz Hub, {name}\n".center(80))
+    red_string("Please select an option from the menu\n".center(80))
+    blank_line()
+    white_string("(A) Start the quiz".center(80))
+    white_string("(B) View the leaderboards".center(80))
+    white_string("(C) View game statistics".center(80))
+    white_string("(D) View game rules\n".center(80))
+    white_string("(E) Return back to the main menu\n".center(80))
+    user_input = input("".center(38)).upper()
+    blank_line()
+    while True:
+        if user_input not in {"A", "B", "C", "D", "E"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D or E\n".center(80))
+            time.sleep(1)
+            clear_terminal()
+            quiz_hub()
+        else:
+            break
+    if user_input == ("A"):
+        magenta_string("Great stuff, starting a new quiz now...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        select_difficulty()
+    if user_input == ("B"):
+        magenta_string("Loading the leaderboards...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        show_leaderboards()
+    if user_input == ("C"):
+        magenta_string("Loading the game statistics...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        show_game_stats()
+    if user_input == ("D"):
+        magenta_string("Loading the game rules...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        show_game_rules()
+    if user_input == ("E"):
+        magenta_string("Returning back to the main menu...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        main_menu()
+
+
+def f1_info_hub():
+    """ Displays the main menu for the F1 info hub """
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
+    red_string(f"Welcome to the F1 Info Hub, {name}\n".center(80))
+    red_string("Please select an option from the menu\n".center(80))
+    blank_line()
+    white_string("(A) View an F1 fact".center(80))
+    white_string("(B) View select track menu".center(80))
+    white_string("(C) View 2022 F1 calendar".center(80))
+    white_string("(D) View 2022 F1 drivers\n".center(80))
+    white_string("(E) Return back to the main menu\n".center(80))
+    user_input = input("".center(38)).upper()
+    blank_line()
+    while True:
+        if user_input not in {"A", "B", "C", "D", "E"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D or E\n".center(80))
+            time.sleep(1)
+            clear_terminal()
+            f1_info_hub()
+        else:
+            break 
+    if user_input == ("A"):
+        magenta_string("Loading the F1 fact display...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        show_fact()
+    if user_input == ("B"):
+        magenta_string("Loading select track..".center(80))
+        time.sleep(2)
+        clear_terminal()
+        select_track()
+    if user_input == ("C"):
+        magenta_string("Loading 2022 calendar..".center(80))
+        time.sleep(2)
+        clear_terminal()
+        view_calendar()
+    if user_input == ("D"):
+        magenta_string("Loading current F1 drivers..".center(80))
+        drivers.sort((5, 'des'))
+        time.sleep(2)
+        clear_terminal()
+        view_drivers()
+    if user_input == ("E"):
+        magenta_string("Returning back to the main menu...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        main_menu()
+
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
     blank_line()
@@ -342,21 +444,15 @@ def main_menu():
     red_string(f"Welcome to the main menu, {name}\n".center(80))
     red_string("Please select an option from the menu\n".center(80))
     blank_line()
-    white_string("(A) Start the quiz".center(80))
-    white_string("(B) View the leaderboards".center(80))
-    white_string("(C) View game statistics".center(80))
-    white_string("(D) View game rules".center(80))
-    white_string("(E) View an F1 fact".center(80))
-    white_string("(F) Submit feedback".center(80))
-    white_string("(G) Exit the game".center(80))
-    white_string("(H) View select track menu".center(80))
-    white_string("(I) View 2022 F1 calendar".center(80))
-    white_string("(J) View 2022 F1 drivers\n".center(80))
+    white_string("(A) View Quiz Hub".center(80))
+    white_string("(B) View F1 Info Hub".center(80))
+    white_string("(C) Submit feedback".center(80))
+    white_string("(D) Exit the game".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}:
-            yellow_string("Invalid input! Please enter either A, B, C, D, E, F, G, H, I or J\n".center(80))
+        if user_input not in {"A", "B", "C", "D"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D or E\n".center(80))
             time.sleep(1)
             clear_terminal()
             main_menu()
