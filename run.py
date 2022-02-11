@@ -163,11 +163,10 @@ def select_difficulty():
     blank_line()
     blank_line()
     blank_line()
-    blank_line()
     red_string("Please select a difficulty\n".center(80))
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
-    white_string('C) Hard'.center(80))
+    white_string('C) Hard\n'.center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     if user_input == ("A"):
