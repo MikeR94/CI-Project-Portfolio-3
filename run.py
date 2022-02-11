@@ -35,8 +35,8 @@ feedback = SHEET.worksheet("feedback")
 nowdate = datetime.now()
 date = nowdate.strftime("%d/%m/%Y")
 track_info = SHEET.worksheet("track_info")
-paul_ricard = track_info.get_values("A1:B6")
-silverstone = track_info.get_values("A8:B13")
+paul_ricard = track_info.get_values("A1:B8")
+silverstone = track_info.get_values("A10:B17")
 
 def select_track():
     """ Used to allow the user to select a track to view info """
