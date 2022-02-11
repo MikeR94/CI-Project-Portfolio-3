@@ -286,9 +286,9 @@ def exit_game():
     white_string("and we hope to see you back shortly!\n".center(80))
     thank_you()
     time.sleep(2)
-    magenta_string("Shutting the program down...\n".center(80))
+    magenta_string("Shutting the application down...\n".center(80))
     time.sleep(2)
-    green_string("Program shutdown successfully".center(80))
+    green_string("Application shutdown successfully".center(80))
     sys.exit()
 
 
@@ -323,7 +323,7 @@ def get_random_fact():
 def submit_feedback():
     """ Allows the user to submit feedback """
     white_string(name + ", please submit your feedback below\n")
-    white_string("If you wish to leave this screen before submitting a message, please click the  run program button below\n")
+    white_string("If you wish to leave this screen before submitting a message, please click the  run app button below\n")
     user_feedback = input("Enter feedback: ")
     blank_line()
     magenta_string("Thank you for your feedback, uploading now...\n")
