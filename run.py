@@ -65,7 +65,7 @@ def select_track():
         print("Please enter a track name to view information about it\n".center(80))
         user_input = input("".center(34)).lower()
         blank_line()
-        if user_input not in {"paul ricard", "silverstone",}:
+        if user_input not in {"paul ricard", "silverstone"}:
             yellow_string("Invalid input! Please try again \n".center(80))
         else:
             break
@@ -139,7 +139,7 @@ def start_quiz(selected_difficulty):
     quick_menu()
 
 
-def quick_menu(centered=False,f1_quick_menu=False):
+def quick_menu(centered=False, f1_quick_menu=False):
     """Small navigation menu for the user"""
     if centered:
         while True:
@@ -436,7 +436,7 @@ def f1_info_hub():
             clear_terminal()
             f1_info_hub()
         else:
-            break 
+            break
     if user_input == ("A"):
         magenta_string("Loading the F1 fact display...".center(80))
         time.sleep(2)
@@ -463,6 +463,7 @@ def f1_info_hub():
         time.sleep(2)
         clear_terminal()
         main_menu()
+
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
