@@ -168,18 +168,18 @@ def select_difficulty():
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
     white_string('C) Hard'.center(80))
-    user_input = input().capitalize()
-    if user_input == ("A"):
+    user_input = input("".center(38))
+    if user_input == ("A") or ("a"):
         magenta_string("Loading easy questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(easy_question_list)
-    elif user_input == ("B"):
+    elif user_input == ("B") or ("b"):
         magenta_string("Loading medium questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(medium_question_list)
-    elif user_input == ("C"):
+    elif user_input == ("C") or ("c"):
         magenta_string("Loading hard questions...".center(80))
         time.sleep(2)
         clear_terminal()
@@ -296,47 +296,47 @@ def main_menu():
     white_string("(E) View an F1 fact".center(80))
     white_string("(F) Submit feedback".center(80))
     white_string("(G) Exit the game\n".center(80))
-    user_input = input("".center(38))
+    user_input = input("".center(38)).upper()
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "a", "b", "c", "d", "e", "f", "g"}:
-            yellow_string("Invalid input! Please enter either A, B, C, D, E, F or G\n")
+        if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
+            yellow_string("Invalid input! Please enter either A, B, C, D, E, F or G\n".center(80))
             time.sleep(1)
             clear_terminal()
             main_menu()
         else:
             break
-    if user_input == ("A") or ("a"):
+    if user_input == ("A"):
         magenta_string("Great stuff, starting a new quiz now...".center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
-    if user_input == ("B") or ("b"):
+    if user_input == ("B"):
         magenta_string("Loading the leaderboards...".center(80))
         time.sleep(2)
         clear_terminal()
         show_leaderboards()
-    if user_input == ("C") or ("c"):
+    if user_input == ("C"):
         magenta_string("Loading the game statistics...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_stats()
-    if user_input == ("D") or ("d"):
+    if user_input == ("D"):
         magenta_string("Loading the game rules...".center(80))
         time.sleep(2)
         clear_terminal()
         show_game_rules()
-    if user_input == ("E") or ("e"):
+    if user_input == ("E"):
         magenta_string("Loading the F1 fact display...".center(80))
         time.sleep(2)
         clear_terminal()
         show_fact()
-    if user_input == ("F") or ("f"):
+    if user_input == ("F"):
         magenta_string("Loading submit feedback...".center(80))
         time.sleep(2)
         clear_terminal()
         submit_feedback()
-    if user_input == ("G") or ("g"):
+    if user_input == ("G"):
         magenta_string("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
