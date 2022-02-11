@@ -9,7 +9,7 @@ import random
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
-from print import cyan_string, formula_1_text, green_string, magenta_string, multiple_blank_lines
+from print import cyan_string, formula_1_text, green_string, magenta_string, multiple_blank_lines, thank_you
 from print import red_string, white_string, yellow_string, blank_line, solid_line
 from questions import easy_question_list
 from questions import medium_question_list
@@ -235,10 +235,14 @@ def clear_terminal():
 
 def exit_game():
     """ Exits the game """
-    white_string("Thank you for playing\n")
-    white_string("Shutting the program down...\n")
+    multiple_blank_lines()
+    white_string(f"Thank you very much for stopping by, {name}\n".center(80))
+    white_string("We hope you enjoyed your time on the application and we hope to see you back shortly!\n".center(80))
+    thank_you()
     time.sleep(2)
-    green_string("Program shutdown successfully")
+    magenta_string("Shutting the program down...\n".center(80))
+    time.sleep(2)
+    green_string("Program shutdown successfully".center(80))
     sys.exit()
 
 
