@@ -55,7 +55,7 @@ def start_quiz(selected_difficulty):
     questions = random.sample(selected_difficulty, 5)
     for question in questions:
         while True:
-            user_answer = input(question.question).capitalize()
+            user_answer = input(question.question).upper()
             if user_answer not in {"A", "B", "C"}:
                 yellow_string("Invalid input! You can attempt the question again\n")
             else:
@@ -111,7 +111,7 @@ def quick_menu(centered=False):
     else:
         while True:
             cyan_string("A) Return to main menu B) Exit game")
-            user_input = input().capitalize()
+            user_input = input().upper()
             if user_input not in {"A", "B"}:
                 yellow_string("Invalid input! Please enter either A or B\n")
             else:
@@ -135,7 +135,7 @@ def fact_menu():
             'A) Return to main menu '
             'B) Exit game '
             'C) Load new fact\n'.center(80))
-        user_input = input().capitalize()
+        user_input = input().upper()
         if user_input not in {"A", "B", "C"}:
             yellow_string("Invalid input! Please enter either A, B, or C \n".center(80))
         else:
