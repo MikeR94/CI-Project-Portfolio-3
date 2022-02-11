@@ -17,7 +17,7 @@ White: \u001b[37m.
 
 
 def formula_1_text():
-    """ Prints formula 1 in ASCI text"""
+    """ Prints Formula 1 in ASCI Art"""
     print('''             ___________                         __            ____
              \_   _____/__________  _____  __ __|  | _____    /_   |
               |    __)/  _ \_  __ \/     \|  |  \  | \__  \    |   |
@@ -33,6 +33,15 @@ def multiple_blank_lines():
     blank_line()
     blank_line()
     blank_line()
+
+
+def thank_you():
+    """ Prints Thankyou in ASCI Art"""
+    print('''  _____ _              _
+ |_   _| |_  __ _ _ _ | |___  _ ___ _  _
+   | | | ' \/ _` | ' \| / / || / _ \ || |
+   |_| |_||_\__,_|_||_|_\_\\_, \___/\_,_|
+                           |__/          \n''')
 
 
 def solid_line(new_line_at_end=False):
