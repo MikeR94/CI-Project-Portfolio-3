@@ -296,17 +296,17 @@ def main_menu():
     white_string("(E) View an F1 fact".center(80))
     white_string("(F) Submit feedback".center(80))
     white_string("(G) Exit the game\n".center(80))
-    user_input = input().capitalize()
+    user_input = input("".center(35))
     blank_line()
     while True:
-        if user_input not in {"A", "B", "C", "D", "E", "F", "G"}:
+        if user_input not in {"A", "B", "C", "D", "E", "F", "G", "a", "b", "c", "d", "e", "f", "g"}:
             yellow_string("Invalid input! Please enter either A, B, C, D, E, F or G\n")
             time.sleep(1)
             clear_terminal()
             main_menu()
         else:
             break
-    if user_input == ("A"):
+    if user_input == ("A") or ("a"):
         magenta_string("Great stuff, starting a new quiz now...".center(80))
         time.sleep(2)
         clear_terminal()
