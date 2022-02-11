@@ -168,18 +168,18 @@ def select_difficulty():
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
     white_string('C) Hard'.center(80))
-    user_input = input("".center(38))
-    if user_input == ("A") or ("a"):
+    user_input = input("".center(38)).upper()
+    if user_input == ("A"):
         magenta_string("Loading easy questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(easy_question_list)
-    elif user_input == ("B") or ("b"):
+    elif user_input == ("B"):
         magenta_string("Loading medium questions...".center(80))
         time.sleep(2)
         clear_terminal()
         start_quiz(medium_question_list)
-    elif user_input == ("C") or ("c"):
+    elif user_input == ("C"):
         magenta_string("Loading hard questions...".center(80))
         time.sleep(2)
         clear_terminal()
