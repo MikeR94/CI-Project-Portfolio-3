@@ -6,6 +6,7 @@ import os
 import time
 import sys
 import random
+from turtle import clear
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
@@ -45,6 +46,7 @@ show_drivers = drivers.get_all_values()
 
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
+    clear_terminal()
     print(tabulate(show_calendar, headers="firstrow", tablefmt='simple'))
     blank_line()
     quick_menu(f1_quick_menu=True)
@@ -52,6 +54,7 @@ def view_calendar():
 
 def view_drivers():
     """ Shows the user the current F1 2022 drivers and some statistics about them """
+    clear_terminal()
     print(tabulate(show_drivers, headers="firstrow", tablefmt='simple'))
     blank_line()
     quick_menu(f1_quick_menu=True)
