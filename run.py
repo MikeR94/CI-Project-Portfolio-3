@@ -342,6 +342,7 @@ def main_menu():
     white_string("(F) Submit feedback".center(80))
     white_string("(G) Exit the game".center(80))
     white_string("(H) View select track menu\n".center(80))
+    white_string("(I) View 2022 F1 calendar\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
