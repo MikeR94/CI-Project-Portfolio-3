@@ -94,6 +94,7 @@ def quick_menu(centered=False):
         while True:
             cyan_string("A) Return to main menu B) Exit game\n".center(80))
             user_input = input("".center(38)).upper()
+            blank_line()
             if user_input not in {"A", "B"}:
                 yellow_string("Invalid input! Please enter either A or B")
             else:
@@ -112,6 +113,7 @@ def quick_menu(centered=False):
         while True:
             cyan_string("A) Return to main menu B) Exit game")
             user_input = input().upper()
+            blank_line()
             if user_input not in {"A", "B"}:
                 yellow_string("Invalid input! Please enter either A or B\n")
             else:
@@ -136,6 +138,7 @@ def fact_menu():
             'B) Exit game '
             'C) Load new fact\n'.center(80))
         user_input = input("".center(38)).upper()
+        blank_line()
         if user_input not in {"A", "B", "C"}:
             yellow_string("Invalid input! Please enter either A, B, or C \n".center(80))
         else:
