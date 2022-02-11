@@ -296,7 +296,7 @@ def main_menu():
     white_string("(E) View an F1 fact".center(80))
     white_string("(F) Submit feedback".center(80))
     white_string("(G) Exit the game\n".center(80))
-    user_input = input("".center(35))
+    user_input = input("".center(38))
     blank_line()
     while True:
         if user_input not in {"A", "B", "C", "D", "E", "F", "G", "a", "b", "c", "d", "e", "f", "g"}:
