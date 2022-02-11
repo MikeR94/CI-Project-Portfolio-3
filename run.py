@@ -43,7 +43,7 @@ show_calendar = calendar.get_all_values()
 
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
-    print(tabulate(show_calendar, tablefmt='plain'))
+    print(tabulate(show_calendar, headers="firstrow", tablefmt='simple'))
 
 
 def select_track():
