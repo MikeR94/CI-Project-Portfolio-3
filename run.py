@@ -9,8 +9,8 @@ import random
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
-from print import cyan_string, formula_1_text, green_string, magenta_string, multiple_blank_lines, thank_you
-from print import red_string, white_string, yellow_string, blank_line, solid_line
+from print import cyan_string, formula_1_text, green_string, magenta_string, multiple_blank_lines
+from print import red_string, white_string, yellow_string, blank_line, solid_line, thank_you
 from questions import easy_question_list
 from questions import medium_question_list
 from questions import hard_question_list
@@ -46,12 +46,15 @@ show_drivers = drivers.get_all_values()
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
     print(tabulate(show_calendar, headers="firstrow", tablefmt='simple'))
+    blank_line()
+    quick_menu(f1_quick_menu=True)
 
 
 def view_drivers():
     """ Shows the user the current F1 2022 drivers and some statistics about them """
     print(tabulate(show_drivers, headers="firstrow", tablefmt='simple'))
-
+    blank_line()
+    quick_menu(f1_quick_menu=True)
 
 
 def select_track():
@@ -70,12 +73,16 @@ def select_track():
         clear_terminal()
         time.sleep(1)
         print(tabulate(paul_ricard, tablefmt='plain'))
+        blank_line()
+        quick_menu(f1_quick_menu=True)
     if user_input == ("silverstone"):
         magenta_string(f"Understood {name}, loading track info...".center(80))
         time.sleep(2)
         clear_terminal()
         time.sleep(1)
         print(tabulate(silverstone, tablefmt='plain'))
+        blank_line()
+        quick_menu(f1_quick_menu=True)
 
 
 def days_to_new_season():
@@ -130,30 +137,30 @@ def start_quiz(selected_difficulty):
     quick_menu()
 
 
-def quick_menu(centered=False):
+def quick_menu(centered=False,f1_quick_menu=False):
     """Small navigation menu for the user"""
     if centered:
         while True:
-            cyan_string("A) Return to main menu B) Exit game\n".center(80))
+            cyan_string("A) Return to Quiz Hub B) Return to Main Menu\n".center(80))
             user_input = input("".center(38)).upper()
             blank_line()
             if user_input not in {"A", "B"}:
-                yellow_string("Invalid input! Please enter either A or B")
+                yellow_string("Invalid input! Please enter either A or B\n")
             else:
                 break
         if user_input == ("A"):
-            magenta_string(f"Understood {name}, redirecting back to the main menu...".center(80))
+            magenta_string(f"Understood {name}, redirecting back to the Quiz Hub...".center(80))
+            time.sleep(2)
+            clear_terminal()
+            quiz_hub()
+        if user_input == ("B"):
+            magenta_string("Understood " + name + ", redirecting back to the Main Menu...".center(80))
             time.sleep(2)
             clear_terminal()
             main_menu()
-        if user_input == ("B"):
-            magenta_string("Exiting the game...".center(80))
-            time.sleep(2)
-            clear_terminal()
-            exit_game()
-    else:
+    if f1_quick_menu:
         while True:
-            cyan_string("A) Return to main menu B) Exit game")
+            cyan_string("A) Return to F1 Info Hub B) Return to Main Menu\n")
             user_input = input().upper()
             blank_line()
             if user_input not in {"A", "B"}:
@@ -161,23 +168,42 @@ def quick_menu(centered=False):
             else:
                 break
         if user_input == ("A"):
-            magenta_string("Understood " + name + ", redirecting back to the main menu...")
+            magenta_string("Understood " + name + ", redirecting back to the F1 Info Hub...")
+            time.sleep(2)
+            clear_terminal()
+            f1_info_hub()
+        if user_input == ("B"):
+            magenta_string("Understood " + name + ", redirecting back to the Main Menu...")
             time.sleep(2)
             clear_terminal()
             main_menu()
-        if user_input == ("B"):
-            magenta_string("Exiting the game...")
+    else:
+        while True:
+            cyan_string("A) Return to Quiz Hub B) Return to Main Menu\n")
+            user_input = input().upper()
+            blank_line()
+            if user_input not in {"A", "B"}:
+                yellow_string("Invalid input! Please enter either A or B\n")
+            else:
+                break
+        if user_input == ("A"):
+            magenta_string("Understood " + name + ", redirecting back to the Quiz Hub...")
             time.sleep(2)
             clear_terminal()
-            exit_game()
+            quiz_hub()
+        if user_input == ("B"):
+            magenta_string("Understood " + name + ", redirecting back to the Main Menu...")
+            time.sleep(2)
+            clear_terminal()
+            main_menu()
 
 
 def fact_menu():
     """Small navigation menu for the user"""
     while True:
         cyan_string(
-            'A) Return to main menu '
-            'B) Exit game '
+            'A) Return to F1 Info Hub '
+            'B) Return to Main Menu '
             'C) Load new fact\n'.center(80))
         user_input = input("".center(38)).upper()
         blank_line()
@@ -186,15 +212,15 @@ def fact_menu():
         else:
             break
     if user_input == ("A"):
-        magenta_string(f"Understood {name}, redirecting back to the main menu...".center(80))
+        magenta_string(f"Understood {name}, redirecting back to the F1 Info Hub...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        f1_info_hub()
+    if user_input == ("B"):
+        magenta_string(f"Understood {name}, redirecting back to the Main Menu...".center(80))
         time.sleep(2)
         clear_terminal()
         main_menu()
-    if user_input == ("B"):
-        magenta_string("Exiting the game...".center(80))
-        time.sleep(2)
-        clear_terminal()
-        exit_game()
     if user_input == ("C"):
         magenta_string("Loading new fact...".center(80))
         time.sleep(2)
