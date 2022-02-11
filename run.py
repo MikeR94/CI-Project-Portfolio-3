@@ -92,8 +92,8 @@ def quick_menu(centered=False):
     """Small navigation menu for the user"""
     if centered:
         while True:
-            cyan_string("A) Return to main menu B) Exit game".center(80))
-            user_input = input().capitalize()
+            cyan_string("A) Return to main menu B) Exit game\n".center(80))
+            user_input = input("".center(38)).upper()
             if user_input not in {"A", "B"}:
                 yellow_string("Invalid input! Please enter either A or B")
             else:
