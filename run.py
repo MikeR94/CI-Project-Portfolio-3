@@ -461,7 +461,8 @@ def main_menu():
     if user_input == ("A"):
         magenta_string("Loading the Quiz Hub...".center(80))
         time.sleep(2)
-        quiz_hub() 
+        clear_terminal()
+        quiz_hub()
     if user_input == ("B"):
         magenta_string("Loading the F1 Info Hub".center(80))
         time.sleep(2)
