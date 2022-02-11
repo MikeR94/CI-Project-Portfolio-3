@@ -235,9 +235,13 @@ def clear_terminal():
 
 def exit_game():
     """ Exits the game """
-    multiple_blank_lines()
+    blank_line()
+    blank_line()
+    blank_line()
+    blank_line()
     white_string(f"Thank you very much for stopping by, {name}\n".center(80))
-    white_string("We hope you enjoyed your time on the application and we hope to see you back shortly!\n".center(80))
+    white_string("We hope you enjoyed your time on the application".center(80))
+    white_string("and we hope to see you back shortly!\n".center(80))
     thank_you()
     time.sleep(2)
     magenta_string("Shutting the program down...\n".center(80))
