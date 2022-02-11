@@ -18,7 +18,7 @@ White: \u001b[37m.
 
 def formula_1_text():
     """ Prints formula 1 in ASCI text"""
-    red_string('''        ___________                         __            ____
+    red_string_no_weight('''             ___________                         __            ____
              \_   _____/__________  _____  __ __|  | _____    /_   |
               |    __)/  _ \_  __ \/     \|  |  \  | \__  \    |   |
               |     \(  <_> )  | \/  Y Y  \  |  /  |__/ __ \_  |   |
@@ -55,6 +55,12 @@ def blank_line():
 def red_string(text):
     """ Print a string in the colour red """
     string = f"\033[31;1m{text}\033[0m"
+    print(string)
+
+
+def red_string_no_weight(text):
+    """ Print a string in the colour red with no weight """
+    string = f"\033[31m{text}\033[0m"
     print(string)
 
 
