@@ -345,7 +345,7 @@ def quiz_hub():
     white_string("(A) Start the quiz".center(80))
     white_string("(B) View the leaderboards".center(80))
     white_string("(C) View game statistics".center(80))
-    white_string("(D) View game rules\n".center(80))
+    white_string("(D) View game rules".center(80))
     white_string("(E) Return back to the main menu\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
@@ -396,7 +396,7 @@ def f1_info_hub():
     white_string("(A) View an F1 fact".center(80))
     white_string("(B) View select track menu".center(80))
     white_string("(C) View 2022 F1 calendar".center(80))
-    white_string("(D) View 2022 F1 drivers\n".center(80))
+    white_string("(D) View 2022 F1 drivers".center(80))
     white_string("(E) Return back to the main menu\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
@@ -447,7 +447,7 @@ def main_menu():
     white_string("(A) View Quiz Hub".center(80))
     white_string("(B) View F1 Info Hub".center(80))
     white_string("(C) Submit feedback".center(80))
-    white_string("(D) Exit the game".center(80))
+    white_string("(D) Exit the game\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
@@ -459,56 +459,25 @@ def main_menu():
         else:
             break
     if user_input == ("A"):
-        magenta_string("Great stuff, starting a new quiz now...".center(80))
+        magenta_string("Loading the Quiz Hub...".center(80))
         time.sleep(2)
-        clear_terminal()
-        select_difficulty()
+        quiz_hub() 
     if user_input == ("B"):
-        magenta_string("Loading the leaderboards...".center(80))
+        magenta_string("Loading the F1 Info Hub".center(80))
         time.sleep(2)
         clear_terminal()
-        show_leaderboards()
+        f1_info_hub()
     if user_input == ("C"):
-        magenta_string("Loading the game statistics...".center(80))
-        time.sleep(2)
-        clear_terminal()
-        show_game_stats()
-    if user_input == ("D"):
-        magenta_string("Loading the game rules...".center(80))
-        time.sleep(2)
-        clear_terminal()
-        show_game_rules()
-    if user_input == ("E"):
-        magenta_string("Loading the F1 fact display...".center(80))
-        time.sleep(2)
-        clear_terminal()
-        show_fact()
-    if user_input == ("F"):
         magenta_string("Loading submit feedback...".center(80))
         time.sleep(2)
         clear_terminal()
         submit_feedback()
-    if user_input == ("G"):
+    if user_input == ("D"):
         magenta_string("Exiting the game...".center(80))
         time.sleep(2)
         clear_terminal()
         exit_game()
-    if user_input == ("H"):
-        magenta_string("Loading select track..".center(80))
-        time.sleep(2)
-        clear_terminal()
-        select_track()
-    if user_input == ("I"):
-        magenta_string("Loading 2022 calendar..".center(80))
-        time.sleep(2)
-        clear_terminal()
-        view_calendar()
-    if user_input == ("J"):
-        magenta_string("Loading current F1 drivers..".center(80))
-        drivers.sort((5, 'des'))
-        time.sleep(2)
-        clear_terminal()
-        view_drivers()
+
 print("Loading game files...")
 # time.sleep(2)
 green_string("Game files successfully loaded")
