@@ -6,7 +6,6 @@ import os
 import time
 import sys
 import random
-from turtle import clear
 from tabulate import tabulate
 import gspread
 from google.oauth2.service_account import Credentials
