@@ -300,7 +300,8 @@ def show_game_stats():
 
 def clear_terminal():
     """ Clears the terminal """
-    os.system('clear')
+    # os.system('clear')
+    os.system('printf "\ec"')
 
 
 def exit_game():
