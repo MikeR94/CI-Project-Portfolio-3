@@ -322,7 +322,7 @@ def exit_app():
 
 
 def show_quiz_rules():
-    """ Displays the game rules to the user """
+    """ Displays the quiz rules to the user """
     white_string("Currently under construction\n")
     quick_menu()
 
@@ -373,8 +373,8 @@ def quiz_hub():
     blank_line()
     white_string("(A) Start the quiz".center(80))
     white_string("(B) View the leaderboards".center(80))
-    white_string("(C) View game statistics".center(80))
-    white_string("(D) View game rules".center(80))
+    white_string("(C) View quiz statistics".center(80))
+    white_string("(D) View quiz rules".center(80))
     white_string("(E) Return back to the main menu\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
@@ -397,12 +397,12 @@ def quiz_hub():
         clear_terminal()
         show_leaderboards()
     if user_input == ("C"):
-        magenta_string("Loading the game statistics...".center(80))
+        magenta_string("Loading the quiz statistics...".center(80))
         time.sleep(2)
         clear_terminal()
         show_quiz_stats()
     if user_input == ("D"):
-        magenta_string("Loading the game rules...".center(80))
+        magenta_string("Loading the quiz rules...".center(80))
         time.sleep(2)
         clear_terminal()
         show_quiz_rules()
