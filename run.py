@@ -53,6 +53,9 @@ def view_track_list():
         blank_line()
         if user_input not in {"A"}:
             yellow_string("Invalid input! Please try again \n".center(80))
+            time.sleep(2)
+            clear_terminal()
+            view_track_list()
         else:
             break
     if user_input == ("A"):
