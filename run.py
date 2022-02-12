@@ -304,8 +304,8 @@ def clear_terminal():
     os.system('printf "\ec"')
 
 
-def exit_game():
-    """ Exits the game """
+def exit_app():
+    """ Exits the app """
     blank_line()
     blank_line()
     blank_line()
@@ -477,7 +477,7 @@ def main_menu():
     white_string("(A) View Quiz Hub".center(80))
     white_string("(B) View F1 Info Hub".center(80))
     white_string("(C) Submit feedback".center(80))
-    white_string("(D) Exit the game\n".center(80))
+    white_string("(D) Exit the app\n".center(80))
     user_input = input("".center(38)).upper()
     blank_line()
     while True:
@@ -504,10 +504,10 @@ def main_menu():
         clear_terminal()
         submit_feedback()
     if user_input == ("D"):
-        magenta_string("Exiting the game...".center(80))
+        magenta_string("Exiting the application...".center(80))
         time.sleep(2)
         clear_terminal()
-        exit_game()
+        exit_app()
 
 print("Loading game files...")
 # time.sleep(2)
