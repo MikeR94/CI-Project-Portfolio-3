@@ -53,18 +53,34 @@ def view_track_list():
         blank_line()
         if user_input not in {"A"}:
             yellow_string("Invalid input! Please try again \n".center(80))
-            time.sleep(2)
-            clear_terminal()
-            view_track_list()
         else:
             break
     if user_input == ("A"):
-        magenta_string(f"Understood {name}, returning back to select track...".center(80))
+        magenta_string(f"Understood {name}, returning back to select a track...".center(80))
         time.sleep(2)
         clear_terminal()
         select_track()
 
-
+def track_list_menu():
+    """ A menu for the user so they can view another track """
+    while True:
+        cyan_string("A) Return to F1 Info Hub B) Select a new track\n")
+        user_input = input().upper()
+        blank_line()
+        if user_input not in {"A", "B"}:
+            yellow_string("Invalid input! Please enter either A or B\n")
+        else:
+            break
+    if user_input == ("A"):
+        magenta_string("Understood " + name + ", redirecting back to the F1 Info Hub...")
+        time.sleep(2)
+        clear_terminal()
+        f1_info_hub()
+    if user_input == ("B"):
+        magenta_string("Understood " + name + ", redirecting back to select a track...")
+        time.sleep(2)
+        clear_terminal()
+        select_track()
 
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
@@ -95,6 +111,9 @@ def select_track():
         blank_line()
         if user_input not in {"view list", "exit", "paul ricard", "silverstone"}:
             yellow_string("Invalid input! Please try again \n".center(80))
+            time.sleep(2)
+            clear_terminal()
+            select_track()
         else:
             break
     if user_input == ("view list"):
@@ -113,14 +132,14 @@ def select_track():
         clear_terminal()
         print(tabulate(paul_ricard, tablefmt='plain'))
         blank_line()
-        quick_menu(f1_quick_menu=True)
+        track_list_menu()
     if user_input == ("silverstone"):
         magenta_string(f"Understood {name}, loading track info...".center(80))
         time.sleep(2)
         clear_terminal()
         print(tabulate(silverstone, tablefmt='plain'))
         blank_line()
-        quick_menu(f1_quick_menu=True)
+        track_list_menu()
 
 
 def days_to_new_season():
