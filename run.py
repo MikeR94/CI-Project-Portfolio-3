@@ -321,7 +321,7 @@ def exit_app():
     sys.exit()
 
 
-def show_game_rules():
+def show_quiz_rules():
     """ Displays the game rules to the user """
     white_string("Currently under construction\n")
     quick_menu()
@@ -405,7 +405,7 @@ def quiz_hub():
         magenta_string("Loading the game rules...".center(80))
         time.sleep(2)
         clear_terminal()
-        show_game_rules()
+        show_quiz_rules()
     if user_input == ("E"):
         magenta_string("Returning back to the main menu...".center(80))
         time.sleep(2)
