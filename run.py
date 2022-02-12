@@ -425,10 +425,7 @@ def submit_feedback():
 
 def quiz_hub():
     """ Displays the main menu for the quiz menu options """
-    blank_line()
-    blank_line()
-    blank_line()
-    blank_line()
+    multiple_blank_lines()
     red_string(f"Welcome to the Quiz Hub, {name}\n".center(80))
     red_string("Please select an option from the menu\n".center(80))
     blank_line()
@@ -476,10 +473,7 @@ def quiz_hub():
 
 def f1_info_hub():
     """ Displays the main menu for the F1 info hub """
-    blank_line()
-    blank_line()
-    blank_line()
-    blank_line()
+    multiple_blank_lines()
     red_string(f"Welcome to the F1 Info Hub, {name}\n".center(80))
     red_string("Please select an option from the menu\n".center(80))
     blank_line()
