@@ -61,6 +61,7 @@ def view_track_list():
         clear_terminal()
         select_track()
 
+
 def track_list_menu():
     """ A menu for the user so they can view another track """
     while True:
@@ -81,6 +82,7 @@ def track_list_menu():
         time.sleep(2)
         clear_terminal()
         select_track()
+
 
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
