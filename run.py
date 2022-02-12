@@ -271,7 +271,7 @@ def show_leaderboards():
     quick_menu()
 
 
-def show_game_stats():
+def show_quiz_stats():
     """Shows the game stats"""
     games_played = leaderboard.row_count - 1
     solid_line(new_line_at_end=True)
@@ -400,7 +400,7 @@ def quiz_hub():
         magenta_string("Loading the game statistics...".center(80))
         time.sleep(2)
         clear_terminal()
-        show_game_stats()
+        show_quiz_stats()
     if user_input == ("D"):
         magenta_string("Loading the game rules...".center(80))
         time.sleep(2)
