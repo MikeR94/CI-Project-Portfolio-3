@@ -528,10 +528,7 @@ def f1_info_hub():
 
 def main_menu():
     """ Displays the main menu to the user that allows them to navigate the application """
-    blank_line()
-    blank_line()
-    blank_line()
-    blank_line()
+    multiple_blank_lines()
     red_string(f"Welcome to the Main Menu, {name}\n".center(80))
     red_string("Please select an option from the menu\n".center(80))
     blank_line()
