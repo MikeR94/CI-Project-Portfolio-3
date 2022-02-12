@@ -29,7 +29,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('ci_project_portfolio_3')
 leaderboard = SHEET.worksheet('leaderboard')
-data = leaderboard.get_all_values()
 facts = SHEET.worksheet('facts')
 fact_data = facts.get_all_values()
 feedback = SHEET.worksheet('feedback')
@@ -428,7 +427,7 @@ def select_difficulty():
 
 def show_leaderboards():
     ''' Shows the leaderboards to the user '''
-    leaderboard.sort((2, 'des'))
+    data = leaderboard.get_all_values()
     print(tabulate(data[0:9], tablefmt='fancy_grid'))
     quick_menu()
 
@@ -714,6 +713,6 @@ while True:
     else:
         break
 time.sleep(2)
+leaderboard.sort((2, 'des'))
 clear_terminal()
-
 main_menu()
