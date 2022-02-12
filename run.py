@@ -97,12 +97,12 @@ def track_list_menu():
         else:
             break
     if user_input == ('A'):
-        magenta_string('Understood ' + name + ', redirecting back to the F1 Info Hub...')
+        magenta_string(f'Understood {name}, redirecting back to the F1 Info Hub...')
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
     if user_input == ('B'):
-        magenta_string('Understood ' + name + ', redirecting back to select a track...')
+        magenta_string(f'Understood {name}, redirecting back to select a track...')
         time.sleep(2)
         clear_terminal()
         select_track()
@@ -225,11 +225,11 @@ def start_quiz(selected_difficulty):
             incorrect += 1
             red_string('Incorrect answer\n')
             time.sleep(2)
-    white_string('Great stuff, ' + name + ' You have managed to answer all the questions!\n')
+    white_string(f'Great stuff {name}, you have managed to answer all the questions!\n')
     white_string(
-                'You scored ' + str(score) + ' points, answering '
-                + str(correct) + ' correct and ' + str(incorrect)
-                + ' incorrect\n'
+                f'You scored {score} points, answering'
+                f' {correct} correct and {incorrect}'
+                f' incorrect\n'
                 )
     time.sleep(2)
     magenta_string('Please wait, adding your score to the leaderboard...\n')
@@ -257,7 +257,7 @@ def quick_menu(centered=False, f1_quick_menu=False):
             clear_terminal()
             quiz_hub()
         if user_input == ('B'):
-            magenta_string('Understood ' + name + ', redirecting back to the Main Menu...'.center(80))
+            magenta_string(f'Understood {name}, redirecting back to the Main Menu...'.center(80))
             time.sleep(2)
             clear_terminal()
             main_menu()
@@ -271,12 +271,12 @@ def quick_menu(centered=False, f1_quick_menu=False):
             else:
                 break
         if user_input == ('A'):
-            magenta_string('Understood ' + name + ', redirecting back to the F1 Info Hub...')
+            magenta_string(f'Understood {name}, redirecting back to the F1 Info Hub...')
             time.sleep(2)
             clear_terminal()
             f1_info_hub()
         if user_input == ('B'):
-            magenta_string('Understood ' + name + ', redirecting back to the Main Menu...')
+            magenta_string(f'Understood {name}, redirecting back to the Main Menu...')
             time.sleep(2)
             clear_terminal()
             main_menu()
@@ -290,12 +290,12 @@ def quick_menu(centered=False, f1_quick_menu=False):
             else:
                 break
         if user_input == ('A'):
-            magenta_string('Understood ' + name + ', redirecting back to the Quiz Hub...')
+            magenta_string(f'Understood {name}, redirecting back to the Quiz Hub...')
             time.sleep(2)
             clear_terminal()
             quiz_hub()
         if user_input == ('B'):
-            magenta_string('Understood ' + name + ', redirecting back to the Main Menu...')
+            magenta_string(f'Understood {name}, redirecting back to the Main Menu...')
             time.sleep(2)
             clear_terminal()
             main_menu()
@@ -452,7 +452,7 @@ def get_random_fact():
 
 def submit_feedback():
     ''' Allows the user to submit feedback '''
-    white_string(name + ', please submit your feedback below\n')
+    white_string(f'{name}, please submit your feedback below\n')
     white_string('If you wish to leave this screen before submitting a message, please click the  run app button below\n')
     user_feedback = input('Enter feedback: ')
     blank_line()
