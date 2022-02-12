@@ -80,7 +80,10 @@ def view_track_list():
         else:
             break
     if user_input == ('A'):
-        magenta_string(f'Understood {name}, returning back to select a track...'.center(80))
+        magenta_string(
+                      f'Understood {name}, returning '
+                      f'back to select a track...'.center(80)
+                      )
         time.sleep(2)
         clear_terminal()
         select_track()
@@ -97,12 +100,18 @@ def track_list_menu():
         else:
             break
     if user_input == ('A'):
-        magenta_string(f'Understood {name}, redirecting back to the F1 Info Hub...')
+        magenta_string(
+                      f'Understood {name}, redirecting '
+                      f'back to the F1 Info Hub...'
+                      )
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
     if user_input == ('B'):
-        magenta_string(f'Understood {name}, redirecting back to select a track...')
+        magenta_string(
+                      f'Understood {name}, redirecting '
+                      f'back to select a track...'
+                      )
         time.sleep(2)
         clear_terminal()
         select_track()
@@ -130,7 +139,9 @@ def select_track():
     blank_line()
     blank_line()
     while True:
-        white_string('Please enter a track name to view information about it\n'.center(80))
+        white_string(
+                    'Please enter a track name to view '
+                    'information about it\n'.center(80))
         white_string(
                     'We recommend you type the below command'
                     'to see what you can enter\n'.center(80)
@@ -164,7 +175,10 @@ def select_track():
         clear_terminal()
         view_track_list()
     if user_input == ('exit'):
-        magenta_string(f'Understood {name}, returning back to F1 Info Hub...'.center(80))
+        magenta_string(
+                      f'Understood {name}, redirecting '
+                      f'back to the F1 Info Hub...'.center(80)
+                      )
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
@@ -192,7 +206,9 @@ def days_to_new_season():
     number_of_days = '{} days'.format(days)
     if days <= 0:
         return green_string('The F1 2022 season has started!'.center(80))
-    return red_string(f'Days left until F1 2022 Season: {number_of_days}'.center(80))
+    return red_string(
+                     f'Days left until F1 2022 Season: '
+                     f'{number_of_days}'.center(80))
 
 
 def start_quiz(selected_difficulty):
@@ -205,7 +221,10 @@ def start_quiz(selected_difficulty):
         while True:
             user_answer = input(question.question).upper()
             if user_answer not in {'A', 'B', 'C'}:
-                yellow_string('Invalid input! You can attempt the question again\n')
+                yellow_string(
+                             'Invalid input! You can attempt '
+                             'the question again\n'
+                             )
             else:
                 break
         if user_answer == question.answer:
@@ -225,7 +244,9 @@ def start_quiz(selected_difficulty):
             incorrect += 1
             red_string('Incorrect answer\n')
             time.sleep(2)
-    white_string(f'Great stuff {name}, you have managed to answer all the questions!\n')
+    white_string(
+                f'Great stuff {name}, you have '
+                f'managed to answer all the questions!\n')
     white_string(
                 f'You scored {score} points, answering'
                 f' {correct} correct and {incorrect}'
@@ -233,7 +254,11 @@ def start_quiz(selected_difficulty):
                 )
     time.sleep(2)
     magenta_string('Please wait, adding your score to the leaderboard...\n')
-    leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected, date])
+    leaderboard.append_row(
+                            values=[name, score, correct,
+                            incorrect, difficulty_selected,
+                            date]
+                          )
     leaderboard.sort((2, 'des'))
     time.sleep(2)
     green_string('Leaderboard updated successfully!\n')
@@ -271,7 +296,10 @@ def quick_menu(centered=False, f1_quick_menu=False):
             else:
                 break
         if user_input == ('A'):
-            magenta_string(f'Understood {name}, redirecting back to the F1 Info Hub...')
+            magenta_string(
+                      f'Understood {name}, redirecting '
+                      f'back to the F1 Info Hub...'
+                      )
             time.sleep(2)
             clear_terminal()
             f1_info_hub()
@@ -315,7 +343,10 @@ def fact_menu():
         else:
             break
     if user_input == ('A'):
-        magenta_string(f'Understood {name}, redirecting back to the F1 Info Hub...'.center(80))
+        magenta_string(
+                      f'Understood {name}, redirecting '
+                      f'back to the F1 Info Hub...'.center(80)
+                      )
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
@@ -495,6 +526,7 @@ def quiz_hub():
         select_difficulty()
     if user_input == ('B'):
         magenta_string('Loading the leaderboards...'.center(80))
+        leaderboard.sort((2, 'des'))
         time.sleep(2)
         clear_terminal()
         show_leaderboards()
