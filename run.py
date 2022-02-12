@@ -76,7 +76,7 @@ def select_track():
         red_string("exit\n".center(80))
         user_input = input("".center(34)).lower()
         blank_line()
-        if user_input not in {"view list", "paul ricard", "silverstone"}:
+        if user_input not in {"view list", "exit", "paul ricard", "silverstone"}:
             yellow_string("Invalid input! Please try again \n".center(80))
         else:
             break
@@ -85,6 +85,11 @@ def select_track():
         time.sleep(2)
         clear_terminal()
         view_track_list()
+    if user_input == ("exit"):
+        magenta_string(f"Understood {name}, returning back to F1 Info Hub...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        f1_info_hub()
     if user_input == ("paul ricard"):
         magenta_string(f"Understood {name}, loading track info...".center(80))
         time.sleep(2)
