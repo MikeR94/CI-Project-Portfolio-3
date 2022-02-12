@@ -131,7 +131,10 @@ def select_track():
     blank_line()
     while True:
         white_string("Please enter a track name to view information about it\n".center(80))
-        white_string("We recommend you type the below command to see what you can enter\n".center(80))
+        white_string(
+                    'We recommend you type the below command'
+                    'to see what you can enter\n'.center(80)
+                    )
         green_string("view list\n".center(80))
         white_string(
                     'Alternatively you can type the below command to'
@@ -223,7 +226,11 @@ def start_quiz(selected_difficulty):
             red_string("Incorrect answer\n")
             time.sleep(2)
     white_string("Great stuff, " + name + " You've managed to answer all the questions!\n")
-    white_string("You scored " + str(score) + " points, answering " + str(correct) + " correct and " + str(incorrect) + " incorrect\n")
+    white_string(
+                'You scored ' + str(score) + ' points, answering '
+                + str(correct) + " correct and " + str(incorrect)
+                + " incorrect\n"
+                )
     time.sleep(2)
     magenta_string("Please wait, adding your score to the leaderboard...\n")
     leaderboard.append_row(values=[name, score, correct, incorrect, difficulty_selected, date])
