@@ -146,12 +146,12 @@ def select_track():
                     'Please enter a track name to view '
                     'information about it\n'.center(80))
         white_string(
-                    'We recommend you type the below command'
+                    'We recommend you type the below command '
                     'to see what you can enter\n'.center(80)
                     )
         green_string('view list\n'.center(80))
         white_string(
-                    'Alternatively you can type the below command to'
+                    'Alternatively you can type the below command to '
                     'return to the F1 Quiz Hub \n'.center(80)
                     )
         red_string('exit\n'.center(80))
