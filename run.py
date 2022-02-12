@@ -260,11 +260,9 @@ def start_quiz(selected_difficulty):
                 )
     time.sleep(2)
     magenta_string('Please wait, adding your score to the leaderboard...\n')
-    leaderboard.append_row(
-                            values=[name, score, correct,
-                            incorrect, difficulty_selected,
-                            date]
-                          )
+    leaderboard.append_row(values=[name, score, correct,
+                           incorrect, difficulty_selected,
+                           date])
     leaderboard.sort((2, 'des'))
     time.sleep(2)
     green_string('Leaderboard updated successfully!\n')
