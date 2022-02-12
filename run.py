@@ -391,7 +391,11 @@ def submit_feedback():
     time.sleep(2)
     feedback.append_row(values=[name, user_feedback, date])
     green_string("Feedback uploaded successfully!\n")
-    quick_menu()
+    time.sleep(1)
+    white_string("Returning back to the main menu, please wait")
+    time.sleep(3)
+    clear_terminal()
+    main_menu()
 
 
 def quiz_hub():
