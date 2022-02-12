@@ -46,8 +46,21 @@ show_drivers = drivers.get_all_values()
 def view_track_list():
     """ Displays a list of tracks the user can enter """
     white_string("silverstone".center(80))
-    white_string("paul ricard".center(80))
-    quick_menu(centered=True)
+    white_string("paul ricard\n".center(80))
+    while True:
+        cyan_string("A) Return back to select track\n".center(80))
+        user_input = input("".center(34)).upper()
+        blank_line()
+        if user_input not in {"A"}:
+            yellow_string("Invalid input! Please try again \n".center(80))
+        else:
+            break
+    if user_input == ("A"):
+        magenta_string(f"Understood {name}, returning back to select track...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        select_track()
+
 
 
 def view_calendar():
@@ -70,7 +83,7 @@ def select_track():
     """ Used to allow the user to select a track to view info """
     while True:
         white_string("Please enter a track name to view information about it\n".center(80))
-        white_string("We recommend you type the below command to see the list which you can enter\n".center(80))
+        white_string("We recommend you type the below command to see what you can enter\n".center(80))
         green_string("view list\n".center(80))
         white_string("Alternatively you can type the below command to return to the F1 Quiz Hub \n".center(80))
         red_string("exit\n".center(80))
