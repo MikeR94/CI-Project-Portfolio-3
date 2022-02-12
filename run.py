@@ -67,7 +67,8 @@ def view_track_list():
     white_string('americas'.center(80))
     white_string('autodromo'.center(80))
     white_string('interlagos'.center(80))
-    white_string('yas marina\n'.center(80))
+    white_string('yas marina'.center(80))
+    blank_line()
     while True:
         cyan_string('A) Return back to select track\n'.center(80))
         user_input = input(''.center(34)).upper()
