@@ -43,6 +43,12 @@ drivers = SHEET.worksheet("drivers")
 show_drivers = drivers.get_all_values()
 
 
+def view_track_list():
+    """ Displays a list of tracks the user can enter """
+    white_string("silverstone".center(80))
+    white_string("paul ricard".center(80))
+
+
 def view_calendar():
     """ Shows the user the current F1 2022 season calendar"""
     clear_terminal()
