@@ -133,11 +133,22 @@ def select_track():
         white_string("Please enter a track name to view information about it\n".center(80))
         white_string("We recommend you type the below command to see what you can enter\n".center(80))
         green_string("view list\n".center(80))
-        white_string("Alternatively you can type the below command to return to the F1 Quiz Hub \n".center(80))
+        white_string(
+                    'Alternatively you can type the below command to'
+                    'return to the F1 Quiz Hub \n'.center(80)
+                    )
         red_string("exit\n".center(80))
         user_input = input("".center(34)).lower()
         blank_line()
-        if user_input not in {"view list", "exit", "paul ricard", "silverstone"}:
+        if user_input not in {
+                            "view list", "exit", "paul ricard", "silverstone",
+                            "sakhir", "jeddah", "albert park", "imola",
+                            "miami gardens", "barcelona", "monte carlo",
+                            "baku", "montreal", "red bull ring",
+                            "hungaroring", "spa", "zandvoort", "monza",
+                            "sochi", "marina bay", "suzuka", "americas",
+                            "autodromo", "interlagos", "yas marina"
+                             }:
             yellow_string("Invalid input! Please try again \n".center(80))
             time.sleep(2)
             clear_terminal()
