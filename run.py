@@ -47,6 +47,7 @@ def view_track_list():
     """ Displays a list of tracks the user can enter """
     white_string("silverstone".center(80))
     white_string("paul ricard".center(80))
+    quick_menu(centered=True)
 
 
 def view_calendar():
@@ -68,18 +69,26 @@ def view_drivers():
 def select_track():
     """ Used to allow the user to select a track to view info """
     while True:
-        print("Please enter a track name to view information about it\n".center(80))
+        white_string("Please enter a track name to view information about it\n".center(80))
+        white_string("We recommend you type the below command to see the list which you can enter\n".center(80))
+        green_string("view list\n".center(80))
+        white_string("Alternatively you can type the below command to return to the F1 Quiz Hub \n".center(80))
+        red_string("exit\n".center(80))
         user_input = input("".center(34)).lower()
         blank_line()
-        if user_input not in {"paul ricard", "silverstone"}:
+        if user_input not in {"view list", "paul ricard", "silverstone"}:
             yellow_string("Invalid input! Please try again \n".center(80))
         else:
             break
+    if user_input == ("view list"):
+        magenta_string(f"Understood {name}, loading the list...".center(80))
+        time.sleep(2)
+        clear_terminal()
+        view_track_list()
     if user_input == ("paul ricard"):
         magenta_string(f"Understood {name}, loading track info...".center(80))
         time.sleep(2)
         clear_terminal()
-        time.sleep(1)
         print(tabulate(paul_ricard, tablefmt='plain'))
         blank_line()
         quick_menu(f1_quick_menu=True)
@@ -87,7 +96,6 @@ def select_track():
         magenta_string(f"Understood {name}, loading track info...".center(80))
         time.sleep(2)
         clear_terminal()
-        time.sleep(1)
         print(tabulate(silverstone, tablefmt='plain'))
         blank_line()
         quick_menu(f1_quick_menu=True)
