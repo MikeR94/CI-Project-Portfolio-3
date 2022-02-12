@@ -45,7 +45,6 @@ show_drivers = drivers.get_all_values()
 
 def view_track_list():
     """ Displays a list of tracks the user can enter """
-    white_string("silverstone".center(80))
     white_string("sakhir".center(80))
     white_string("jeddah".center(80))
     white_string("albert park".center(80))
@@ -55,7 +54,9 @@ def view_track_list():
     white_string("monte carlo".center(80))
     white_string("baku".center(80))
     white_string("montreal".center(80))
+    white_string("silverstone".center(80))
     white_string("red bull ring".center(80))
+    white_string("paul ricard".center(80))
     white_string("hungaroring".center(80))
     white_string("spa".center(80))
     white_string("zandvoort".center(80))
@@ -66,7 +67,7 @@ def view_track_list():
     white_string("americas".center(80))
     white_string("autodromo".center(80))
     white_string("interlagos".center(80))
-    white_string("paul ricard\n".center(80))
+    white_string("yas marina\n".center(80))
     while True:
         cyan_string("A) Return back to select track\n".center(80))
         user_input = input("".center(34)).upper()
