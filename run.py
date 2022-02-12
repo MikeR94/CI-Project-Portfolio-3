@@ -150,7 +150,7 @@ def days_to_new_season():
     count = int((futuredate-nowdate).total_seconds())
     days = count//86400
     number_of_days = "{} days".format(days)
-    if days == 0:
+    if days <= 0:
         return green_string("The F1 2022 season has started!".center(80))
     return red_string(f"Days left until F1 2022 Season: {number_of_days}".center(80))
 
