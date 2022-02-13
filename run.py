@@ -141,7 +141,6 @@ def select_track():
     ''' Used to allow the user to select a track to view info '''
     multiple_blank_lines()
     blank_line()
-    blank_line()
     while True:
         white_string(
                     'Please enter a track name to view '
