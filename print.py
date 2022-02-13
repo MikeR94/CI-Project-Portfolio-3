@@ -4,17 +4,6 @@ import colorama
 
 colorama.init()
 
-"""
-Black: \u001b[30m.
-Red: \u001b[31m.
-Green: \u001b[32m.
-Yellow: \u001b[33m.
-Blue: \u001b[34m.
-Magenta: \u001b[35m.
-Cyan: \u001b[36m.
-White: \u001b[37m.
-"""
-
 
 def formula_1_text():
     """ Prints Formula 1 in ASCI Art"""
@@ -86,12 +75,6 @@ def green_string(text):
 def yellow_string(text):
     """ Print a string in the colour yellow """
     string = f"\033[33;1m{text}\033[0m"
-    print(string)
-
-
-def blue_string(text):
-    """ Print a string in the colour blue """
-    string = f"\033[34;1m{text}\033[0m"
     print(string)
 
 
