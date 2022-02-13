@@ -691,10 +691,6 @@ def main_menu():
         clear_terminal()
         exit_app()
 
-print('Loading game files...')
-# time.sleep(2)
-green_string('Game files successfully loaded')
-# time.sleep(2)
 clear_terminal()
 multiple_blank_lines()
 formula_1_text()
