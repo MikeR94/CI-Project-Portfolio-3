@@ -30,15 +30,12 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('ci_project_portfolio_3')
 leaderboard = SHEET.worksheet('leaderboard')
 facts = SHEET.worksheet('facts')
-fact_data = facts.get_all_values()
 feedback = SHEET.worksheet('feedback')
-nowdate = datetime.now()
-date = nowdate.strftime('%d/%m/%Y')
 track_info = SHEET.worksheet('track_info')
 calendar = SHEET.worksheet('calendar')
-show_calendar = calendar.get_all_values()
 drivers = SHEET.worksheet('drivers')
-show_drivers = drivers.get_all_values()
+nowdate = datetime.now()
+date = nowdate.strftime('%d/%m/%Y')
 
 
 def view_track_list():
@@ -119,6 +116,7 @@ def track_list_menu():
 def view_calendar():
     ''' Shows the user the current F1 2022 season calendar'''
     clear_terminal()
+    show_calendar = calendar.get_all_values()
     print(tabulate(show_calendar, headers='firstrow', tablefmt='simple'))
     blank_line()
     quick_menu(f1_quick_menu=True)
@@ -130,6 +128,7 @@ def view_drivers():
     and some statistics about them
     '''
     clear_terminal()
+    show_drivers = drivers.get_all_values()
     print(tabulate(show_drivers, headers='firstrow', tablefmt='simple'))
     blank_line()
     quick_menu(f1_quick_menu=True)
@@ -685,6 +684,7 @@ def get_random_fact():
     Stores all facts in a list, picks one
     at random and returns it as a string
     '''
+    fact_data = facts.get_all_values()
     fact_list = []
     for i in fact_data:
         fact_list.append(i)
