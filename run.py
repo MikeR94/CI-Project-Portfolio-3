@@ -486,7 +486,11 @@ def exit_app():
     time.sleep(2)
     magenta_string('Shutting the application down...\n'.center(80))
     time.sleep(2)
-    green_string('Application shutdown successfully'.center(80))
+    green_string('Application shutdown successfully\n'.center(80))
+    white_string(
+                'Click the RUN APP button if you '
+                'wish to restart the app'.center(80)
+                )
     sys.exit()
 
 
