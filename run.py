@@ -34,42 +34,28 @@ feedback = SHEET.worksheet('feedback')
 track_info = SHEET.worksheet('track_info')
 calendar = SHEET.worksheet('calendar')
 drivers = SHEET.worksheet('drivers')
+commands = SHEET.worksheet('commands')
 nowdate = datetime.now()
 date = nowdate.strftime('%d/%m/%Y')
 
 
 def view_track_list():
     ''' Displays a list of tracks the user can enter '''
-    white_string('sakhir'.center(80))
-    white_string('jeddah'.center(80))
-    white_string('albert park'.center(80))
-    white_string('imola'.center(80))
-    white_string('miami gardens'.center(80))
-    white_string('barcelona'.center(80))
-    white_string('monte carlo'.center(80))
-    white_string('baku'.center(80))
-    white_string('montreal'.center(80))
-    white_string('silverstone'.center(80))
-    white_string('red bull ring'.center(80))
-    white_string('paul ricard'.center(80))
-    white_string('hungaroring'.center(80))
-    white_string('spa'.center(80))
-    white_string('zandvoort'.center(80))
-    white_string('monza'.center(80))
-    white_string('sochi'.center(80))
-    white_string('marina bay'.center(80))
-    white_string('suzuka'.center(80))
-    white_string('americas'.center(80))
-    white_string('autodromo'.center(80))
-    white_string('interlagos'.center(80))
-    white_string('yas marina'.center(80))
+    show_commands = commands.get_all_values()
+    print(tabulate(show_commands, tablefmt='simple'))
+    blank_line()
+    white_string(
+                'Typing in one of the above commands when on '
+                'the select track page will load information '
+                'about that track'
+                )
     blank_line()
     while True:
-        cyan_string('A) Return back to select track\n'.center(80))
-        user_input = input(''.center(34)).upper()
+        cyan_string('A) Return back to select track\n')
+        user_input = input().upper()
         blank_line()
         if user_input not in {'A'}:
-            yellow_string('Invalid input! Please try again \n'.center(80))
+            yellow_string('Invalid input! Please try again \n')
             time.sleep(2)
             clear_terminal()
             view_track_list()
@@ -78,7 +64,7 @@ def view_track_list():
     if user_input == ('A'):
         magenta_string(
                       f'Understood {name}, returning '
-                      f'back to select a track...'.center(80)
+                      f'back to select a track...'
                       )
         time.sleep(2)
         clear_terminal()
