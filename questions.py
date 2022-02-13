@@ -11,38 +11,44 @@ class Question:
         self.answer = answer
 
 easy_questions = [
-     "Easy F1 Question 1\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
+     "Lewis Hamilton won the first F1 world championship title when he raced for which team?\n \
+     (A) McLaren\n \
+     (B) Ferrari\n \
+     (C) Mercedes\n",
 
-     "Easy F1 Question 2\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
+     "What does a red flag mean in the race?\n \
+     (A) Lapped cars must give way to the leaders\n \
+     (B) The race is stopped\n \
+     (C) Drivers are on the final lap\n",
 
-     "Easy F1 Question 3\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
+     "Who is the youngest F1 driver to win a race?\n \
+     (A) Lewis Hamilton\n \
+     (B) George Russell\n \
+     (C) Max Verstappen\n",
 
-     "Easy F1 Question 4\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
+     "How many driver world titles did Michael Schumacher win?\n \
+     (A) 7\n \
+     (B) 8\n \
+     (C) 6\n",
 
-     "Easy F1 Question 5\n \
-     (A) Easy answer 1\n \
-     (B) Easy answer 2\n \
-     (C) Easy answer 3\n",
+     "How many points are awarded to the race winner of each Grand Prix?\n \
+     (A) 30\n \
+     (B) 25\n \
+     (C) 20\n",
+
+     "What are F1 races known as?\n \
+     (A) Grand Canyon\n \
+     (B) Grand Finale\n \
+     (C) Grand Prix\n",
 ]
 
 easy_question_list = [
     Question(easy_questions[0], "A"),
-    Question(easy_questions[1], "A"),
-    Question(easy_questions[2], "A"),
+    Question(easy_questions[1], "B"),
+    Question(easy_questions[2], "C"),
     Question(easy_questions[3], "A"),
-    Question(easy_questions[4], "A"),
+    Question(easy_questions[4], "B"),
+    Question(easy_questions[5], "C"),
 ]
 
 medium_questions = [
