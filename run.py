@@ -130,7 +130,7 @@ def select_track():
                     )
         white_string(
                     'For example, you could type '
-                    '"silverstone"\n'.center(80)
+                    '"silverstone", "jeddah" or "spa"\n'.center(80)
                     )
         white_string(
                     'We recommend you type the below command '
