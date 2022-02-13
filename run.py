@@ -123,11 +123,15 @@ def view_drivers():
 def select_track():
     ''' Used to allow the user to select a track to view info '''
     multiple_blank_lines()
-    blank_line()
     while True:
         white_string(
                     'Please enter a track name to view '
-                    'information about it\n'.center(80))
+                    'information about it\n'.center(80)
+                    )
+        white_string(
+                    'For example, you could type '
+                    '"silverstone"\n'.center(80)
+                    )
         white_string(
                     'We recommend you type the below command '
                     'to see what you can enter\n'.center(80)
