@@ -1,4 +1,4 @@
-''' Main file to run the F1 quiz '''
+''' Main file to run the F1 app '''
 
 
 from datetime import datetime

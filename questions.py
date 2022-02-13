@@ -1,3 +1,6 @@
+""" File to store the questions for the quiz """
+
+
 class Question:
     """
     Questions instance, gets the question
