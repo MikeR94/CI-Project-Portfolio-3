@@ -862,11 +862,11 @@ blank_line()
 while True:
     white_string('Please enter your name below:\n'.center(80))
     name = input(''.center(35))
-    if len(name) > 7 or name.isspace() or name == '':
+    if len(name) > 14 or name.isspace() or name == '':
         blank_line()
         yellow_string(
                      'Please enter a name that is '
-                     '7 characters or less'.center(80)
+                     '14 characters or less'.center(80)
                      )
     else:
         break
