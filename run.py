@@ -411,17 +411,17 @@ def start_quiz(selected_difficulty):
                 f'Great stuff {name}, you have '
                 f'managed to answer all the questions!\n')
     white_string(
-                f'You chose {difficulty_selected} difficulty and scored {score} '
-                f'points, answering {correct} correct and {incorrect} '
-                f'incorrect\n'
+                f'You chose {difficulty_selected} difficulty and scored '
+                f'{score} points, answering {correct} correct and '
+                f'{incorrect} incorrect\n'
                 )
     time.sleep(2)
     magenta_string('Please wait, adding your score to the leaderboard...\n')
     leaderboard.append_row(values=[name, score, correct,
                            incorrect, difficulty_selected,
                            date])
-    leaderboard.sort((2, 'des'))
     time.sleep(2)
+    leaderboard.sort((2, 'des'))
     green_string('Leaderboard updated successfully!\n')
     quick_menu()
 
@@ -582,6 +582,8 @@ def select_difficulty():
 
 def show_leaderboards():
     ''' Shows the leaderboards to the user '''
+    leaderboard = SHEET.worksheet('leaderboard')
+    leaderboard.sort((2, 'des'))
     data = leaderboard.get_all_values()
     print(tabulate(data[0:9], tablefmt='fancy_grid'))
     quick_menu()
