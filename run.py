@@ -673,13 +673,13 @@ def show_quiz_rules():
     white_string(
                 'You will have 10 questions to answer and '
                 'there is no time limit, so you can'
-                ' take your time on each question\n'
                 )
+    white_string('take your time on each question\n')
     white_string(
                 'The questions are all general knowledge '
                 'based and the answers are in the form'
-                ' of multiple choice\n'
                 )
+    white_string('of multiple choice\n')
     white_string(
                 'Upon completion, your score will be '
                 'automatically uploaded to the hiscores\n'
