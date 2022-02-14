@@ -396,13 +396,13 @@ def start_quiz(selected_difficulty):
             correct += 1
             if selected_difficulty == easy_question_list:
                 difficulty_selected = 'Easy'
-                score += 5
+                score += 10
             elif selected_difficulty == medium_question_list:
                 difficulty_selected = 'Medium'
-                score += 10
+                score += 20
             elif selected_difficulty == hard_question_list:
                 difficulty_selected = 'Hard'
-                score += 20
+                score += 40
         else:
             incorrect += 1
             red_string('Incorrect answer\n')
