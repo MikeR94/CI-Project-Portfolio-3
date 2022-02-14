@@ -145,38 +145,141 @@ easy_question_list = [
 ]
 
 medium_questions = [
-     "Medium F1 Question 1\n \
-     (A) Medium answer 1\n \
-     (B) Medium answer 2\n \
-     (C) Medium answer 3\n",
+     "\u001b[36;1mWhat is the nickname of Ferrari?\u001b[0m\n \
+     (A) The Prancing Horse\n \
+     (B) The Dancing Horse\n \
+     (C) The Laughing Horse\n",
 
-     "Medium F1 Question 2\n \
-     (A) Medium answer 1\n \
-     (B) Medium answer 2\n \
-     (C) Medium answer 3\n",
+     "\u001b[36;1mWhich driver won the first ever F1 world "
+     "championship title?\u001b[0m\n \
+     (A) Niki Lauda\n \
+     (B) Giuseppe Farina\n \
+     (C) Michael Schumacher\n",
 
-     "Medium F1 Question 3\n \
-     (A) Medium answer 1\n \
-     (B) Medium answer 2\n \
-     (C) Medium answer 3\n",
+     "\u001b[36;1mWho is the only woman to get points in an "
+     "F1 World Championship race?\u001b[0m\n \
+     (A) Divina Galica\n \
+     (B) Desire Wilson\n \
+     (C) Lella Lombardi\n",
 
-     "Medium F1 Question 4\n \
-     (A) Medium answer 1\n \
-     (B) Medium answer 2\n \
-     (C) Medium answer 3\n",
+     "\u001b[36;1mIf a few drivers set identical lap times, "
+     "then who would get the priority?\u001b[0m\n \
+     (A) The driver who set first\n \
+     (B) The driver who set last\n \
+     (C) None of them\n",
 
-     "Medium F1 Question 5\n \
-     (A) Medium answer 1\n \
-     (B) Medium answer 2\n \
-     (C) Medium answer 3\n",
+     "\u001b[36;1mHow old was Ayrton Senna when he died?\u001b[0m\n \
+     (A) 37 years\n \
+     (B) 34 years\n \
+     (C) 30 years\n",
+
+     "\u001b[36;1mWhich movie was made about Niki Lauda's "
+     "racing career?\u001b[0m\n \
+     (A) Blast\n \
+     (B) Race\n \
+     (C) Rush\n",
+
+     "\u001b[36;1mJenson Button won the 2009 Formula One "
+     "World Championship driving for which team?\u001b[0m\n \
+     (A) Brawn GP\n \
+     (B) McLaren\n \
+     (C) Renault\n",
+
+     "\u001b[36;1mWho was the first ever British Formula "
+     "One World Champion?\u001b[0m\n \
+     (A) Lewis Hamilton\n \
+     (B) Mike Hawthorne\n \
+     (C) Niki Lauda\n",
+
+     "\u001b[36;1mSebastian Vettel won the championship in "
+     "2010, 2011, 2012 and 2013, with which racing team?\u001b[0m\n \
+     (A) Ferrari\n \
+     (B) McLaren\n \
+     (C) Red Bull\n",
+
+     "\u001b[36;1mWhich car team were Constructors' Champions "
+     "in 2017?\u001b[0m\n \
+     (A) Mercedes\n \
+     (B) McLaren\n \
+     (C) Haas\n",
+
+     "\u001b[36;1mIn which year was the World Drivers' Championship "
+     "first awarded?\u001b[0m\n \
+     (A) 1960\n \
+     (B) 1950\n \
+     (C) 1940\n",
+
+     "\u001b[36;1mIn which year did Lewis Hamilton win his first "
+     "World Championship?\u001b[0m\n \
+     (A) 2005\n \
+     (B) 2010\n \
+     (C) 2008\n",
+
+     "\u001b[36;1mWhat was the previous name of Alpha Tauri?\u001b[0m\n \
+     (A) Toro Rosso\n \
+     (B) Toro Bosso\n \
+     (C) Toro Losso\n",
+
+     "\u001b[36;1mWho is the only driver to beat both Hamilton "
+     "and Schumacher as a team-mate?\u001b[0m\n \
+     (A) Jenson Button\n \
+     (B) Nico Rosberg\n \
+     (C) Valtteri Bottas\n",
+
+     "\u001b[36;1mWho was the first Mexican driver to get a "
+     "podium in Mexico?\u001b[0m\n \
+     (A) Pedro Rodríguez\n \
+     (B) Moisés Solana\n \
+     (C) Sergio Perez\n",
+
+     "\u001b[36;1mWhich circuit saw the first F1 Sprint Race trial?\u001b[0m\n \
+     (A) Silverstone\n \
+     (B) Sochi\n \
+     (C) Monza\n",
+
+     "\u001b[36;1mWhich circuit did Pierre Gasly take his first win at?\u001b[0m\n \
+     (A) Spa\n \
+     (B) Monza\n \
+     (C) Jeddah\n",
+
+     "\u001b[36;1mHow many World Championships did Ayrton Senna win?\u001b[0m\n \
+     (A) 1\n \
+     (B) 2\n \
+     (C) 3\n",
+
+     "\u001b[36;1mAt which track did Daniel Ricciardo win his first "
+     "race for McLaren?\u001b[0m\n \
+     (A) Monza\n \
+     (B) Paul Ricard\n \
+     (C) Baku\n",
+
+     "\u001b[36;1mWhen was the halo first used in F1?\u001b[0m\n \
+     (A) 2015\n \
+     (B) 2018\n \
+     (C) 2020\n",
 ]
 
 medium_question_list = [
     Question(medium_questions[0], "A"),
-    Question(medium_questions[1], "A"),
-    Question(medium_questions[2], "A"),
+    Question(medium_questions[1], "B"),
+    Question(medium_questions[2], "C"),
     Question(medium_questions[3], "A"),
-    Question(medium_questions[4], "A"),
+    Question(medium_questions[4], "B"),
+    Question(medium_questions[5], "C"),
+    Question(medium_questions[6], "A"),
+    Question(medium_questions[7], "B"),
+    Question(medium_questions[8], "C"),
+    Question(medium_questions[9], "A"),
+    Question(medium_questions[10], "B"),
+    Question(medium_questions[11], "C"),
+    Question(medium_questions[12], "A"),
+    Question(medium_questions[13], "B"),
+    Question(medium_questions[14], "C"),
+    Question(medium_questions[15], "A"),
+    Question(medium_questions[16], "B"),
+    Question(medium_questions[17], "C"),
+    Question(medium_questions[18], "A"),
+    Question(medium_questions[19], "B"),
 ]
 
 hard_questions = [
