@@ -283,36 +283,143 @@ medium_question_list = [
 ]
 
 hard_questions = [
-     "Hard F1 Question 1\n \
-     (A) Hard answer 1\n \
-     (B) Hard answer 2\n \
-     (C) Hard answer 3\n",
+     "\u001b[36;1mThe title “Grand Prix” was first used for "
+     "a motor race in which country?\u001b[0m\n \
+     (A) France\n \
+     (B) Britian\n \
+     (C) Spain\n",
 
-     "Hard F1 Question 2\n \
-     (A) Hard answer 1\n \
-     (B) Hard answer 2\n \
-     (C) Hard answer 3\n",
+     "\u001b[36;1mJuan Manuel Fangio, one of the greatest F1 "
+     "drivers, took his last world championship title in which year?\u001b[0m\n \
+     (A) 1952\n \
+     (B) 1957\n \
+     (C) 1962\n",
 
-     "Hard F1 Question 3\n \
-     (A) Hard answer 1\n \
-     (B) Hard answer 2\n \
-     (C) Hard answer 3\n",
+     "\u001b[36;1mFord provided engines to F1 for many years before forming "
+     "its own team in 2000 under the name of which subsidiary marques?\u001b[0m\n \
+     (A) McLaren\n \
+     (B) Brawn GP\n \
+     (C) Jaguar\n",
 
-     "Hard F1 Question 4\n \
-     (A) Hard answer 1\n \
-     (B) Hard answer 2\n \
-     (C) Hard answer 3\n",
+     "\u001b[36;1mFor what country did Emerson Fittipaldi and "
+     "Wilson Fittipaldi compete and win two world titles?\u001b[0m\n \
+     (A) Brazil\n \
+     (B) Columbia\n \
+     (C) Mexico\n",
 
-     "Hard F1 Question 5\n \
-     (A) Hard answer 1\n \
-     (B) Hard answer 2\n \
-     (C) Hard answer 3\n",
+     "\u001b[36;1mWhich circuit held the first race of the French Grand Prix "
+     "in 1950?\u001b[0m\n \
+     (A) Paul Ricard\n \
+     (B) Reims\n \
+     (C) Le Mans\n",
+
+     "\u001b[36;1mWhich major car manufacturer was successful at "
+     "supplying engines for McLaren between 1988 and 1992, but "
+     "failed when the two renewed their cooperation in 2015?\u001b[0m\n \
+     (A) Ford\n \
+     (B) Mercedes\n \
+     (C) Honda\n",
+
+     "\u001b[36;1mThe Hungarian Grand Prix became a part of the F1 world "
+     "championship during which decade?\u001b[0m\n \
+     (A) 1980s\n \
+     (B) 1970s\n \
+     (C) 1960s\n",
+
+     "\u001b[36;1mHSBC was the title sponsor for which F1 team from 1997 "
+     "to 1999?\u001b[0m\n \
+     (A) Brawn GP\n \
+     (B) Stewart\n \
+     (C) Williams\n",
+
+     "\u001b[36;1mHow many Grand Prix's did the Jordan F1 team win between "
+     "1995 and 2005?\u001b[0m\n \
+     (A) 2\n \
+     (B) 1\n \
+     (C) 4\n",
+
+     "\u001b[36;1mWhich team won the first World Constructors' "
+     "Championship?\u001b[0m\n \
+     (A) Vanwall\n \
+     (B) Vauxhall\n \
+     (C) Volvo\n",
+
+     "\u001b[36;1mWhich circuit hosted the first World "
+     "Championship race?\u001b[0m\n \
+     (A) Imola\n \
+     (B) Silverstone\n \
+     (C) Yas Marina\n",
+
+     "\u001b[36;1mWhich race in 2005 saw just 6 cars start?\u001b[0m\n \
+     (A) French Grand Prix\n \
+     (B) Mexican Grand Prix\n \
+     (C) United States Grand Prix\n",
+
+     "\u001b[36;1mWho won the 2008 Canadian Grand Prix?\u001b[0m\n \
+     (A) Robert Kubica\n \
+     (B) Lewis Hamilton\n \
+     (C) Nico Rosberg\n",
+
+     "\u001b[36;1mIn which country did Lewis Hamilton take "
+     "his first win?\u001b[0m\n \
+     (A) Great Britain\n \
+     (B) Canada\n \
+     (C) Spain\n",
+
+     "\u001b[36;1mIn which country did Max Verstappen take "
+     "his first win?\u001b[0m\n \
+     (A) France\n \
+     (B) Netherlands\n \
+     (C) Spain\n",
+
+     "\u001b[36;1mWhat was the previous name of the Red Bull team?\u001b[0m\n \
+     (A) Jaguar\n \
+     (B) Ford\n \
+     (C) Vauxhall\n",
+
+     "\u001b[36;1mAt which circuit did three drivers set identical pole "
+     "position times in 1997?\u001b[0m\n \
+     (A) Silverstone\n \
+     (B) Jerez\n \
+     (C) Imola\n",
+
+     "\u001b[36;1mWhat team did Fernando Alonso win his first 2 "
+     "championships with?\u001b[0m\n \
+     (A) McLaren\n \
+     (B) Ferrari\n \
+     (C) Renault\n",
+
+     "\u001b[36;1mWhat country is Juan Pablo Montoya from?\u001b[0m\n \
+     (A) Colombia\n \
+     (B) Mexico\n \
+     (C) Argentina\n",
+
+     "\u001b[36;1mWho was the first Finnish F1 World Champion?\u001b[0m\n \
+     (A) Valtteri Bottas\n \
+     (B) Keke Rosberg\n \
+     (C) Kimi Räikkönen\n",
+
 ]
 
 hard_question_list = [
     Question(hard_questions[0], "A"),
-    Question(hard_questions[1], "A"),
-    Question(hard_questions[2], "A"),
+    Question(hard_questions[1], "B"),
+    Question(hard_questions[2], "C"),
     Question(hard_questions[3], "A"),
-    Question(hard_questions[4], "A"),
+    Question(hard_questions[4], "B"),
+    Question(hard_questions[5], "C"),
+    Question(hard_questions[6], "A"),
+    Question(hard_questions[7], "B"),
+    Question(hard_questions[8], "C"),
+    Question(hard_questions[9], "A"),
+    Question(hard_questions[10], "B"),
+    Question(hard_questions[11], "C"),
+    Question(hard_questions[12], "A"),
+    Question(hard_questions[13], "B"),
+    Question(hard_questions[14], "C"),
+    Question(hard_questions[15], "A"),
+    Question(hard_questions[16], "B"),
+    Question(hard_questions[17], "C"),
+    Question(hard_questions[18], "A"),
+    Question(hard_questions[19], "B"),
 ]
