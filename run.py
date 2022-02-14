@@ -672,12 +672,12 @@ def show_quiz_rules():
                 )
     white_string(
                 'You will have 10 questions to answer and '
-                'there is no time limit, so you can '
+                'there is no time limit, so you can'
                 'take your time on each question\n'
                 )
     white_string(
                 'The questions are all general knowledge '
-                'based and the answers are in the form '
+                'based and the answers are in the form'
                 'of multiple choice\n'
                 )
     white_string(
