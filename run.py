@@ -654,7 +654,35 @@ def exit_app():
 
 def show_quiz_rules():
     ''' Displays the quiz rules to the user '''
-    white_string('Currently under construction\n')
+    white_string(
+                'The quiz has 3 different difficulty '
+                'levels to choose from\n'
+                )
+    white_string(
+                'Selecting Easy will result in 10 points '
+                'per correct question\n'
+                )
+    white_string(
+                'Selecting Medium will result in 20 points '
+                'per correct question\n'
+                )
+    white_string(
+                'Selecting Hard will result in 40 points '
+                'per correct question\n'
+                )
+    white_string(
+                'There is no time limit, so you can '
+                'take your time on each question\n'
+                )
+    white_string(
+                'The questions are all general knowledge '
+                'questions and the answers are in the form '
+                'of multiple choice\n'
+                )
+    white_string(
+                'Upon completion, your score will be '
+                'automatically uploaded to the hiscores\n'
+                )
     quick_menu()
 
 
