@@ -411,9 +411,9 @@ def start_quiz(selected_difficulty):
                 f'Great stuff {name}, you have '
                 f'managed to answer all the questions!\n')
     white_string(
-                f'You scored {score} points, answering'
-                f' {correct} correct and {incorrect}'
-                f' incorrect\n'
+                f'You chose {difficulty_selected} difficulty and scored {score} '
+                f'points, answering {correct} correct and {incorrect} '
+                f'incorrect\n'
                 )
     time.sleep(2)
     magenta_string('Please wait, adding your score to the leaderboard...\n')
