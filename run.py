@@ -379,7 +379,7 @@ def start_quiz(selected_difficulty):
     score = 0
     correct = 0
     incorrect = 0
-    questions = random.sample(selected_difficulty, 5)
+    questions = random.sample(selected_difficulty, 10)
     for question in questions:
         while True:
             user_answer = input(question.question).upper()
