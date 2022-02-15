@@ -555,7 +555,8 @@ def select_difficulty():
     red_string('Please select a difficulty\n'.center(80))
     white_string('A) Easy'.center(80))
     white_string('B) Medium'.center(80))
-    white_string('C) Hard\n'.center(80))
+    white_string('C) Hard'.center(80))
+    white_string('D) Return to Quiz Hub\n'.center(80))
     user_input = input(''.center(38)).upper()
     blank_line()
     if user_input == ('A'):
@@ -573,8 +574,13 @@ def select_difficulty():
         time.sleep(2)
         clear_terminal()
         start_quiz(hard_question_list)
+    elif user_input == ('D'):
+        magenta_string('Returning back to Quiz Hub...'.center(80))
+        time.sleep(2)
+        clear_terminal()
+        quiz_hub()
     else:
-        magenta_string('Please enter either A, B or C'.center(80))
+        magenta_string('Please enter either A, B, C or D'.center(80))
         time.sleep(2)
         clear_terminal()
         select_difficulty()
