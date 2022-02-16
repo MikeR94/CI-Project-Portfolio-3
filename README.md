@@ -1,31 +1,64 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **_The Formula 1 Hub - Project Portfolio 3 - Python_**
 
-Welcome USER_NAME,
+The Formula 1 Hub is a command line interface styled application that allows players to test their knowledge on Formula 1. The quiz consists of 3 different levels to choose from, granting more points for harder difficulties. The quiz has 10 questions for each difficulty and if the player answers all questions, they will receive points based on the difficulty selected. Additionally the Formula 1 Hub will allow players to view additional information regarding the upcoming Formula 1 2022 Season such as the current drivers, the 2022 calendar and some interesting Formula 1 facts.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+You can view the live site here - <a href="https://mr-project-portfolio-3.herokuapp.com/" target="_blank" rel="noopener">The F1 Hub</a>
 
-## Reminders
+![The Astronomy Quiz responsive design](assets/images/readme-images/preview-image.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# Contents
 
-## Creating the Heroku app
+* [**Objective**](<#objective>)
+* [**User Experience UX**](<#user-experience-ux>)
+    * [Design Prototype](<#design-prototype>)
+    * [Site Structure](<#site-structure>)
+    * [Design Choices](<#design-choices>)
+    *  [Typography](<#typography>)
+    *  [Colour Scheme](<#colour-scheme>)
+* [**Features**](<#features>)
+    * [Startup Display](<#startup-display>)
+    * [Main Menu](<#main-menu>)
+    * [Quiz Hub Menu](<#quiz-hub-menu>)
+    * [Quiz](<#quiz>)
+    * [Quiz Leaderboards](<#quiz-leaderboards>)
+    * [Quiz Statistics](<#quiz-statistics>)
+    * [Quiz Rules](<#quiz-rules>)
+    * [F1 Info Hub Menu](<#f1-info-hub-menu>)
+    * [View F1 Fact](<#view-f1-fact>)
+    * [Select A Track](<#select-a-track>)
+    * [F1 2022 Calendar](<#f1-2022-calendar>)
+    * [F1 2022 Drivers](<#f1-2022-drivers>)
+    * [Submit Feedback](<#submit-feedback>)
+    * [Exit App](<#exit-app>)
+* [**Future Features**](<#future-features>)
+    * [Latest News](<#latest-news>)
+    * [Polls](<#polls>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Testing**](<#testing>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Media**](<#media>)
+    * [**Code**](<#code>)
+*  [**Acknowledgments**](<#acknowledgements>)
+*  [**Personal Development**](<#personal-development>)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Objective
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+In my third project, I intend to create a visually appealing command line interface application where players can test their knowledge on Formula 1 and also provide some insightful, interesting and useful information regarding the upcoming 2022 season. The main objective is to demonstrate competency in Python whilst adhering to high presentation standards.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+[Back to top](<#contents>)
 
-Connect your GitHub repository and deploy as normal.
+# User Experience (UX)
 
-## Constraints
+## Design Prototype
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+The very first design prototype was created using [Balsamiq](https://balsamiq.com/). I only designed the very bare minimum using this program so that I could have a basic idea of what I wanted to achieve. Additionally because this is a command line interface application, there is only a small amount of room to come up with ideas on how to present it so I decided that I wanted the command line interface to be housed within a computer screen to give it a more presentable look and then I would add a Formula 1 styled background to enhance the visual appearance.<br /><br />
 
------
-Happy coding!
+
+![Balsamiq Start Prototype](assets/images/readme-images/balsamiq-prototype.png)
+
+
+[Back to top](<#contents>)
+
