@@ -264,3 +264,32 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 * ### Polls
 
     * Explain feature here
+
+# Technologies Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - Provides the functionality of the website.
+* [a11y](https://color.a11y.com/Contrast/) - Used to test the contrast and accessibility.
+* [Favicon](https://favicon.io/) - Used to create the favicon.
+* [Compressor](https://compressor.io/) - Used to compress the images.
+* [VSCode](https://code.visualstudio.com/) - Used to create and edit the website.
+* [GitHub](https://github.com/) - Used to host and deploy the website.
+* [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) - Terminal used to push changes to the GitHub repository.
+* [removebg](https://www.remove.bg/) - Used to remove background images.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug.
+* [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used to test responsiveness.
+* [Balsamiq](https://balsamiq.com/) - Used to create the wire-frame.
+* [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) - Used to create the logic flow chart.
+* [Trello](https://trello.com/en-GB) - Used as a project management tool to organise my work flow.
+* [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
+* [GSpread](https://pypi.org/project/gspread/) - Used to transfer data between google sheets.
+* [Colorama](https://pypi.org/project/colorama/) - Used to add colours to the terminal.
+* [Random](https://docs.python.org/3/library/random.html) - Used to implement pseudo-random number generators.
+* [Datetime](https://docs.python.org/3/library/datetime.html) - Used to manipulate dates and times.
+* [OS](https://docs.python.org/3/library/os.html) - Used to provide a way of using operating system dependent functionality.
+* [Time](https://docs.python.org/3/library/time.html) - Used to provide various time-related functions.
+* [Sys](https://docs.python.org/3/library/sys.html) - Used to provide access to some variables used or maintained by the interpreter.
+* [Tabulate](https://pypi.org/project/tabulate/) - Used to print data in a nice table format.
+
+
+[Back to top](<#contents>)
