@@ -291,5 +291,32 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 * [Sys](https://docs.python.org/3/library/sys.html) - Used to provide access to some variables used or maintained by the interpreter.
 * [Tabulate](https://pypi.org/project/tabulate/) - Used to print data in a nice table format.
 
-
 [Back to top](<#contents>)
+
+# Testing
+
+* ## Code Validation
+
+    * The Formula 1 Hub code has been validated by using online validation tools [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [PEP8 Online Validator](http://pep8online.com/). I encountered many PEP8 errors and warnings however these have now been fixed and documented below. <br /><br />
+
+    * As the JavaScript for this project has been provided by [Code Institute](https://codeinstitute.net/) and I have not altered it in any way, I have been advised by my mentor that it is not a requirement to test it.
+
+* ### HTML Validation Image
+
+    ![HTML Validation](assets/images/readme-images/html-validation-image.png)
+
+* ### CSS Validation Image
+
+    ![CSS Validation](assets/images/readme-images/css-validation-image.png)
+
+* ### PEP8 Validation Image (run.py)
+
+    ![PEP8 Validation (run.py)](assets/images/readme-images/pep8-run-image.png)
+
+* ### PEP8 Validation Image (print.py)
+
+    ![PEP8 Validation (print.py)](assets/images/readme-images/pep8-print-image.png)
+
+* ### PEP8 Validation Image (questions.py)
+
+    ![PEP8 Validation (questions.py)](assets/images/readme-images/pep8-questions-image.png)
