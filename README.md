@@ -94,11 +94,6 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 ![Startup Display Image](assets/images/readme-images/startup-display-image.png)
 </details><br />
 
-<details><summary><b>Responsive Home/Landing Page Image</b></summary>
-
-![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
-</details><br />
-
 [Back to top](<#contents>)
 
   * ### Navigation Bar
