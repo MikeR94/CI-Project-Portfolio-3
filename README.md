@@ -371,3 +371,35 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
       * Main Menu
         * Verify step here
         <br /><br />
+
+* ## Browser Compatibility
+    * The website has had manual and responsive tests conducted on the below browsers with additional Lighthouse testing on Google Chrome and Microsoft Edge and I was presented with no issues.
+        * Google Chrome
+        * Microsoft Edge
+        * Safari
+        <br /><br />
+
+* ## Bugs Fixed 
+
+    ### Bug Fixed 1
+        
+    * Insert bug here <br /><br />
+
+    <details><summary><b>Bug Fixed 1</b></summary>
+
+    ![Bug Fixed 1](assets/videos/screen-error-flicker.gif)
+    </details><br />
+
+    * Insert explanation here <br /><br />
+
+
+* ## Bugs Unresolved
+
+    ### Bug unresolved 1
+    
+    * Insert bug here <br /><br />
+
+    ![Bug unresolved 1](assets/images/readme-images/navigator-agent-issue.png)
+    
+    * Insert explanation here <br /><br />
+
