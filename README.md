@@ -460,3 +460,13 @@ The live link to the Github repository can be found here - https://github.com/Mi
 * Insert code here
 
 [Back to top](<#contents>)
+
+# Acknowledgments
+The site was completed as a part of a Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/) and is my Portfolio Project 3. I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), my educator [Luke Walters](https://www.linkedin.com/in/luke-walters-leatherbarrow-531107101/), and my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/), the Slack community, and all at the Code Institute for their help and support.
+
+# Personal Development
+Insert text here
+
+Mike Ralph 2022.
+
+[Back to top](<#contents>)
