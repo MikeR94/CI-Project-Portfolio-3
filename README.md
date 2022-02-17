@@ -379,6 +379,8 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
         * Safari
         <br /><br />
 
+[Back to top](<#contents>)
+
 * ## Bugs Fixed 
 
     ### Bug Fixed 1
@@ -402,6 +404,8 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
     ![Bug unresolved 1](assets/images/readme-images/navigator-agent-issue.png)
     
     * Insert explanation here <br /><br />
+
+[Back to top](<#contents>)
 
 # Deployment
 
@@ -441,3 +445,18 @@ The method from cloning a project from GitHub is below:
 
 The live link to the Github repository can be found here - https://github.com/MikeR94/CI-Project-Portfolio-3
 
+[Back to top](<#contents>)
+
+# Credits
+### Content
+
+* The responsive preview image at the top of the README.md came from [Techsini](https://techsini.com/multi-mockup/index.php)
+* The favicon came from [Favicon](https://favicon.io/)
+
+### Media
+* The photos were compressed using [Compressor](https://compressor.io/)
+
+### Code
+* Insert code here
+
+[Back to top](<#contents>)
