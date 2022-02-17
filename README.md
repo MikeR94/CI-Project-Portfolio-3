@@ -78,7 +78,7 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 
 Insert Data Model text here
 
-![Python Logic Chart](assets/images/readme-images/f1-hub-logic-flow.png)
+![Python Logic Chart](assets/images/readme-images/data-model-image.png)
 
 ## Design Choices
 
