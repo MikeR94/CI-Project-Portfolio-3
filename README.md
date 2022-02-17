@@ -348,6 +348,16 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
     ![Chrome Mobile Lighthouse](assets/images/readme-images/chrome-mobile-lighthouse-image.png)
 
 * ## Accessibility Testing
-    * I also put the website through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues.  <br /><br />
+    * I also put the website through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues. <br /><br />
 
     ![a11y Test](assets/images/readme-images/a11y-contrast-test-image.png)
+
+* ## Responsiveness Testing
+    * Although this project is not required to be fully responsive, I still conducted responsive tests manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).<br /><br />
+
+    ![Responsive Test Sheet](assets/images/readme-images/responsive-design-checker-image.png)
+
+* ## Compressing Images
+    * All images that are displayed within the website have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of XXX KB.<br /><br />
+
+    ![Compressed Image 1](assets/images/readme-images/compressed-1.png)
