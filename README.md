@@ -403,3 +403,41 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
     
     * Insert explanation here <br /><br />
 
+# Deployment
+
+### **To deploy the project**
+The site was deployed to Heroku. The steps to deploy a site are as follows:
+  1. Insert deployment steps here
+
+<details><summary><b>Git Deploy Preview Image</b></summary>
+
+![Git Deploy Image](assets/images/readme-images/git-deploy-image.png)
+</details><hr>
+
+### **To fork the repository on GitHub**
+A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
+1. Log in to **GitHub** and locate the [repository](https://github.com/MikeR94/CI-Project-Portfolio-3).
+2. On the right-hand side of the page inline with the repository name is a button called **'Fork'**, click on the button to create a copy of the original repository in your GitHub Account.
+
+<details><summary><b>Git Fork Preview Image</b></summary>
+
+![Git Fork Image](assets/images/readme-images/git-fork-image.png)
+</details><hr>
+
+### **To create a local clone of this project**
+The method from cloning a project from GitHub is below:
+
+1. Under the repository’s name, click on the **code** tab.
+2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
+3. In your IDE of choice, open **Git Bash**.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type **git clone**, and then paste the URL copied from GitHub.
+6. Press **enter** and the local clone will be created.
+
+<details><summary><b>Git Clone Preview Image</b></summary>
+
+![Git Clone Image](assets/images/readme-images/git-clone-image.png)
+</details><hr>
+
+The live link to the Github repository can be found here - https://github.com/MikeR94/CI-Project-Portfolio-3
+
