@@ -254,3 +254,13 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 </details><br />
 
 [Back to top](<#contents>)
+
+* ## Future Features 
+
+* ### Latest News
+
+    * Explain feature here
+
+* ### Polls
+
+    * Explain feature here
