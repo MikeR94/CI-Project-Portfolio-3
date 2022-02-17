@@ -103,12 +103,12 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 
 <details><summary><b>Desktop Navigation Bar Image</b></summary>
 
-![Navigation Bar Desktop Image](assets/images/readme-images/desktop-nav-bar-image.png)
+![Navigation Bar Desktop Image](assets/images/readme-images/play-quiz-image.png)
 </details><br />
 
 <details><summary><b>Desktop Navigation Bar Image (Contact Page)</b></summary>
 
-![Navigation Bar Desktop Contact Image](assets/images/readme-images/desktop-nav-bar-contact-image.png)
+![Navigation Bar Desktop Contact Image](assets/images/readme-images/play-quiz-image-2.png)
 </details><br />
 
 <details><summary><b>Desktop Navigation Bar Image (During Quiz)</b></summary>
