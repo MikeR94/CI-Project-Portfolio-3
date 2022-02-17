@@ -320,3 +320,34 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 * ### PEP8 Validation Image (questions.py)
 
     ![PEP8 Validation (questions.py)](assets/images/readme-images/pep8-questions-image.png)
+
+* ## Lighthouse Testing 
+
+    * Furthermore the website has been through the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) and [Microsoft Edge Dev Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/open/?tabs=cmd-Windows) Lighthouse Testing which tests the website for the following:
+        * Performance - How the page performs whilst loading.
+        * Accessibility - Is the site accessible for all players and how can it be improved.
+        * Best Practices - Site conforms to industry best practices.
+        * SEO - Search Engine Optimisation. Is the site optimised for search engine result rankings.
+
+    * The lighthouse tests were conducted in incognito/private windows due to extensions interfering with the results.<br /><br />
+
+* ### Edge Desktop Lighthouse Result
+
+    ![Edge Desktop Lighthouse](assets/images/readme-images/edge-desktop-lighthouse-image.png)
+
+* ### Edge Mobile Lighthouse Result
+
+    ![Edge Mobile Lighthouse](assets/images/readme-images/edge-mobile-lighthouse-image.png)
+
+* ### Chrome Desktop Lighthouse Result
+
+    ![Chrome Desktop Lighthouse](assets/images/readme-images/chrome-desktop-lighthouse-image.png)
+
+* ### Chrome Mobile Lighthouse Result
+
+    ![Chrome Mobile Lighthouse](assets/images/readme-images/chrome-mobile-lighthouse-image.png)
+
+* ## Accessibility Testing
+    * I also put the website through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues.  <br /><br />
+
+    ![a11y Test](assets/images/readme-images/a11y-contrast-test-image.png)
