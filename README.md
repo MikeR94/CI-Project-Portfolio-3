@@ -361,3 +361,13 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
     * All images that are displayed within the website have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of XXX KB.<br /><br />
 
     ![Compressed Image 1](assets/images/readme-images/compressed-1.png)
+
+* ## Manual Testing
+    * In addition to the other tests, I have conducted a manual check list for myself to carry out to make sure that everything is working as intended.
+
+   * ### Manual Tests Conducted
+      * Startup Display
+        * Verify step here
+      * Main Menu
+        * Verify step here
+        <br /><br />
