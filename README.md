@@ -4,7 +4,7 @@ The Formula 1 Hub is a command line interface styled application that allows pla
 
 You can view the live site here - <a href="https://mr-project-portfolio-3.herokuapp.com/" target="_blank" rel="noopener">The F1 Hub</a>
 
-![The Astronomy Quiz responsive design](assets/images/readme-images/preview-image.png)
+![The F1 Hub responsive design](assets/images/readme-images/preview-image.png)
 
 # Contents
 
@@ -12,6 +12,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
 * [**User Experience UX**](<#user-experience-ux>)
     * [Design Prototype](<#design-prototype>)
     * [Site Structure](<#site-structure>)
+    * [Python Logic](<#python-logic>)
     * [Design Choices](<#design-choices>)
     *  [Typography](<#typography>)
     *  [Colour Scheme](<#colour-scheme>)
@@ -65,6 +66,12 @@ The very first design prototype was created using [Balsamiq](https://balsamiq.co
 ## Site Structure
 
 The Formula 1 Hub is a one-page website that, in the center, has a command line interface. When the application starts up, the player will be greeted with a nicely styled initial startup screen and then asked to enter a username. The application is designed with the user experience in mind so at every stage, the user will be asked if they wish to return to either the Quiz Hub Menu, F1 Info Hub Menu or the Main Menu. The application also has a 'RUN APP' button located at the bottom of the screen which the user can press and reload the application if they wish to do so.
+
+## Python Logic
+
+I decided to create a logic flow chart to detail the entire flow of the application. Creating this gave me a brilliant overview of how everything works and how the user will navigate the application. The logic flow chart was created using an excellent [VSCode](https://code.visualstudio.com/) extension called [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
+
+![Python Logic Chart](assets/images/readme-images/f1-hub-logic-flow.png)
 
 ## Design Choices
 
