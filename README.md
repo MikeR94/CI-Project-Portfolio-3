@@ -80,3 +80,50 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 
  * ### Colour Scheme
       The application utilises a brilliant Python package called [Colorama](https://pypi.org/project/colorama/) which allows developers to change the colour of the text <br /><br />
+
+## Existing Features
+  * ### Startup Display
+
+      * This is the first part of the quiz the player will see when visiting and is designed to allow the player to immediately get started with playing the quiz.
+      * In the middle of the website the player will see the quiz application complimented by a beautiful space background.
+      * Within the quiz application, the player will be greeted and then asked to submit a name and then click next to be directed to select a difficulty.
+      * If the player inputs a name that doesn't meet validation, the player will be given feedback on how to fill the name input correctly.<br /><br />
+
+<details><summary><b>Desktop Home/Landing Page Image</b></summary>
+
+![Startup Display Image](assets/images/readme-images/startup-display-image.png)
+</details><br />
+
+<details><summary><b>Responsive Home/Landing Page Image</b></summary>
+
+![Responsive Home Image](assets/images/readme-images/responsive-home-page-image.png)
+</details><br />
+
+[Back to top](<#contents>)
+
+  * ### Navigation Bar
+
+    * Located at the top of the quiz application and provides the player the ability to navigate back to the home page, enter the menu and turn the game sounds on or off. Whilst the player is currently playing the quiz, the hamburger icon will disappear and will be replaced with additional features such as "Current Question Number", "Time Left" and "Score" to give the player more information and provide a better player experience.
+    * An additional GitHub icon will be visible on the contact page for players to see the repository in a new window.<br /><br />
+
+<details><summary><b>Desktop Navigation Bar Image</b></summary>
+
+![Navigation Bar Desktop Image](assets/images/readme-images/desktop-nav-bar-image.png)
+</details><br />
+
+<details><summary><b>Desktop Navigation Bar Image (Contact Page)</b></summary>
+
+![Navigation Bar Desktop Contact Image](assets/images/readme-images/desktop-nav-bar-contact-image.png)
+</details><br />
+
+<details><summary><b>Desktop Navigation Bar Image (During Quiz)</b></summary>
+
+![Navigation Bar Responsive Image](assets/images/readme-images/desktop-nav-bar-quiz-image.png)
+</details><br />
+
+<details><summary><b>Responsive Navigation Bar Image (During Quiz)</b></summary>
+
+![Navigation Bar Responsive Image](assets/images/readme-images/responsive-nav-bar-quiz-image.png)
+</details><br />
+
+[Back to top](<#contents>)
