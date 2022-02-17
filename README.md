@@ -13,6 +13,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
     * [Design Prototype](<#design-prototype>)
     * [Site Structure](<#site-structure>)
     * [Python Logic](<#python-logic>)
+    * [Data Model](<#data-model>)
     * [Design Choices](<#design-choices>)
     *  [Typography](<#typography>)
     *  [Colour Scheme](<#colour-scheme>)
@@ -70,6 +71,12 @@ The Formula 1 Hub is a one-page website that, in the center, has a command line 
 ## Python Logic
 
 I decided to create a logic flow chart to detail the entire flow of the application. Creating this gave me a brilliant overview of how everything works and how the user will navigate the application. The logic flow chart was created using an excellent [VSCode](https://code.visualstudio.com/) extension called [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
+
+![Python Logic Chart](assets/images/readme-images/f1-hub-logic-flow.png)
+
+## Data Model
+
+Insert Data Model text here
 
 ![Python Logic Chart](assets/images/readme-images/f1-hub-logic-flow.png)
 
