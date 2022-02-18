@@ -316,11 +316,11 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
 * ### Latest News
 
-    * Explain feature here
+    * An update to display the latest live Formula 1 2022 news would be very informative for the users and also increase user retention.
 
 * ### Polls
 
-    * Explain feature here
+    * Allowing users to participate in daily/weekly/monthly polls would increase user activity and also glean interesting data that could be used to understand what the majority feels about a certain subject.
 
 # Technologies Used
 * [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
