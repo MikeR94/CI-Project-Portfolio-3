@@ -21,6 +21,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
     * [Startup Display](<#startup-display>)
     * [Main Menu](<#main-menu>)
     * [Quiz Hub Menu](<#quiz-hub-menu>)
+    * [Select Difficulty](<#select-difficulty>)
     * [Quiz](<#quiz>)
     * [Quiz Leaderboards](<#quiz-leaderboards>)
     * [Quiz Statistics](<#quiz-statistics>)
@@ -99,8 +100,10 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 ## Existing Features
   * ### Startup Display
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This is the first display that the user will see when they first load the website.
+      * ASCI art has been created to display a visually appealing Formula 1 title to further reinforce the purpose of the application.
+      * The user is asked to enter their name which will be validated.
+      * An automatic countdown to the F1 2022 season is displayed to the user and will display "F1 2022 Season has started" in bold green text when the days left are less than or equal to 0.<br /><br />
 
 <details><summary><b>Startup Display Image</b></summary>
 
@@ -111,8 +114,9 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Main Menu
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This is the highest level of the application that the user will see when they have entered their name.
+      * It allows users to either go down the Quiz route or the F1 Info route.
+      * Alternatively they can submit feedback through this menu and also exit the application.<br /><br />
 
 <details><summary><b>Main Menu Image</b></summary>
 
@@ -123,8 +127,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Hub Menu
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This is the Quiz Hub Menu which hosts all options for the user to navigate regarding the quiz itself
+      * The user has the option to either Start the Quiz, View the Leaderboards, View the Quiz Statistics, View the Quiz rules or Return back to the main menu if they wish to do so.<br /><br />
 
 <details><summary><b>Quiz Hub Menu Image</b></summary>
 
@@ -133,10 +137,26 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
 [Back to top](<#contents>)
 
+  * ### Select Difficulty
+
+      * This is where the user can choose to select the difficulty level for the quiz.
+      * If the user wishes to return back to the Quiz Hub Menu, then they have that option so they aren't forced to start the quiz if they aren't yet ready to do so.<br /><br />
+
+<details><summary><b>Select Difficulty Image</b></summary>
+
+![Quiz Hub Menu Image](assets/images/readme-images/select-difficulty-image.png)
+</details><br />
+
+[Back to top](<#contents>)
+
   * ### Quiz
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This is the main interactive game that the user will be able to participate in.
+      * The user will be asked 10 random questions of their selected difficulty, earning points for correct answers relative to the difficulty selected.
+      * If the user answers correctly, a green "Correct answer!" will show
+      * If the user answers incorrectly, a red "Incorrect answer" will show
+      * If the user enters a wrong key, they will be informed and allowed to attempt the question again.
+      * Upon completion of the quiz, the users score will be submitted automatically to the leaderboard.<br /><br />
 
 <details><summary><b>Quiz Image</b></summary>
 
@@ -152,8 +172,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Leaderboards
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * Displays the top 8 scores in order of highest score to lowest. I chose to display 8 scores and not 10 to keep the presentation of the application neat and tidy.
+      * Provides additional information to the user such as the users name, their score, how many correct and incorrect answers they achieved, the difficulty they selected and also the date they conducted the quiz.<br /><br />
 
 <details><summary><b>Quiz Leaderboards Image</b></summary>
 
@@ -164,20 +184,24 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Statistics
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * Displays interesting statistical information regarding the quiz such as how many games have been played, how many overall points have been accumulated and also how many correct and incorrect answers have been given.
+      * I was very proud of implementing this feature so I have provided an image of the code that shows the inner workings of displaying the statistics to the user.<br /><br />
 
 <details><summary><b>Quiz Statistics Image</b></summary>
 
 ![Quiz Statistics Image](assets/images/readme-images/quiz-statistics-image.png)
 </details><br />
 
+<details><summary><b>Quiz Statistics Code Image</b></summary>
+
+![Quiz Statistics Code Image](assets/images/readme-images/statistics-code-image.png)
+</details><br />
+
 [Back to top](<#contents>)
 
   * ### Quiz Rules
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * A simple display explaining the basic rules when playing the quiz.<br /><br />
 
 <details><summary><b>Quiz Rules Image</b></summary>
 
@@ -188,8 +212,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### F1 Info Hub Menu
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This is the F1 Info Hub Menu which hosts all options for the user to navigate regarding the F1 Info Hub section.
+      * The user has the option to either View an F1 Fact, Select a Track, View the F1 2022 Calendar, View the F1 2022 Drivers or Return back to the main menu.<br /><br />
 
 <details><summary><b>F1 Info Hub Menu Image</b></summary>
 
@@ -200,8 +224,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### View F1 Fact
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * This feature will retrieve and display a random fact to the user.
+      * The user has the option to continuously load a new fact if they wish to do so.<br /><br />
 
 <details><summary><b>View F1 Fact Image</b></summary>
 
@@ -212,8 +236,11 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Select A Track
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * The initial display the user will see when they press B from the F1 Info Hub will be the first image below.
+      * If the user then types **view list** they will then be provided with a list of commands that they enter.
+      * If the user successfully types in a correct track name, the user will be provided information about that specific track.
+      * The information the user will be able to see will be **Name**, **Location**, **Length**, **Turns**, **Race Lap Record**, **Capacity**, **2021 Pole Position** and **2021 Race Winner**.
+      * This information is retrieved from the google sheets database and stores information about every track for the F1 2022 Season.<br /><br />
 
 <details><summary><b>Select A Track Image</b></summary>
 
@@ -234,8 +261,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### F1 2022 Calendar
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * A simple yet useful feature the user can use to retrieve the dates and locations of the F1 2022 Season Calendar.<br /><br />
 
 <details><summary><b>F1 2022 Calendar Image</b></summary>
 
@@ -246,8 +272,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### F1 2022 Drivers 
       
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * Displays all the F1 2022 Drivers in order of career points.
+      * The user will be able to see the following information about each driver. **Name**, **Current Team**, **Wins**, **Pole Positions** and **Career Points**<br /><br />
 
 <details><summary><b>F1 2022 Drivers Image</b></summary>
 
@@ -258,8 +284,9 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Submit Feedback
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * A feature for the user to submit any type of feedback they wish to.
+      * All feedback gets stored in the google sheets database and can be viewed by myself.
+      * A small thank you message is displayed to the user upon submitting their feedback and they will then be returned to the main menu.<br /><br />
 
 <details><summary><b>Submit Feedback Image</b></summary>
 
@@ -275,8 +302,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Exit App
 
-      * Explain feature here
-      * Explain feature here<br /><br />
+      * If the user has finished using the application, they can choose to terminate the application by selecting D on the main menu.
+      * This will then display a thank you message to the user and then shutdown the applicartion.<br /><br />
 
 <details><summary><b>Exit App Image</b></summary>
 
