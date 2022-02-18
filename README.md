@@ -17,6 +17,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
     * [Design Choices](<#design-choices>)
     *  [Typography](<#typography>)
     *  [Colour Scheme](<#colour-scheme>)
+    * [Project Management](<#project-management>)
 * [**Features**](<#features>)
     * [Startup Display](<#startup-display>)
     * [Main Menu](<#main-menu>)
@@ -96,6 +97,15 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
  * ### Colour Scheme
       The application utilises a brilliant Python package called [Colorama](https://pypi.org/project/colorama/) which allows developers to change the colour of the text <br /><br />
+
+## Project Management
+
+ * ### Trello
+      I used an excellent application called [Trello](https://trello.com/en-GB) which greatly improved organisation and productivity. This tool allows the individual to properly plan and create a systematic work flow so you are always aware of what needs to be done next.
+
+      I would first create a very basic overview of what I wanted to achieve and then break it down into smaller more manageable steps. Before finishing for the day, I would spend at least 15 minutes planning for the next day so that when I came back to developing I could open my Trello board and instantly get back developing since I would know immediately what I need to be working on. I highly recommend this tool to any developer or development team. <br /><br />
+
+![Google Sheet Image](assets/images/readme-images/trello-board-image.png)
 
 ## Existing Features
   * ### Startup Display
@@ -414,10 +424,14 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
     ![Responsive Test Sheet](assets/images/readme-images/responsive-design-checker-image.png)
 
-* ## Compressing Images
-    * All images that are displayed within the website have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of XXX KB.<br /><br />
+    * If the device does not meet the required dimensions to support the application, the user will be presented with the below image. I feel this is a much nicer way of dealing with devices that don't meet the required dimensions as it doesn't allow the user to view the website when certain elements won't render properly.
 
-    ![Compressed Image 1](assets/images/readme-images/compressed-1.png)
+    ![Responsive Test Sheet](assets/images/readme-images/device-size-error-image.png)
+
+* ## Compressing Images
+    * All images that are displayed within the website have been compressed with [Compressor](https://compressor.io/) and I managed to save a total of 538 KB.<br /><br />
+
+    ![Compressed Image 1](assets/images/readme-images/compressor-image.png)
 
 * ## Manual Testing
     * In addition to the other tests, I have conducted a manual check list for myself to carry out to make sure that everything is working as intended.
