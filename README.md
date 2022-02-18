@@ -76,7 +76,7 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 
 ## Data Model
 
-I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the data for the Formula 1 Hub application. This acted as my primary database where data would be sent to and also retrieved from. The [Google Sheet](https://www.google.co.uk/sheets/about/) had 7 separate worksheets, all of which had a different job. 
+I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the data for the Formula 1 Hub application. This acted as my primary database where data would be sent to and also retrieved from. The [Google Sheet](https://www.google.co.uk/sheets/about/) had 7 separate worksheets, all of which had a different task. 
 
 * *Leaderboard* - Used to store users scores and holds information such as **Name**, **Score**, **Correct**, **Incorrect**, **Difficulty** and **Date**. This sheet is sorted by column B, **Score**.
 * *Feedback* - Used to store all feedback that the user submits.
@@ -99,6 +99,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 ## Existing Features
   * ### Startup Display
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Startup Display Image</b></summary>
@@ -110,6 +111,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Main Menu
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Main Menu Image</b></summary>
@@ -121,6 +123,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Hub Menu
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Quiz Hub Menu Image</b></summary>
@@ -132,6 +135,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Quiz Image</b></summary>
@@ -148,6 +152,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Leaderboards
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Quiz Leaderboards Image</b></summary>
@@ -159,6 +164,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Statistics
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Quiz Statistics Image</b></summary>
@@ -170,6 +176,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Quiz Rules
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Quiz Rules Image</b></summary>
@@ -181,6 +188,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### F1 Info Hub Menu
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>F1 Info Hub Menu Image</b></summary>
@@ -192,6 +200,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### View F1 Fact
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>View F1 Fact Image</b></summary>
@@ -203,6 +212,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Select A Track
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Select A Track Image</b></summary>
@@ -224,6 +234,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### F1 2022 Calendar
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>F1 2022 Calendar Image</b></summary>
@@ -234,6 +245,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 [Back to top](<#contents>)
 
   * ### F1 2022 Drivers 
+      
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>F1 2022 Drivers Image</b></summary>
@@ -245,6 +258,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Submit Feedback
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Submit Feedback Image</b></summary>
@@ -261,6 +275,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
   * ### Exit App
 
+      * Explain feature here
       * Explain feature here<br /><br />
 
 <details><summary><b>Exit App Image</b></summary>
