@@ -551,7 +551,11 @@ The live link to the Github repository can be found here - https://github.com/Mi
 The site was completed as a part of a Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/) and is my Portfolio Project 3. I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), my educator [Luke Walters](https://www.linkedin.com/in/luke-walters-leatherbarrow-531107101/), and my brother [Jack Ralph](https://www.linkedin.com/in/jackthomasralph/), the Slack community, and all at the Code Institute for their help and support.
 
 # Personal Development
-Insert text here
+After developing a project in JavaScript and then moving to Python, I found to learning curve to be incredibly easier as the syntax is very easily readable. I learnt the power of proper project management and I feel like I understand the fundamentals of Python. Creating this project was an immense amount of fun and because I decided to create another project which I am passionate about, it made the whole experience so much more enjoyable. I understand that I have only scratched the surface with Python but I can now understand why it is currently the most popular programming language in the world today.
+
+Moving forward, I will retain and put to use all of the skills I have learnt during this project to not only better myself but to better others around me.
+
+I hope you enjoyed my Formula 1 project and thank you very much for your time.
 
 Mike Ralph 2022.
 
