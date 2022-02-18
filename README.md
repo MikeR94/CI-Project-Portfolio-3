@@ -528,7 +528,18 @@ The live link to the Github repository can be found here - https://github.com/Mi
 * The photos were compressed using [Compressor](https://compressor.io/)
 
 ### Code
-* Insert code here
+* When first deciding that I wanted to make an F1 Quiz, I simply googled "How can I create a quiz game in Python?". This incredible article by [Brock Byrd](https://brockbyrdd.medium.com/) gave me the foundations I needed to begin creating my quiz. I used the foundations of his [Article](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) and then heavily modified it by adding multiple different features, one of which was allowing the user to select a difficulty. 
+
+* I also thought it would be prudent to document but a few of my many googled questions so that future developers can see the power of seeking advice and searching for answers on the internet. Some of the questions I googled are the following:
+
+    * How do I clear the terminal in python? [Link](https://stackoverflow.com/questions/5367068/clear-a-terminal-screen-for-real)
+    * How do I add a time delay in Python? [Link](https://www.geeksforgeeks.org/how-to-add-time-delay-in-python/)
+    * How do I add colours to the Python terminal? [Link](https://www.geeksforgeeks.org/print-colors-python-terminal/)
+    * How do I add a date countdown in Python? [Link](https://www.sololearn.com/Discuss/1530780/how-can-i-get-python-to-countdown-to-a-set-date-in-the-future)
+    * How can I print my google sheets table nicely in Python? [Link](https://www.delftstack.com/howto/python/data-in-table-format-python/)
+    * How do I shutdown my Python program? [Link](https://stackoverflow.com/questions/2823472/is-there-a-method-that-tells-my-program-to-quit)
+    * How can I add randomness in Python? [Link](https://www.geeksforgeeks.org/python-random-sample-function/)
+    * How can I add the date the user has submitted feedback and or completed the quiz? [Link](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior)
 
 [Back to top](<#contents>)
 
