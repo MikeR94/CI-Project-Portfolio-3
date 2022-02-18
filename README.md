@@ -76,9 +76,17 @@ I decided to create a logic flow chart to detail the entire flow of the applicat
 
 ## Data Model
 
-Insert Data Model text here
+I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the data for the Formula 1 Hub application. This acted as my primary database where data would be sent to and also retrieved from. The [Google Sheet](https://www.google.co.uk/sheets/about/) had 7 separate worksheets, all of which had a different job. 
 
-![Python Logic Chart](assets/images/readme-images/data-model-image.png)
+* *Leaderboard* - Used to store users scores and holds information such as **Name**, **Score**, **Correct**, **Incorrect**, **Difficulty** and **Date**. This sheet is sorted by column B, **Score**.
+* *Feedback* - Used to store all feedback that the user submits.
+* *Facts* - Used to store interesting F1 facts and one will be picked at random to be presented to the user.
+* *Drivers* - Used to store information about the F1 2022 drivers. This includes details such as **Name**, **Current Team**, **Wins**, **Pole Positions** and **Career Points**. This sheet is sorted by column E, **Career Points**
+* *Calendar* - Used to store the current F1 2022 calendar. This includes details such as the **Date**, **Grand Prix** and **Venue**. This sheet is sorted by column A, *Date*
+* *Track Info* - Used to store all data about the F1 2022 tracks. I have stored the name of the track into a variable which retrieves the information about that track by referencing the appropriate range within the worksheet.
+* *Commands* - Used to store a simple list of commands that the user can enter on the Select Track display.
+
+![Google Sheet Image](assets/images/readme-images/google-sheet-image.png)
 
 ## Design Choices
 
@@ -304,7 +312,7 @@ Insert Data Model text here
 
 * ## Code Validation
 
-    * The Formula 1 Hub code has been validated by using online validation tools [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [PEP8 Online Validator](http://pep8online.com/). I encountered many PEP8 errors and warnings however these have now been fixed and documented below. <br /><br />
+    * The Formula 1 Hub code has been validated by using online validation tools [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [PEP8 Online Validator](http://pep8online.com/). I encountered many PEP8 errors and warnings however these have now been fixed and documented below. 
 
     * As the JavaScript for this project has been provided by [Code Institute](https://codeinstitute.net/) and I have not altered it in any way, I have been advised by my mentor that it is not a requirement to test it.
 
