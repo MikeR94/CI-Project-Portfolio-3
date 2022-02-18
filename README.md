@@ -250,7 +250,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
       * If the user then types **view list** they will then be provided with a list of commands that they enter.
       * If the user successfully types in a correct track name, the user will be provided information about that specific track.
       * The information the user will be able to see will be **Name**, **Location**, **Length**, **Turns**, **Race Lap Record**, **Capacity**, **2021 Pole Position** and **2021 Race Winner**.
-      * This information is retrieved from the google sheets database and stores information about every track for the F1 2022 Season.<br /><br />
+      * This information is retrieved from the [Google Sheets](https://www.google.co.uk/sheets/about/) database and stores information about every track for the F1 2022 Season.<br /><br />
 
 <details><summary><b>Select A Track Image</b></summary>
 
@@ -295,7 +295,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
   * ### Submit Feedback
 
       * A feature for the user to submit any type of feedback they wish to.
-      * All feedback gets stored in the google sheets database and can be viewed by myself.
+      * All feedback gets stored in the [Google Sheets](https://www.google.co.uk/sheets/about/) database and can be viewed by myself.
       * A small thank you message is displayed to the user upon submitting their feedback and they will then be returned to the main menu.<br /><br />
 
 <details><summary><b>Submit Feedback Image</b></summary>
@@ -521,11 +521,15 @@ The live link to the Github repository can be found here - https://github.com/Mi
 # Credits
 ### Content
 
-* The responsive preview image at the top of the README.md came from [Techsini](https://techsini.com/multi-mockup/index.php)
-* The favicon came from [Favicon](https://favicon.io/)
+* The responsive preview image at the top of the README.md came from [Techsini](https://techsini.com/multi-mockup/index.php).
+* The questions for the Formula 1 Quiz came [WeLoveQuizzes](https://www.welovequizzes.com/formula-1-quiz-questions-and-answers/), [Express](https://www.express.co.uk/sport/f1-autosport/1277159/F1-quiz-questions-and-answers-trivia), [FreePubQuiz](http://www.freepubquiz.co.uk/F1-quiz.html) and [Quiz-Questions](https://quiz-questions.uk/f1-quiz/). I also added questions of my own.
+* Information stored within [Google Sheets](https://www.google.co.uk/sheets/about/) that is presented to the user was from [AutoSport](https://www.autosport.com/f1/news/everything-we-know-about-the-2022-formula-1-season-drivers-cars-tracks-more/6868204/), [Racing Statistics](https://www.racing-statistics.com/en/f1-drivers), [Formula 1](https://www.formula1.com/en/results.html/2021/races.html) and [Wikipedia](https://en.wikipedia.org/wiki/Main_Page).
 
 ### Media
-* The photos were compressed using [Compressor](https://compressor.io/)
+* The photos were compressed using [Compressor](https://compressor.io/).
+* The Formula 1 background image came from [WallPaperBat](https://wallpaperbat.com/f1-race-tracks-wallpapers).
+* The computer image that contains the terminal came from [Pngall](https://www.pngall.com/wp-content/uploads/4/LCD-Computer-Monitor-PNG-Image.png).
+* The favicon image came from [encrypted-tbn0](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtOmemr76GOUK79y3itlIDr5bYfWiS-F2xixdV1qg4e9WI8POOvZ0TV06TKCmL7zE3Ko&usqp=CAU) and then turned into a favicon by [Favicon](https://favicon.io/).
 
 ### Code
 * When first deciding that I wanted to make an F1 Quiz, I simply googled "How can I create a quiz game in Python?". This incredible article by [Brock Byrd](https://brockbyrdd.medium.com/) gave me the foundations I needed to begin creating my quiz. I used the foundations of his [Article](https://brockbyrdd.medium.com/creating-a-multiple-choice-quiz-in-python-terminal-1c46123b86d5) and then heavily modified it by adding multiple different features, one of which was allowing the user to select a difficulty. 
@@ -536,7 +540,7 @@ The live link to the Github repository can be found here - https://github.com/Mi
     * How do I add a time delay in Python? [Link](https://www.geeksforgeeks.org/how-to-add-time-delay-in-python/)
     * How do I add colours to the Python terminal? [Link](https://www.geeksforgeeks.org/print-colors-python-terminal/)
     * How do I add a date countdown in Python? [Link](https://www.sololearn.com/Discuss/1530780/how-can-i-get-python-to-countdown-to-a-set-date-in-the-future)
-    * How can I print my google sheets table nicely in Python? [Link](https://www.delftstack.com/howto/python/data-in-table-format-python/)
+    * How can I print my [Google Sheets](https://www.google.co.uk/sheets/about/) table nicely in Python? [Link](https://www.delftstack.com/howto/python/data-in-table-format-python/)
     * How do I shutdown my Python program? [Link](https://stackoverflow.com/questions/2823472/is-there-a-method-that-tells-my-program-to-quit)
     * How can I add randomness in Python? [Link](https://www.geeksforgeeks.org/python-random-sample-function/)
     * How can I add the date the user has submitted feedback and or completed the quiz? [Link](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior)
