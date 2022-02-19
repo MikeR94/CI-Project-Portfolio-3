@@ -454,27 +454,48 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
 * ## Bugs Fixed 
 
-    ### Bug Fixed 1
+    ### Leaderboards not updating properly
         
-    * Insert bug here <br /><br />
+    * When the user has finished the quiz, their score would be uploaded to the leaderboard. If the user then returned back to the Quiz Hub Menu and then selected View the leaderboards, the leaderboards would not sort in order of highest to lowest by column B (score) even though I had the code written and in the right place.
+    
+    * After about an hour of trying to understand why this was happening, I decided to reference the worksheet again within the code that was responsible for viewing the leaderboards. Thankfully, this solved the issue. <br /><br />
 
-    <details><summary><b>Bug Fixed 1</b></summary>
+    ![Leaderboards Fixed](assets/images/readme-images/leaderboard-solved-image.png)
 
-    ![Bug Fixed 1](assets/videos/screen-error-flicker.gif)
-    </details><br />
+    ### PEP8 Warnings and Errors
+        
+    * When I put my code through the [PEP8 Online Validator](http://pep8online.com/checkresult) I was presented the below warnings and errors multiple times. <br /><br />
 
-    * Insert explanation here <br /><br />
+    ![PEP8 Newline Warning](assets/images/readme-images/pep8-newline-warning-image.png)
+
+    ![PEP8 Line Too Long Error](assets/images/readme-images/pep8-error-line-too-long-image.png)
+
+    ![PEP8 Visual Indent Error](assets/images/readme-images/pep8-visual-indent-error-image.png)
+
+    ![PEP8 Unexpected Indentation Error](assets/images/readme-images/pep8-unexpected-indentation-error-image.png)
+    
+    * After understanding the warnings and errors, I spent time refactoring the code to fix everything. Now I have zero warnings and errors when I put all of my Python files through the [PEP8 Online Validator](http://pep8online.com/checkresult).
 
 
 * ## Bugs Unresolved
 
-    ### Bug unresolved 1
-    
-    * Insert bug here <br /><br />
+    ### User entering keys fast
 
-    ![Bug unresolved 1](assets/images/readme-images/navigator-agent-issue.png)
+    * If the user enters a correct key multiple times extremely fast then the program will register every key and just keep loading the next available display relative to the key pressed. 
+
+    * My idea for fixing this issue was to implement a function that will enable and then disable user input where appropriate. Unfortunately, I was unable to implement this. I did find a brilliant solution which involved importing the keyboard module but for some reason I was unable to import the module.
+
+    * This isn't entirely a "bug" in the sense that the application breaks or something doesn't work as intended however it's more of a quality user flow control issue which would be very nice if I could implement to prevent users spam pressing keys.
     
-    * Insert explanation here <br /><br />
+    ### navigator.userAgent/appVersion and platform
+    
+    * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing one issue which is the same issue I had on my Project Portfolio 1 and Project Portfolio 2 so I'm familiar with it. <br /><br />
+
+    ![Site Issue](assets/images/readme-images/navigator-agent-issue-image.png)
+    
+    * I've done some research and apparently this is a Google Chrome issue as per this [source](https://forum.codewithmosh.com/t/the-ultimate-javascript-console-issue-at-beginning-of-course/6535) and has been reported [here](https://githubmemory.com/repo/zalmoxisus/redux-devtools-extension/issues/808). Additionally, I have tested this website with Microsoft Edge and the issue doesn't show.
+
+
 
 [Back to top](<#contents>)
 
