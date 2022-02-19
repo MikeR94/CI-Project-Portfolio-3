@@ -39,7 +39,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
     * [Polls](<#polls>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
-* [**Deployment**](<#deployment>)
+* [**Deployment To Heroku**](<#deployment-to-heroku>)
 * [**Credits**](<#credits>)
     * [**Content**](<#content>)
     * [**Media**](<#media>)
@@ -478,41 +478,72 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
 [Back to top](<#contents>)
 
-# Deployment
+# Deployment To Heroku
+  
+The project was deployed to [Heroku](https://www.heroku.com). The deployment process is as follows: 
+  
+1. Log in to Heroku or create an account if required.
 
-### **To deploy the project**
-The site was deployed to Heroku. The steps to deploy a site are as follows:
-  1. Insert deployment steps here
+<details><summary><b>Heroku Step 1</b></summary>
 
-<details><summary><b>Git Deploy Preview Image</b></summary>
+![Heroku Step 1](assets/images/readme-images/heroku-1-image.png)
+</details><br />
 
-![Git Deploy Image](assets/images/readme-images/git-deploy-image.png)
-</details><hr>
+1. Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app"
 
-### **To fork the repository on GitHub**
-A copy of the GitHub Repository can be made by forking the GitHub account. This copy can be viewed and changes can be made to the copy without affecting the original repository. Take the following steps to fork the repository;
-1. Log in to **GitHub** and locate the [repository](https://github.com/MikeR94/CI-Project-Portfolio-3).
-2. On the right-hand side of the page inline with the repository name is a button called **'Fork'**, click on the button to create a copy of the original repository in your GitHub Account.
+<details><summary><b>Heroku Step 2</b></summary>
 
-<details><summary><b>Git Fork Preview Image</b></summary>
+![Heroku Step 2](assets/images/readme-images/heroku-2-image.png)
+</details><br />
 
-![Git Fork Image](assets/images/readme-images/git-fork-image.png)
-</details><hr>
+1. Enter a unique application name and then select your region. Once you are ready, click "Create app"
 
-### **To create a local clone of this project**
-The method from cloning a project from GitHub is below:
+<details><summary><b>Heroku Step 3</b></summary>
 
-1. Under the repository’s name, click on the **code** tab.
-2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
-3. In your IDE of choice, open **Git Bash**.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type **git clone**, and then paste the URL copied from GitHub.
-6. Press **enter** and the local clone will be created.
+![Heroku Step 3](assets/images/readme-images/heroku-3-image.png)
+</details><br />
 
-<details><summary><b>Git Clone Preview Image</b></summary>
+1. This will bring you to the project "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button to the right.
 
-![Git Clone Image](assets/images/readme-images/git-clone-image.png)
-</details><hr>
+<details><summary><b>Heroku Step 4</b></summary>
+
+![Heroku Step 4](assets/images/readme-images/heroku-4-image.png)
+</details><br />
+
+1. Scroll down to the buildpacks section of the settings page and click the button "Add buildpack".
+
+<details><summary><b>Heroku Step 5</b></summary>
+
+![Heroku Step 5](assets/images/readme-images/heroku-5-image.png)
+</details><br />
+
+1. Add both "Python" and "node.js" and make sure that Python is above node.js. If it isn't you can just drag it above.
+
+<details><summary><b>Heroku Step 6</b></summary>
+
+![Heroku Step 6](assets/images/readme-images/heroku-6-image.png)
+</details><br />
+
+1. Scroll back to the top of the settings page, and navigate to the "Deploy" tab. Select Github as the deployment method.
+
+<details><summary><b>Heroku Step 7</b></summary>
+
+![Heroku Step 7](assets/images/readme-images/heroku-7-image.png)
+</details><br />
+
+1. Search for the repository name and click the connect button next to the intended repository.
+
+<details><summary><b>Heroku Step 8</b></summary>
+
+![Heroku Step 8](assets/images/readme-images/heroku-8-image.png)
+</details><br />
+
+1. From the bottom of the deploy page select your preferred deployment type. I personally enabled automatic deployments. After that, click "Deploy Branch".
+
+<details><summary><b>Heroku Step 9</b></summary>
+
+![Heroku Step 9](assets/images/readme-images/heroku-9-image.png)
+</details><br />
 
 The live link to the Github repository can be found here - https://github.com/MikeR94/CI-Project-Portfolio-3
 
