@@ -489,56 +489,56 @@ The project was deployed to [Heroku](https://www.heroku.com). The deployment pro
 ![Heroku Step 1](assets/images/readme-images/heroku-1-image.png)
 </details><br />
 
-1. Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app"
+2. Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app"
 
 <details><summary><b>Heroku Step 2</b></summary>
 
 ![Heroku Step 2](assets/images/readme-images/heroku-2-image.png)
 </details><br />
 
-1. Enter a unique application name and then select your region. Once you are ready, click "Create app"
+3. Enter a unique application name and then select your region. Once you are ready, click "Create app"
 
 <details><summary><b>Heroku Step 3</b></summary>
 
 ![Heroku Step 3](assets/images/readme-images/heroku-3-image.png)
 </details><br />
 
-1. This will bring you to the project "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button to the right.
+4. This will bring you to the project "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button to the right.
 
 <details><summary><b>Heroku Step 4</b></summary>
 
 ![Heroku Step 4](assets/images/readme-images/heroku-4-image.png)
 </details><br />
 
-1. Scroll down to the buildpacks section of the settings page and click the button "Add buildpack".
+5. Scroll down to the buildpacks section of the settings page and click the button "Add buildpack".
 
 <details><summary><b>Heroku Step 5</b></summary>
 
 ![Heroku Step 5](assets/images/readme-images/heroku-5-image.png)
 </details><br />
 
-1. Add both "Python" and "node.js" and make sure that Python is above node.js. If it isn't you can just drag it above.
+6. Add both "Python" and "node.js" and make sure that Python is above node.js. If it isn't you can just drag it above.
 
 <details><summary><b>Heroku Step 6</b></summary>
 
 ![Heroku Step 6](assets/images/readme-images/heroku-6-image.png)
 </details><br />
 
-1. Scroll back to the top of the settings page, and navigate to the "Deploy" tab. Select Github as the deployment method.
+7. Scroll back to the top of the settings page, and navigate to the "Deploy" tab. Select Github as the deployment method.
 
 <details><summary><b>Heroku Step 7</b></summary>
 
 ![Heroku Step 7](assets/images/readme-images/heroku-7-image.png)
 </details><br />
 
-1. Search for the repository name and click the connect button next to the intended repository.
+8. Search for the repository name and click the connect button next to the intended repository.
 
 <details><summary><b>Heroku Step 8</b></summary>
 
 ![Heroku Step 8](assets/images/readme-images/heroku-8-image.png)
 </details><br />
 
-1. From the bottom of the deploy page select your preferred deployment type. I personally enabled automatic deployments. After that, click "Deploy Branch".
+9. From the bottom of the deploy page select your preferred deployment type. I personally enabled automatic deployments. After that, click "Deploy Branch".
 
 <details><summary><b>Heroku Step 9</b></summary>
 
