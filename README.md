@@ -448,9 +448,55 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
    * ### Manual Tests Conducted
       * Startup Display
-        * Verify step here
+        * Verify that the F1 countdown text counts down correctly and that it will change when the days are <= 0.
+        * Verify that the user validation is working as intended.
+        * Verify that if the user enters a correct name, they will move to the Main Menu.
       * Main Menu
-        * Verify step here
+        * Verify that the users name is displayed at the top of the page.
+        * Verify that the user receives an invalid input message if an incorrect key has been entered.
+        * Verify that all menu options load as intended only if the user enters the appropriate key.
+      * Quiz Hub Menu
+        * Verify that the users name is displayed at the top of the page.
+        * Verify that the user receives an invalid input message if an incorrect key has been entered.
+        * Verify that all menu options load as intended only if the user enters the appropriate key.
+      * F1 Info Hub Menu
+        * Verify that the users name is displayed at the top of the page.
+        * Verify that the user receives an invalid input message if an incorrect key has been entered.
+        * Verify that all menu options load as intended only if the user enters the appropriate key.
+      * Select Difficulty
+        * Verify that the user receives an invalid input message if an incorrect key has been entered.
+        * Verify that all menu options load as intended only if the user enters the appropriate key.
+        * Verify that the user receives an invalid input message if an incorrect key has been entered.
+      * Quiz
+        * Verify that the correct difficulty questions are presented to the user.
+        * Verify that only one question is loaded at a time.
+        * Verify that the user receives an invalid input message if an incorrect key has been entered and then the question is displayed again.
+        * Verify that the user receives a correct answer message if they answer a question correctly.
+        * Verify that the user receives an incorrect answer message if they answer a question incorrectly.
+        * Verify that when all questions have been answered, the user is receives a tailored message that represents their quiz results.
+        * Verify that the users score is submitted correctly to the leaderboards.
+      * Quiz Leaderboards
+        * Verify that the leaderboards are displayed correctly and only show the top 8 highest scores in order of highest to lowest.
+      * Quiz Statistics
+        * Verify that the statistics for the quiz are displayed correctly and the numbers are accurate.
+      * Quiz Rules
+        * Verify that the quiz rules are displayed correctly to the user.
+      * View F1 Fact
+        * Verify that only one fact is displayed to the user.
+        * Verify that if the user chooses to load a new fact then a new fact is presented.
+      * Select A Track
+        * Verify that if the user types in "view list" then the commands are presented to the user.
+        * Verify that if the user types in a correct track name then that specific track data is presented to the user.
+        * Verify that if the user types in "exit" then it will return the user back to the F1 Quiz Hub Menu.
+      * F1 2022 Calendar
+        * Verify that the F1 2022 Calendar is presented to the user in the correct order of dates.
+      * F1 2022 Drivers
+        * Verify that the F1 2022 Drivers list is presented to the user in the correct order of career points highest to lowest.
+      * Submit Feedback
+        * Verify that when the user submits feedback, the message is stored within the google sheets database.
+        * Verify that when the user submits feedback, the user is then redirected back to the main menu.
+      * Exit App
+        * Verify that when the user exits the app, they are presented with a thank you message and then the program shuts down successfully.
         <br /><br />
 
 * ## Browser Compatibility
