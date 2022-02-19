@@ -107,6 +107,11 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
 ![Google Sheet Image](assets/images/readme-images/trello-board-image.png)
 
+ * ### Excel
+      I use [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) to organise to and create any files that have a lot of data. I use Excel as it allows me to visually organise things in a way so that it is much more easily readable and understandable so that when I come to transfer that information into my projects, I know exactly what has and has not been entered. This worked especially well for tracking all of my quiz questions and splitting them into their respective categories. <br /><br />
+
+![Google Sheet Image](assets/images/readme-images/excel-questions-image.png)
+
 ## Existing Features
   * ### Startup Display
 
@@ -486,7 +491,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
     * My idea for fixing this issue was to implement a function that will enable and then disable user input where appropriate. Unfortunately, I was unable to implement this. I did find a brilliant solution which involved importing the keyboard module but for some reason I was unable to import the module.
 
     * This isn't entirely a "bug" in the sense that the application breaks or something doesn't work as intended however it's more of a quality user flow control issue which would be very nice if I could implement to prevent users spam pressing keys.
-    
+
     ### navigator.userAgent/appVersion and platform
     
     * When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing one issue which is the same issue I had on my Project Portfolio 1 and Project Portfolio 2 so I'm familiar with it. <br /><br />
