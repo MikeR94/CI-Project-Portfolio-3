@@ -38,6 +38,7 @@ You can view the live site here - <a href="https://mr-project-portfolio-3.heroku
     * [Latest News](<#latest-news>)
     * [Polls](<#polls>)
 * [**Technologies Used**](<#technologies-used>)
+* [**Python Packages**](<#python-packages>)
 * [**Testing**](<#testing>)
 * [**Deployment To Heroku**](<#deployment-to-heroku>)
 * [**Credits**](<#credits>)
@@ -353,7 +354,11 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 * [Balsamiq](https://balsamiq.com/) - Used to create the wire-frame.
 * [Draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) - Used to create the logic flow chart.
 * [Trello](https://trello.com/en-GB) - Used as a project management tool to organise my work flow.
+* [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) - Used to create spreadsheets to easily view data.
 * [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
+
+# Python Packages
+
 * [GSpread](https://pypi.org/project/gspread/) - Used to transfer data between google sheets.
 * [Colorama](https://pypi.org/project/colorama/) - Used to add colours to the terminal.
 * [Random](https://docs.python.org/3/library/random.html) - Used to implement pseudo-random number generators.
