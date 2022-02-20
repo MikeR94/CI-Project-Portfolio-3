@@ -135,7 +135,28 @@ def load_track_info(user_input):
     '''
     track_info_google_sheets_ref_dict = {
         "paul ricard": "A1:B8",
-        "silverstone": "A10:B17"
+        "silverstone": "A10:B17",
+        "sakhir": "A19:B26",
+        "jeddah": "A28:B35",
+        "albert park": "A37:B44",
+        "imola": "A46:B53",
+        "miami gardens": "A55:B62",
+        "barcelona": "A64:B71",
+        "monte carlo": "A73:B80",
+        "baku": "A82:B89",
+        "montreal": "A91:B98",
+        "red bull ring": "A100:B107",
+        "hungaroring": "A109:B116",
+        "spa": "A118:B125",
+        "zandvoort": "A127:B134",
+        "monza": "A136:B143",
+        "sochi": "A145:B152",
+        "marina bay": "A154:B161",
+        "suzuka": "A163:B170",
+        "americas": "A172:B179",
+        "autodromo": "A181:B188",
+        "interlagos": "A190:B197",
+        "yas marina": "A199:B206"
     }
 
     google_sheets_ref = track_info_google_sheets_ref_dict[user_input]
