@@ -158,9 +158,7 @@ def load_track_info(user_input):
         "interlagos": "A190:B197",
         "yas marina": "A199:B206"
     }
-
     google_sheets_ref = track_info_google_sheets_ref_dict[user_input]
-
     selected_track = track_info.get_values(google_sheets_ref)
     print(tabulate(selected_track, tablefmt='plain'))
 
