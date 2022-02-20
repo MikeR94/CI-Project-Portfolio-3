@@ -499,7 +499,6 @@ def show_quiz_stats():
 
 def clear_terminal():
     ''' Clears the terminal '''
-    # os.system('clear')
     os.system("printf '\ec'")
 
 
