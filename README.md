@@ -575,14 +575,14 @@ The project was deployed to [Heroku](https://www.heroku.com). The deployment pro
 ![Heroku Step 1](assets/images/readme-images/heroku-1-image.png)
 </details><br />
 
-2. Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app"
+2. Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app".
 
 <details><summary><b>Heroku Step 2</b></summary>
 
 ![Heroku Step 2](assets/images/readme-images/heroku-2-image.png)
 </details><br />
 
-3. Enter a unique application name and then select your region. Once you are ready, click "Create app"
+3. Enter a unique application name and then select your region. Once you are ready, click "Create app".
 
 <details><summary><b>Heroku Step 3</b></summary>
 
