@@ -37,6 +37,15 @@ drivers = SHEET.worksheet('drivers')
 commands = SHEET.worksheet('commands')
 nowdate = datetime.now()
 date = nowdate.strftime('%d/%m/%Y')
+tracknames = {
+            'paul ricard', 'silverstone',
+            'sakhir', 'jeddah', 'albert park', 'imola',
+            'miami gardens', 'barcelona', 'monte carlo',
+            'baku', 'montreal', 'red bull ring',
+            'hungaroring', 'spa', 'zandvoort', 'monza',
+            'sochi', 'marina bay', 'suzuka', 'americas',
+            'autodromo', 'interlagos', 'yas marina'
+            }
 
 
 def view_track_list():
@@ -120,6 +129,21 @@ def view_drivers():
     quick_menu(f1_quick_menu=True)
 
 
+def load_track_info(user_input):
+    '''
+    Loads the info for the selected track
+    '''
+    track_info_google_sheets_ref_dict = {
+        "paul ricard": "A1:B8",
+        "silverstone": "A10:B17"
+    }
+
+    google_sheets_ref = track_info_google_sheets_ref_dict[user_input]
+
+    selected_track = track_info.get_values(google_sheets_ref)
+    print(tabulate(selected_track, tablefmt='plain'))
+
+
 def select_track():
     ''' Used to allow the user to select a track to view info '''
     multiple_blank_lines()
@@ -172,188 +196,11 @@ def select_track():
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
-    if user_input == ('paul ricard'):
+    if user_input in tracknames:
         magenta_string(f'Understood {name}, loading track info...'.center(80))
         time.sleep(2)
         clear_terminal()
-        paul_ricard = track_info.get_values('A1:B8')
-        print(tabulate(paul_ricard, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('silverstone'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        silverstone = track_info.get_values('A10:B17')
-        print(tabulate(silverstone, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('sakhir'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        sakhir = track_info.get_values('A19:B26')
-        print(tabulate(sakhir, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('jeddah'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        jeddah = track_info.get_values('A28:B35')
-        print(tabulate(jeddah, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('albert park'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        albert_park = track_info.get_values('A37:B44')
-        print(tabulate(albert_park, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('imola'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        imola = track_info.get_values('A46:B53')
-        print(tabulate(imola, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('miami gardens'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        miami_gardens = track_info.get_values('A55:B62')
-        print(tabulate(miami_gardens, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('barcelona'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        barcelona = track_info.get_values('A64:B71')
-        print(tabulate(barcelona, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('monte carlo'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        monte_carlo = track_info.get_values('A73:B80')
-        print(tabulate(monte_carlo, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('baku'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        baku = track_info.get_values('A82:B89')
-        print(tabulate(baku, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('montreal'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        montreal = track_info.get_values('A91:B98')
-        print(tabulate(montreal, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('red bull ring'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        red_bull_ring = track_info.get_values('A100:B107')
-        print(tabulate(red_bull_ring, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('hungaroring'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        hungaroring = track_info.get_values('A109:B116')
-        print(tabulate(hungaroring, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('spa'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        spa = track_info.get_values('A118:B125')
-        print(tabulate(spa, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('zandvoort'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        zandvoort = track_info.get_values('A127:B134')
-        print(tabulate(zandvoort, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('monza'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        monza = track_info.get_values('A136:B143')
-        print(tabulate(monza, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('sochi'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        sochi = track_info.get_values('A145:B152')
-        print(tabulate(sochi, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('marina bay'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        marina_bay = track_info.get_values('A154:B161')
-        print(tabulate(marina_bay, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('suzuka'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        suzuka = track_info.get_values('A163:B170')
-        print(tabulate(suzuka, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('americas'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        americas = track_info.get_values('A172:B179')
-        print(tabulate(americas, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('autodromo'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        autodromo = track_info.get_values('A181:B188')
-        print(tabulate(autodromo, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('interlagos'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        interlagos = track_info.get_values('A190:B197')
-        print(tabulate(interlagos, tablefmt='plain'))
-        blank_line()
-        track_list_menu()
-    if user_input == ('yas marina'):
-        magenta_string(f'Understood {name}, loading track info...'.center(80))
-        time.sleep(2)
-        clear_terminal()
-        yas_marina = track_info.get_values('A199:B206')
-        print(tabulate(yas_marina, tablefmt='plain'))
+        load_track_info(user_input)
         blank_line()
         track_list_menu()
 
