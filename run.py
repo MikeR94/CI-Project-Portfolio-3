@@ -760,7 +760,7 @@ formula_1_text()
 days_to_new_season()
 blank_line()
 while True:
-    white_string('Please enter your name below:\n'.center(80))
+    white_string('Please enter your name below and press enter\n'.center(80))
     name = input(''.center(35))
     if len(name) > 14 or name.isspace() or name == '':
         blank_line()
