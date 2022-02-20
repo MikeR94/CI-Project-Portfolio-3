@@ -314,6 +314,11 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 ![Submitted Feedback Image](assets/images/readme-images/submitted-feedback-image.png)
 </details><br />
 
+<details><summary><b>Submitted Feedback GIF</b></summary>
+
+![Submitted Feedback GIF](assets/gifs/feedback-proof-gif.gif)
+</details><br />
+
 [Back to top](<#contents>)
 
   * ### Exit App
