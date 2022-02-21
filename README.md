@@ -324,7 +324,7 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
   * ### Exit App
 
       * If the user has finished using the application, they can choose to terminate the application by selecting D on the main menu.
-      * This will then display a thank you message to the user and then shutdown the applicartion.<br /><br />
+      * This will then display a thank you message to the user and then shutdown the application.<br /><br />
 
 <details><summary><b>Exit App Image</b></summary>
 
