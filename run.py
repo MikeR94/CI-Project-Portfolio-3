@@ -685,17 +685,17 @@ def f1_info_hub():
         clear_terminal()
         show_fact()
     if user_input == ('B'):
-        magenta_string('Loading select track..'.center(80))
+        magenta_string('Loading select track...'.center(80))
         time.sleep(2)
         clear_terminal()
         select_track()
     if user_input == ('C'):
-        magenta_string('Loading 2022 calendar..'.center(80))
+        magenta_string('Loading 2022 calendar...'.center(80))
         time.sleep(2)
         clear_terminal()
         view_calendar()
     if user_input == ('D'):
-        magenta_string('Loading current F1 drivers..'.center(80))
+        magenta_string('Loading current F1 drivers...'.center(80))
         drivers.sort((5, 'des'))
         time.sleep(2)
         clear_terminal()
@@ -739,7 +739,7 @@ def main_menu():
         clear_terminal()
         quiz_hub()
     if user_input == ('B'):
-        magenta_string('Loading the F1 Info Hub'.center(80))
+        magenta_string('Loading the F1 Info Hub...'.center(80))
         time.sleep(2)
         clear_terminal()
         f1_info_hub()
