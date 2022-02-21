@@ -383,6 +383,8 @@ I used [Google Sheets](https://www.google.co.uk/sheets/about/) to store all the 
 
     * As the JavaScript for this project has been provided by [Code Institute](https://codeinstitute.net/) and I have not altered it in any way, I have been advised by my mentor that it is not a requirement to test it.
 
+    * ***Please note*** - Although I have added a new line at the end of the file, when copying and pasting the code from [GitHub](https://github.com/) into the [PEP8 Online Validator](http://pep8online.com/), one warning will appear for each file. This warning is the "no new line at end of file" warning. I do have a new line at the end of the file however it seems that when I push my code to [GitHub](https://github.com/) then that line is automatically removed.
+
 * ### HTML Validation Image
 
     ![HTML Validation](assets/images/readme-images/html-validation-image.png)
