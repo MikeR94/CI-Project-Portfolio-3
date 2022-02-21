@@ -726,7 +726,7 @@ def main_menu():
         if user_input not in {'A', 'B', 'C', 'D'}:
             yellow_string(
                          'Invalid input! Please enter either '
-                         'A, B, C, D or E\n'.center(80)
+                         'A, B, C or D\n'.center(80)
                          )
             time.sleep(1)
             clear_terminal()
